@@ -1,0 +1,832 @@
+{
+  "axes": [
+    {
+      "id": "les-bases",
+      "name": "Les Bases du Frontend",
+      "chapters": [
+        {
+          "id": "fondamentaux",
+          "name": "Fondamentaux",
+          "sections": [
+            {
+              "id": "introduction",
+              "name": "Introduction",
+              "file": "dev-web/fondamentaux/introduction.md"
+            },
+            {
+              "id": "histoire",
+              "name": "Histoire du Web",
+              "file": "dev-web/fondamentaux/histoire.md"
+            }
+          ]
+        },
+        {
+          "id": "html-css",
+          "name": "HTML & CSS",
+          "sections": [
+            {
+              "id": "balises-html",
+              "name": "Balises HTML",
+              "subsections": [
+                {
+                  "id": "structure-essentielles",
+                  "name": "Structure & Balises Essentielles",
+                  "file": "dev-web/html-css/balises-html/structure-essentielles.md"
+                },
+                {
+                  "id": "listes-liens-images",
+                  "name": "Listes, Liens & Images",
+                  "file": "dev-web/html-css/balises-html/listes-liens-images.md"
+                },
+                {
+                  "id": "semantique-formulaires",
+                  "name": "Sémantique & Formulaires",
+                  "file": "dev-web/html-css/balises-html/semantique-formulaires.md"
+                }
+              ]
+            },
+            {
+              "id": "selecteurs-css",
+              "name": "Sélecteurs CSS",
+              "subsections": [
+                {
+                  "id": "selecteurs-base",
+                  "name": "Sélecteurs de Base",
+                  "file": "dev-web/html-css/selecteurs-css/selecteurs-base.md"
+                },
+                {
+                  "id": "pseudo-classes-elements",
+                  "name": "Pseudo-classes & Pseudo-éléments",
+                  "file": "dev-web/html-css/selecteurs-css/pseudo-classes-elements.md"
+                },
+                {
+                  "id": "specificite-avances",
+                  "name": "Spécificité & Avancés",
+                  "file": "dev-web/html-css/selecteurs-css/specificite-avances.md"
+                }
+              ]
+            },
+            {
+              "id": "flexbox-grid",
+              "name": "Flexbox et Grid",
+              "subsections": [
+                {
+                  "id": "flexbox",
+                  "name": "Flexbox",
+                  "file": "dev-web/html-css/flexbox-grid/flexbox.md"
+                },
+                {
+                  "id": "grid-responsive",
+                  "name": "Grid & Responsive",
+                  "file": "dev-web/html-css/flexbox-grid/grid-responsive.md"
+                }
+              ]
+            },
+            {
+              "id": "accessibilite",
+              "name": "Accessibilité (a11y)",
+              "file": "dev-web/html-css/accessibilite.md"
+            }
+          ]
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "sections": [
+            {
+              "id": "variables-types",
+              "name": "Variables et Types",
+              "subsections": [
+                {
+                  "id": "declaration-types-primitifs",
+                  "name": "Déclaration & Types Primitifs",
+                  "file": "dev-web/javascript/variables-types/declaration-types-primitifs.md"
+                },
+                {
+                  "id": "types-complexes-scope",
+                  "name": "Types Complexes & Scope",
+                  "file": "dev-web/javascript/variables-types/types-complexes-scope.md"
+                }
+              ]
+            },
+            {
+              "id": "fonctions",
+              "name": "Fonctions",
+              "subsections": [
+                {
+                  "id": "bases-fonctions",
+                  "name": "Bases des Fonctions",
+                  "file": "dev-web/javascript/fonctions/bases-fonctions.md"
+                },
+                {
+                  "id": "concepts-avances",
+                  "name": "Concepts Avancés",
+                  "file": "dev-web/javascript/fonctions/concepts-avances.md"
+                },
+                {
+                  "id": "patterns-best-practices",
+                  "name": "Patterns & Best Practices",
+                  "file": "dev-web/javascript/fonctions/patterns-best-practices.md"
+                }
+              ]
+            },
+            {
+              "id": "dom-manipulation",
+              "name": "DOM Manipulation",
+              "subsections": [
+                {
+                  "id": "selection-modification",
+                  "name": "Sélection & Modification",
+                  "file": "dev-web/javascript/dom-manipulation/selection-modification.md"
+                },
+                {
+                  "id": "evenements",
+                  "name": "Événements",
+                  "file": "dev-web/javascript/dom-manipulation/evenements.md"
+                },
+                {
+                  "id": "pratique-performance",
+                  "name": "Pratique & Performance",
+                  "file": "dev-web/javascript/dom-manipulation/pratique-performance.md"
+                }
+              ]
+            },
+            {
+              "id": "apis-modernes",
+              "name": "APIs Modernes du Navigateur",
+              "subsections": [
+                {
+                  "id": "programmation-asynchrone",
+                  "name": "Programmation Asynchrone",
+                  "file": "dev-web/javascript/apis-modernes/programmation-asynchrone.md"
+                },
+                {
+                  "id": "fetch-storage",
+                  "name": "Fetch & Storage",
+                  "file": "dev-web/javascript/apis-modernes/fetch-storage.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "git",
+          "name": "Git & GitHub",
+          "sections": [
+            {
+              "id": "git-introduction",
+              "name": "Introduction à Git",
+              "file": "dev-web/git/git-introduction.md"
+            },
+            {
+              "id": "branches-merging",
+              "name": "Branches & Merging",
+              "file": "dev-web/git/branches-merging.md"
+            },
+            {
+              "id": "github-collaboration",
+              "name": "GitHub & Collaboration",
+              "file": "dev-web/git/github-collaboration.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "chapters": [
+        {
+          "id": "typescript",
+          "name": "Fondamentaux TypeScript",
+          "sections": [
+            {
+              "id": "types-avances",
+              "name": "Types Avancés",
+              "subsections": [
+                {
+                  "id": "union-intersection-types",
+                  "name": "Union & Intersection Types",
+                  "file": "dev-web/js-avance/types-avances/union-intersection-types.md"
+                },
+                {
+                  "id": "conditional-types",
+                  "name": "Conditional Types",
+                  "file": "dev-web/js-avance/types-avances/conditional-types.md"
+                },
+                {
+                  "id": "mapped-utility-types",
+                  "name": "Mapped & Utility Types",
+                  "file": "dev-web/js-avance/types-avances/mapped-utility-types.md"
+                }
+              ]
+            },
+            {
+              "id": "interfaces-generiques",
+              "name": "Interfaces et Génériques",
+              "subsections": [
+                {
+                  "id": "interfaces-advanced",
+                  "name": "Interfaces Avancées",
+                  "file": "dev-web/js-avance/interfaces-generiques/interfaces-advanced.md"
+                },
+                {
+                  "id": "generics-fundamentals",
+                  "name": "Génériques Fondamentaux",
+                  "file": "dev-web/js-avance/interfaces-generiques/generics-fundamentals.md"
+                },
+                {
+                  "id": "generics-advanced",
+                  "name": "Génériques Avancés",
+                  "file": "dev-web/js-avance/interfaces-generiques/generics-advanced.md"
+                }
+              ]
+            },
+            {
+              "id": "decorateurs-modules",
+              "name": "Décorateurs et Modules",
+              "subsections": [
+                {
+                  "id": "decorators",
+                  "name": "Décorateurs",
+                  "file": "dev-web/js-avance/decorateurs-modules/decorators.md"
+                },
+                {
+                  "id": "modules-namespaces",
+                  "name": "Modules & Namespaces",
+                  "file": "dev-web/js-avance/decorateurs-modules/modules-namespaces.md"
+                },
+                {
+                  "id": "tsconfig-advanced",
+                  "name": "Configuration Avancée",
+                  "file": "dev-web/js-avance/decorateurs-modules/tsconfig-advanced.md"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "chapters": [
+        {
+          "id": "nodejs",
+          "name": "Node.js",
+          "sections": [
+            {
+              "id": "presentation",
+              "name": "Présentation de Node.js",
+              "subsections": [
+                {
+                  "id": "nodejs-introduction",
+                  "name": "Introduction à Node.js",
+                  "file": "dev-web/nodejs/presentation/nodejs-introduction.md"
+                },
+                {
+                  "id": "nodejs-architecture",
+                  "name": "Architecture & Fonctionnement",
+                  "file": "dev-web/nodejs/presentation/nodejs-architecture.md"
+                },
+                {
+                  "id": "nodejs-ecosystem",
+                  "name": "Écosystème & Outils",
+                  "file": "dev-web/nodejs/presentation/nodejs-ecosystem.md"
+                }
+              ]
+            },
+            {
+              "id": "pour-contre",
+              "name": "Avantages et Inconvénients",
+              "subsections": [
+                {
+                  "id": "nodejs-advantages",
+                  "name": "Avantages de Node.js",
+                  "file": "dev-web/nodejs/pour-contre/nodejs-advantages.md"
+                },
+                {
+                  "id": "nodejs-limitations",
+                  "name": "Limitations & Défis",
+                  "file": "dev-web/nodejs/pour-contre/nodejs-limitations.md"
+                },
+                {
+                  "id": "nodejs-use-cases",
+                  "name": "Cas d'Usage & Architectures",
+                  "file": "dev-web/nodejs/pour-contre/nodejs-use-cases.md"
+                }
+              ]
+            },
+            {
+              "id": "installation-environnement",
+              "name": "Installation et Environnement",
+              "subsections": [
+                {
+                  "id": "nodejs-installation",
+                  "name": "Installation & Configuration",
+                  "file": "dev-web/nodejs/installation-environnement/nodejs-installation.md"
+                },
+                {
+                  "id": "nodejs-npm",
+                  "name": "NPM & Gestion des Packages",
+                  "file": "dev-web/nodejs/installation-environnement/nodejs-npm.md"
+                },
+                {
+                  "id": "nodejs-project-structure",
+                  "name": "Structure de Projet",
+                  "file": "dev-web/nodejs/installation-environnement/nodejs-project-structure.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "express",
+          "name": "Express.js",
+          "sections": [
+            {
+              "id": "express-base",
+              "name": "Introduction à Express",
+              "file": "dev-web/nodejs/express/express-base.md"
+            },
+            {
+              "id": "middleware-routing",
+              "name": "Middleware & Routing",
+              "file": "dev-web/nodejs/express/middleware-routing.md"
+            },
+            {
+              "id": "api-rest",
+              "name": "Création d'API REST",
+              "file": "dev-web/nodejs/express/api-rest.md"
+            },
+            {
+              "id": "pagination-filtrage",
+              "name": "Pagination & Filtrage",
+              "file": "dev-web/nodejs/express/pagination-filtrage.md"
+            }
+          ]
+        },
+        {
+          "id": "databases",
+          "name": "Bases de Données",
+          "sections": [
+            {
+              "id": "introduction-bdd",
+              "name": "Introduction aux BDD",
+              "file": "dev-web/nodejs/databases/introduction-bdd.md"
+            },
+            {
+              "id": "mongodb-base",
+              "name": "MongoDB & Mongoose",
+              "file": "dev-web/nodejs/databases/mongodb-base.md"
+            },
+            {
+              "id": "queries-crud",
+              "name": "Requêtes & CRUD",
+              "file": "dev-web/nodejs/databases/queries-crud.md"
+            },
+            {
+              "id": "sql-postgresql",
+              "name": "SQL & PostgreSQL",
+              "file": "dev-web/nodejs/databases/sql-postgresql.md"
+            }
+          ]
+        },
+        {
+          "id": "auth",
+          "name": "Authentification",
+          "sections": [
+            {
+              "id": "auth-concepts",
+              "name": "Concepts d'Authentification",
+              "file": "dev-web/nodejs/auth/auth-concepts.md"
+            },
+            {
+              "id": "jwt-sessions",
+              "name": "JWT & Sessions",
+              "file": "dev-web/nodejs/auth/jwt-sessions.md"
+            },
+            {
+              "id": "securite-bonnes-pratiques",
+              "name": "Sécurité & Bonnes Pratiques",
+              "file": "dev-web/nodejs/auth/securite-bonnes-pratiques.md"
+            }
+          ]
+        },
+        {
+          "id": "files",
+          "name": "Gestion des Fichiers",
+          "sections": [
+            {
+              "id": "upload-fichiers",
+              "name": "Upload de Fichiers",
+              "file": "dev-web/nodejs/files/upload-fichiers.md"
+            }
+          ]
+        },
+        {
+          "id": "env",
+          "name": "Configuration",
+          "sections": [
+            {
+              "id": "variables-environnement",
+              "name": "Variables d'Environnement",
+              "file": "dev-web/nodejs/env/variables-environnement.md"
+            }
+          ]
+        },
+        {
+          "id": "deployment",
+          "name": "Déploiement",
+          "sections": [
+            {
+              "id": "frontend-deployment",
+              "name": "Déploiement Frontend (Vercel/Netlify)",
+              "file": "dev-web/deployment/frontend-deployment.md"
+            },
+            {
+              "id": "backend-deployment",
+              "name": "Déploiement Backend (Render/Railway)",
+              "file": "dev-web/deployment/backend-deployment.md"
+            }
+          ]
+        },
+        {
+          "id": "testing",
+          "name": "Tests",
+          "sections": [
+            {
+              "id": "jest-testing",
+              "name": "Tests avec Jest",
+              "file": "dev-web/nodejs/testing/jest-testing.md"
+            }
+          ]
+        },
+        {
+          "id": "docker",
+          "name": "Docker",
+          "sections": [
+            {
+              "id": "docker-basics",
+              "name": "Docker - Les bases",
+              "file": "dev-web/nodejs/docker/docker-basics.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "front-avance",
+      "name": "Frontend Avancé",
+      "chapters": [
+        {
+          "id": "react",
+          "name": "⚛️ React",
+          "sections": [
+            {
+              "id": "composants-jsx",
+              "name": "Composants et JSX",
+              "subsections": [
+                {
+                  "id": "jsx-composants-base",
+                  "name": "JSX & Composants de Base",
+                  "file": "dev-web/react/composants-jsx/jsx-composants-base.md"
+                },
+                {
+                  "id": "props-composition",
+                  "name": "Props & Composition",
+                  "file": "dev-web/react/composants-jsx/props-composition.md"
+                },
+                {
+                  "id": "evenements-rendu",
+                  "name": "Événements & Rendu",
+                  "file": "dev-web/react/composants-jsx/evenements-rendu.md"
+                }
+              ]
+            },
+            {
+              "id": "hooks",
+              "name": "Hooks",
+              "subsections": [
+                {
+                  "id": "hooks-base",
+                  "name": "Hooks de Base",
+                  "file": "dev-web/react/hooks/hooks-base.md"
+                },
+                {
+                  "id": "hooks-avances",
+                  "name": "Hooks Avancés",
+                  "file": "dev-web/react/hooks/hooks-avances.md"
+                },
+                {
+                  "id": "optimisation-hooks",
+                  "name": "Optimisation avec Hooks",
+                  "file": "dev-web/react/hooks/optimisation-hooks.md"
+                }
+              ]
+            },
+            {
+              "id": "state-management",
+              "name": "State Management",
+              "subsections": [
+                {
+                  "id": "context-api",
+                  "name": "Context API",
+                  "file": "dev-web/react/state-management/context-api.md"
+                },
+                {
+                  "id": "libraries-externes",
+                  "name": "Libraries Externes",
+                  "file": "dev-web/react/state-management/libraries-externes.md"
+                },
+                {
+                  "id": "patterns-architecture",
+                  "name": "Patterns & Architecture",
+                  "file": "dev-web/react/state-management/patterns-architecture.md"
+                }
+              ]
+            },
+            {
+              "id": "performance-react",
+              "name": "Performance et Optimisation",
+              "subsections": [
+                {
+                  "id": "memoization",
+                  "name": "Memoization",
+                  "file": "dev-web/react/performance-react/memoization.md"
+                },
+                {
+                  "id": "code-splitting",
+                  "name": "Code Splitting",
+                  "file": "dev-web/react/performance-react/code-splitting.md"
+                },
+                {
+                  "id": "optimisations-avancees",
+                  "name": "Optimisations Avancées",
+                  "file": "dev-web/react/performance-react/optimisations-avancees.md"
+                }
+              ]
+            },
+            {
+              "id": "routing",
+              "name": "Routing",
+              "subsections": [
+                {
+                  "id": "react-router",
+                  "name": "React Router",
+                  "file": "dev-web/react/routing/react-router.md"
+                }
+              ]
+            },
+            {
+              "id": "forms",
+              "name": "Formulaires",
+              "subsections": [
+                {
+                  "id": "forms-validation",
+                  "name": "Formulaires & Validation",
+                  "file": "dev-web/react/forms/forms-validation.md"
+                }
+              ]
+            },
+            {
+              "id": "nextjs",
+              "name": "Next.js",
+              "subsections": [
+                {
+                  "id": "nextjs-introduction",
+                  "name": "Introduction à Next.js",
+                  "file": "dev-web/react/nextjs/nextjs-introduction.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apis-avancees",
+          "name": "APIs Avancées",
+          "sections": [
+            {
+              "id": "websockets",
+              "name": "WebSockets",
+              "subsections": [
+                {
+                  "id": "websockets-base",
+                  "name": "WebSockets - Base",
+                  "file": "dev-web/apis-avancees/websockets/websockets-base.md"
+                },
+                {
+                  "id": "websockets-avances",
+                  "name": "Gestion Avancée",
+                  "file": "dev-web/apis-avancees/websockets/websockets-avances.md"
+                },
+                {
+                  "id": "websockets-pratique",
+                  "name": "Projets Pratiques",
+                  "file": "dev-web/apis-avancees/websockets/websockets-pratique.md"
+                }
+              ]
+            },
+            {
+              "id": "service-workers-pwa",
+              "name": "Service Workers & PWA",
+              "subsections": [
+                {
+                  "id": "service-workers-base",
+                  "name": "Service Workers - Base",
+                  "file": "dev-web/apis-avancees/service-workers-pwa/service-workers-base.md"
+                },
+                {
+                  "id": "caching-strategies",
+                  "name": "Stratégies de Cache",
+                  "file": "dev-web/apis-avancees/service-workers-pwa/caching-strategies.md"
+                },
+                {
+                  "id": "pwa-manifest",
+                  "name": "PWA & Manifest",
+                  "file": "dev-web/apis-avancees/service-workers-pwa/pwa-manifest.md"
+                }
+              ]
+            },
+            {
+              "id": "indexeddb",
+              "name": "IndexedDB",
+              "subsections": [
+                {
+                  "id": "indexeddb-base",
+                  "name": "IndexedDB - Base",
+                  "file": "dev-web/apis-avancees/indexeddb/indexeddb-base.md"
+                },
+                {
+                  "id": "indexeddb-crud",
+                  "name": "CRUD & Requêtes",
+                  "file": "dev-web/apis-avancees/indexeddb/indexeddb-crud.md"
+                },
+                {
+                  "id": "indexeddb-avance",
+                  "name": "Techniques Avancées",
+                  "file": "dev-web/apis-avancees/indexeddb/indexeddb-avance.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "performance",
+          "name": "Performance Web",
+          "sections": [
+            {
+              "id": "metriques-optimisation",
+              "name": "Métriques & Optimisation",
+              "subsections": [
+                {
+                  "id": "web-vitals",
+                  "name": "Web Vitals & Métriques",
+                  "file": "dev-web/performance/metriques-optimisation/web-vitals.md"
+                },
+                {
+                  "id": "optimisation-js",
+                  "name": "Optimisation JavaScript",
+                  "file": "dev-web/performance/metriques-optimisation/optimisation-js.md"
+                },
+                {
+                  "id": "optimisation-assets",
+                  "name": "Optimisation Assets",
+                  "file": "dev-web/performance/metriques-optimisation/optimisation-assets.md"
+                }
+              ]
+            },
+            {
+              "id": "chargement-ressources",
+              "name": "Chargement des Ressources",
+              "subsections": [
+                {
+                  "id": "lazy-loading",
+                  "name": "Lazy Loading",
+                  "file": "dev-web/performance/chargement-ressources/lazy-loading.md"
+                },
+                {
+                  "id": "code-splitting",
+                  "name": "Code Splitting",
+                  "file": "dev-web/performance/chargement-ressources/code-splitting.md"
+                },
+                {
+                  "id": "resource-hints",
+                  "name": "Resource Hints",
+                  "file": "dev-web/performance/chargement-ressources/resource-hints.md"
+                }
+              ]
+            },
+            {
+              "id": "caching",
+              "name": "Stratégies de Cache",
+              "subsections": [
+                {
+                  "id": "http-caching",
+                  "name": "HTTP Caching",
+                  "file": "dev-web/performance/caching/http-caching.md"
+                },
+                {
+                  "id": "service-worker-cache",
+                  "name": "Service Worker Cache",
+                  "file": "dev-web/performance/caching/service-worker-cache.md"
+                },
+                {
+                  "id": "cdn-strategies",
+                  "name": "CDN & Edge Caching",
+                  "file": "dev-web/performance/caching/cdn-strategies.md"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projets",
+      "name": "Projets",
+      "chapters": [
+        {
+          "id": "prise-en-main",
+          "name": "Prise en main",
+          "sections": [
+            {
+              "id": "cv",
+              "name": "CV simple",
+              "file": "dev-web/projets/prise-en-main/cv-simple.md"
+            },
+            {
+              "id": "memory-game",
+              "name": "DOM Manipulation - Memory Game",
+              "file": "dev-web/projets/prise-en-main/memory-game.md"
+            },
+            {
+              "id": "taquin",
+              "name": "DOM Manipulation - Jeu de taquin",
+              "file": "dev-web/projets/prise-en-main/taquin.md"
+            },
+            {
+              "id": "react-todo",
+              "name": "React - Todo App",
+              "file": "dev-web/projets/prise-en-main/todo-app.md"
+            }
+          ]
+        },
+        {
+          "id": "intermediaire",
+          "name": "Intermédiaire",
+          "sections": [
+            {
+              "id": "api-meteo",
+              "name": "API Meteo",
+              "file": "dev-web/projets/intermediaire/api-meteo.md"
+            },
+            {
+              "id": "blog-personnel",
+              "name": "Blog Personnel avec React",
+              "file": "dev-web/projets/intermediaire/blog-personnel.md"
+            }
+          ]
+        },
+        {
+          "id": "finals",
+          "name": "Projet final",
+          "sections": [
+            {
+              "id": "consignes",
+              "name": "Consignes",
+              "file": "dev-web/projets/consignes.md"
+            },
+            {
+              "id": "sujets",
+              "name": "Sujets",
+              "subsections": [
+                {
+                  "id": "e-commerce",
+                  "name": "Site E-Commerce",
+                  "file": "dev-web/projets/sujets/e-commerce.md"
+                },
+                {
+                  "id": "chat-realtime",
+                  "name": "Application de Chat en Temps Réel",
+                  "file": "dev-web/projets/sujets/chat-realtime.md"
+                },
+                {
+                  "id": "social-media",
+                  "name": "Réseau social basique",
+                  "file": "dev-web/projets/sujets/social-media.md"
+                },
+                {
+                  "id": "board-games",
+                  "name": "Jeux de plateau en ligne",
+                  "file": "dev-web/projets/sujets/board-games.md"
+                }
+              ]
+            }
+            
+          ]
+        }
+      ]
+    }
+  ]
+}
