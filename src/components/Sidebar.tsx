@@ -8,9 +8,11 @@ import { isSectionRead, getProgressPercentage } from '@/utils/navigation';
 import SearchModal from './SearchModal';
 import ThemeToggle from './ThemeToggle';
 import InstallButton from './InstallButton';
+import { useSidebar } from '@/hooks/useSidebar';
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const { isOpen, close } = useSidebar();
   const [openAxes, setOpenAxes] = useState<Record<string, boolean>>({});
   const [openChapters, setOpenChapters] = useState<Record<string, boolean>>({});
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({});
@@ -20,6 +22,11 @@ export default function Sidebar() {
   useEffect(() => {
     // Update progress on mount and when pathname changes
     setProgress(getProgressPercentage());
+  }, [pathname]);
+
+  // Close sidebar on route change (mobile)
+  useEffect(() => {
+    close();
   }, [pathname]);
 
   // Keyboard shortcut for search (Ctrl+K or Cmd+K)
@@ -58,14 +65,40 @@ export default function Sidebar() {
     <>
       <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
       
-      <aside className="w-80 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 h-screen overflow-y-auto flex flex-col">
+      {/* Mobile overlay */}
+      {isOpen && (
+        <div 
+          className="md:hidden fixed inset-0 bg-black/50 z-40"
+          onClick={close}
+        />
+      )}
+      
+      <aside className={`
+        fixed md:static inset-y-0 left-0 z-50
+        w-80 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 
+        h-screen overflow-y-auto flex flex-col
+        transform transition-transform duration-300 ease-in-out
+        ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
+      `}>
         {/* Header */}
         <div className="p-6 border-b border-gray-200 dark:border-gray-700 sticky top-0 bg-white dark:bg-gray-800 z-10">
           <div className="flex items-center justify-between">
-            <Link href="/" className="block">
+            <Link href="/" className="block" onClick={close}>
               <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Prog Web</h1>
             </Link>
-            <ThemeToggle />
+            <div className="flex items-center gap-2">
+              <ThemeToggle />
+              {/* Close button on mobile */}
+              <button
+                onClick={close}
+                className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                aria-label="Fermer le menu"
+              >
+                <svg className="w-5 h-5 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
           </div>
           
           {/* Search button */}
