@@ -41,6 +41,7 @@ export default function CodePlayground({ initialCode, language, onClose }: CodeP
 
     if (language === 'javascript' || language === 'js') {
       // Run JavaScript in a sandboxed way
+      // TODO: voir si on peut faire mieux que new Function() pour la sandbox
       try {
         const logs: string[] = [];
         const originalConsole = { ...console };

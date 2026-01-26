@@ -15,6 +15,7 @@ const axisIcons: Record<string, string> = {
   'devops': '🚀',
 };
 
+// Couleurs par axe - c'est un peu répétitif mais plus lisible que des computed styles
 const axisColors: Record<string, { bg: string; border: string; text: string; darkBg: string; darkBorder: string; darkText: string }> = {
   'les-bases': { bg: 'bg-blue-50', border: 'border-blue-200', text: 'text-blue-700', darkBg: 'dark:bg-blue-900/30', darkBorder: 'dark:border-blue-700', darkText: 'dark:text-blue-300' },
   'frontend-avance': { bg: 'bg-purple-50', border: 'border-purple-200', text: 'text-purple-700', darkBg: 'dark:bg-purple-900/30', darkBorder: 'dark:border-purple-700', darkText: 'dark:text-purple-300' },

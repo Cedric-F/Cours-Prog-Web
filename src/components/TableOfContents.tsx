@@ -18,6 +18,7 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
 
   useEffect(() => {
     // Extract headings from markdown content
+    // on pourrait utiliser unified/remark mais regex suffit ici
     const headingRegex = /^(#{1,6})\s+(.+)$/gm;
     const items: TocItem[] = [];
     let match;

@@ -30,6 +30,7 @@ export default function Sidebar() {
   }, [pathname]);
 
   // Keyboard shortcut for search (Ctrl+K or Cmd+K)
+  // TODO: voir si on ajoute des raccourcis pour naviguer avec les flèches ?
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key === 'k') {

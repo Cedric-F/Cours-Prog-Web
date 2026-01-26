@@ -5,6 +5,7 @@ export const structure: LearningStructure = structureData as LearningStructure;
 
 export function getAllNavigationItems(): NavigationItem[] {
   const items: NavigationItem[] = [];
+  // un peu verbeux mais au moins c'est lisible
   
   structure.axes.forEach(axis => {
     axis.chapters.forEach(chapter => {
