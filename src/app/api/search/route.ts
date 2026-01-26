@@ -1,18 +1,38 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import structure from '@/data/structure.json';
 
 interface SearchResult {
   title: string;
   path: string;
   excerpt: string;
-  axisId: string;
-  chapterId: string;
-  sectionId: string;
-  subsectionId?: string;
 }
 
-// Récursively get all markdown files
+// Build a map from file paths to URLs using structure.json
+function buildFileToUrlMap(): Map<string, string> {
+  const map = new Map<string, string>();
+  
+  for (const axis of structure.axes) {
+    for (const chapter of axis.chapters) {
+      for (const section of chapter.sections) {
+        if (section.subsections && section.subsections.length > 0) {
+          for (const subsection of section.subsections) {
+            if (subsection.file) {
+              map.set(subsection.file, `/${axis.id}/${chapter.id}/${section.id}/${subsection.id}`);
+            }
+          }
+        } else if (section.file) {
+          map.set(section.file, `/${axis.id}/${chapter.id}/${section.id}`);
+        }
+      }
+    }
+  }
+  
+  return map;
+}
+
+// Recursively get all markdown files
 function getMarkdownFiles(dir: string, basePath: string = ''): { filePath: string; relativePath: string }[] {
   const files: { filePath: string; relativePath: string }[] = [];
   
@@ -40,20 +60,6 @@ function getMarkdownFiles(dir: string, basePath: string = ''): { filePath: strin
 function extractTitle(content: string): string {
   const match = content.match(/^#\s+(.+)$/m);
   return match ? match[1] : 'Sans titre';
-}
-
-// Parse relative path to get axis, chapter, section, subsection
-function parseRelativePath(relativePath: string): { axisId: string; chapterId: string; sectionId: string; subsectionId?: string } | null {
-  // Format: axis/chapter/section.md or axis/chapter/section/subsection.md
-  const parts = relativePath.replace(/\\/g, '/').replace('.md', '').split('/');
-  
-  if (parts.length === 3) {
-    return { axisId: parts[0], chapterId: parts[1], sectionId: parts[2] };
-  } else if (parts.length === 4) {
-    return { axisId: parts[0], chapterId: parts[1], sectionId: parts[2], subsectionId: parts[3] };
-  }
-  
-  return null;
 }
 
 // Search in content and return excerpt
@@ -89,6 +95,7 @@ export async function GET(request: NextRequest) {
   
   const contentDir = path.join(process.cwd(), 'public', 'content', 'dev-web');
   const markdownFiles = getMarkdownFiles(contentDir);
+  const fileToUrlMap = buildFileToUrlMap();
   
   const results: SearchResult[] = [];
   
@@ -98,15 +105,15 @@ export async function GET(request: NextRequest) {
       const excerpt = searchInContent(content, query);
       
       if (excerpt) {
-        const pathInfo = parseRelativePath(relativePath);
-        if (pathInfo) {
+        // Convert relativePath to the format used in structure.json
+        const structurePath = 'dev-web/' + relativePath.replace(/\\/g, '/');
+        const url = fileToUrlMap.get(structurePath);
+        
+        if (url) {
           results.push({
             title: extractTitle(content),
-            path: pathInfo.subsectionId 
-              ? `/${pathInfo.axisId}/${pathInfo.chapterId}/${pathInfo.sectionId}/${pathInfo.subsectionId}`
-              : `/${pathInfo.axisId}/${pathInfo.chapterId}/${pathInfo.sectionId}`,
+            path: url,
             excerpt,
-            ...pathInfo,
           });
         }
       }

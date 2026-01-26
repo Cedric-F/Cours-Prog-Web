@@ -1,8 +1,50 @@
-const CACHE_NAME = 'prog-web-v1';
+const CACHE_NAME = 'prog-web-v2';
+const CONTENT_CACHE_NAME = 'prog-web-content-v1';
+
 const STATIC_ASSETS = [
   '/',
   '/manifest.json',
+  '/glossaire',
 ];
+
+// Pre-cache content files on demand
+async function cacheAllContent() {
+  try {
+    // Fetch the structure to know all content files
+    const structureResponse = await fetch('/api/structure');
+    if (!structureResponse.ok) return;
+    
+    const structure = await structureResponse.json();
+    const contentUrls = [];
+    
+    // Extract all content file paths from structure
+    structure.axes.forEach((axis) => {
+      axis.chapters.forEach((chapter) => {
+        chapter.sections.forEach((section) => {
+          contentUrls.push(`/content/${section.file}`);
+        });
+      });
+    });
+    
+    // Cache all content files
+    const contentCache = await caches.open(CONTENT_CACHE_NAME);
+    const cachePromises = contentUrls.map(async (url) => {
+      try {
+        const response = await fetch(url);
+        if (response.ok) {
+          await contentCache.put(url, response);
+        }
+      } catch (e) {
+        console.log('Failed to cache:', url);
+      }
+    });
+    
+    await Promise.all(cachePromises);
+    console.log('Service Worker: All content cached for offline use');
+  } catch (error) {
+    console.error('Error caching content:', error);
+  }
+}
 
 // Install event - cache static assets
 self.addEventListener('install', (event) => {
@@ -15,16 +57,21 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
-// Activate event - clean old caches
+// Activate event - clean old caches and pre-cache content
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames
-          .filter((name) => name !== CACHE_NAME)
-          .map((name) => caches.delete(name))
-      );
-    })
+    Promise.all([
+      // Clean old caches
+      caches.keys().then((cacheNames) => {
+        return Promise.all(
+          cacheNames
+            .filter((name) => name !== CACHE_NAME && name !== CONTENT_CACHE_NAME)
+            .map((name) => caches.delete(name))
+        );
+      }),
+      // Pre-cache all content
+      cacheAllContent()
+    ])
   );
   self.clients.claim();
 });
@@ -34,9 +81,41 @@ self.addEventListener('fetch', (event) => {
   // Skip non-GET requests
   if (event.request.method !== 'GET') return;
 
-  // Skip API requests and search
-  if (event.request.url.includes('/api/')) return;
+  // Skip API requests except structure
+  if (event.request.url.includes('/api/') && !event.request.url.includes('/api/structure')) return;
 
+  // For content files, use cache-first strategy
+  if (event.request.url.includes('/content/')) {
+    event.respondWith(
+      caches.match(event.request).then((cachedResponse) => {
+        if (cachedResponse) {
+          // Return cached version and update in background
+          fetch(event.request).then((response) => {
+            if (response.ok) {
+              caches.open(CONTENT_CACHE_NAME).then((cache) => {
+                cache.put(event.request, response);
+              });
+            }
+          }).catch(() => {});
+          return cachedResponse;
+        }
+        
+        // Not in cache, fetch from network
+        return fetch(event.request).then((response) => {
+          if (response.ok) {
+            const responseClone = response.clone();
+            caches.open(CONTENT_CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseClone);
+            });
+          }
+          return response;
+        });
+      })
+    );
+    return;
+  }
+
+  // For other requests, use network-first strategy
   event.respondWith(
     fetch(event.request)
       .then((response) => {

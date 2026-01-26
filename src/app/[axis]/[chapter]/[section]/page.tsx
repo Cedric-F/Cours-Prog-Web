@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import ContentDisplay from '@/components/ContentDisplay';
 import NavigationArrows from '@/components/NavigationArrows';
 import TableOfContents from '@/components/TableOfContents';
+import ExportPDFButton from '@/components/ExportPDFButton';
 import { findNavigationItem, getAdjacentSections, markSectionAsRead } from '@/utils/navigation';
 import { NavigationItem } from '@/types';
 import { useFavorites } from '@/hooks/useFavorites';
@@ -109,7 +110,9 @@ export default function SectionPage() {
               <span className="text-blue-600 dark:text-blue-400">{currentItem.sectionName}</span>
             </div>
             {/* Favorite button */}
-            {favoritesLoaded && (
+            <div className="flex items-center gap-2">
+              <ExportPDFButton title={`${currentItem.sectionName} - ProgWeb`} />
+              {favoritesLoaded && (
               <button
                 onClick={() => toggleFavorite(currentPath, currentTitle)}
                 className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
@@ -125,7 +128,8 @@ export default function SectionPage() {
                   </svg>
                 )}
               </button>
-            )}
+              )}
+            </div>
           </div>
         </div>
 

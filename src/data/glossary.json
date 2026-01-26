@@ -1,0 +1,254 @@
+{
+  "terms": [
+    {
+      "term": "API",
+      "definition": "Application Programming Interface - Interface de programmation permettant à des applications de communiquer entre elles.",
+      "category": "Général"
+    },
+    {
+      "term": "DOM",
+      "definition": "Document Object Model - Représentation en arbre de la structure HTML d'une page web, manipulable via JavaScript.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "CSS",
+      "definition": "Cascading Style Sheets - Langage de feuilles de style utilisé pour décrire la présentation d'un document HTML.",
+      "category": "HTML & CSS"
+    },
+    {
+      "term": "HTML",
+      "definition": "HyperText Markup Language - Langage de balisage utilisé pour structurer le contenu des pages web.",
+      "category": "HTML & CSS"
+    },
+    {
+      "term": "JavaScript",
+      "definition": "Langage de programmation interprété, principalement utilisé pour créer des pages web interactives.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "React",
+      "definition": "Bibliothèque JavaScript développée par Facebook pour créer des interfaces utilisateur composables et réactives.",
+      "category": "React"
+    },
+    {
+      "term": "Next.js",
+      "definition": "Framework React pour la production, offrant le rendu côté serveur (SSR), la génération statique (SSG) et bien plus.",
+      "category": "React"
+    },
+    {
+      "term": "Hook",
+      "definition": "Fonction spéciale de React permettant d'utiliser l'état et d'autres fonctionnalités React dans les composants fonctionnels.",
+      "category": "React"
+    },
+    {
+      "term": "useState",
+      "definition": "Hook React permettant d'ajouter un état local à un composant fonctionnel.",
+      "category": "React"
+    },
+    {
+      "term": "useEffect",
+      "definition": "Hook React permettant d'exécuter des effets de bord (requêtes API, abonnements, etc.) dans les composants.",
+      "category": "React"
+    },
+    {
+      "term": "Composant",
+      "definition": "Bloc de construction réutilisable d'une interface React, pouvant être une fonction ou une classe.",
+      "category": "React"
+    },
+    {
+      "term": "Props",
+      "definition": "Properties - Données passées d'un composant parent à un composant enfant en React.",
+      "category": "React"
+    },
+    {
+      "term": "State",
+      "definition": "État - Données internes d'un composant qui peuvent changer au fil du temps et déclencher un re-rendu.",
+      "category": "React"
+    },
+    {
+      "term": "JSX",
+      "definition": "JavaScript XML - Extension syntaxique de JavaScript utilisée par React pour décrire l'interface utilisateur.",
+      "category": "React"
+    },
+    {
+      "term": "Flexbox",
+      "definition": "Module CSS pour créer des mises en page flexibles et responsives en une dimension (ligne ou colonne).",
+      "category": "HTML & CSS"
+    },
+    {
+      "term": "Grid",
+      "definition": "CSS Grid Layout - Système de mise en page CSS bidimensionnel pour créer des grilles complexes.",
+      "category": "HTML & CSS"
+    },
+    {
+      "term": "Sélecteur",
+      "definition": "Pattern CSS utilisé pour cibler des éléments HTML auxquels appliquer des styles.",
+      "category": "HTML & CSS"
+    },
+    {
+      "term": "Variable",
+      "definition": "Conteneur nommé pour stocker une valeur en JavaScript (déclarée avec let, const ou var).",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Fonction",
+      "definition": "Bloc de code réutilisable qui effectue une tâche spécifique, pouvant accepter des paramètres et retourner une valeur.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Callback",
+      "definition": "Fonction passée en argument à une autre fonction, exécutée ultérieurement ou en réponse à un événement.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Promise",
+      "definition": "Objet représentant l'achèvement ou l'échec éventuel d'une opération asynchrone.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Async/Await",
+      "definition": "Syntaxe JavaScript pour écrire du code asynchrone de manière plus lisible, basée sur les Promises.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Arrow Function",
+      "definition": "Syntaxe concise pour définir des fonctions en JavaScript (ex: (a, b) => a + b).",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Destructuring",
+      "definition": "Syntaxe JavaScript permettant d'extraire des valeurs de tableaux ou propriétés d'objets dans des variables distinctes.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Spread Operator",
+      "definition": "Opérateur (...) permettant d'étendre un itérable en éléments individuels ou de copier des objets/tableaux.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Node.js",
+      "definition": "Environnement d'exécution JavaScript côté serveur, basé sur le moteur V8 de Chrome.",
+      "category": "Node.js"
+    },
+    {
+      "term": "npm",
+      "definition": "Node Package Manager - Gestionnaire de paquets par défaut pour Node.js.",
+      "category": "Node.js"
+    },
+    {
+      "term": "REST",
+      "definition": "Representational State Transfer - Architecture pour les APIs web utilisant HTTP.",
+      "category": "APIs"
+    },
+    {
+      "term": "JSON",
+      "definition": "JavaScript Object Notation - Format léger d'échange de données, facile à lire et écrire.",
+      "category": "Général"
+    },
+    {
+      "term": "Fetch",
+      "definition": "API JavaScript moderne pour effectuer des requêtes HTTP, retournant des Promises.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "localStorage",
+      "definition": "API Web Storage permettant de stocker des données côté client de manière persistante.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Event",
+      "definition": "Signal indiquant qu'une action s'est produite (clic, chargement, soumission de formulaire, etc.).",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Event Listener",
+      "definition": "Fonction attachée à un élément pour réagir à un type d'événement spécifique.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Responsive Design",
+      "definition": "Approche de conception web où le site s'adapte à la taille de l'écran de l'utilisateur.",
+      "category": "HTML & CSS"
+    },
+    {
+      "term": "Media Query",
+      "definition": "Technique CSS permettant d'appliquer des styles conditionnellement selon les caractéristiques de l'appareil.",
+      "category": "HTML & CSS"
+    },
+    {
+      "term": "PWA",
+      "definition": "Progressive Web App - Application web offrant une expérience similaire aux apps natives.",
+      "category": "Général"
+    },
+    {
+      "term": "Service Worker",
+      "definition": "Script JavaScript exécuté en arrière-plan, permettant le cache, les notifications push et le fonctionnement hors-ligne.",
+      "category": "APIs"
+    },
+    {
+      "term": "WebSocket",
+      "definition": "Protocole de communication bidirectionnel en temps réel entre client et serveur.",
+      "category": "APIs"
+    },
+    {
+      "term": "IndexedDB",
+      "definition": "Base de données NoSQL côté client permettant de stocker de grandes quantités de données structurées.",
+      "category": "APIs"
+    },
+    {
+      "term": "TypeScript",
+      "definition": "Surensemble de JavaScript ajoutant le typage statique optionnel et d'autres fonctionnalités.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Interface",
+      "definition": "En TypeScript, déclaration définissant la structure d'un objet (propriétés et leurs types).",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Generic",
+      "definition": "En TypeScript, type paramétrable permettant de créer des composants réutilisables.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Module",
+      "definition": "Fichier JavaScript/TypeScript encapsulant du code avec ses propres imports/exports.",
+      "category": "JavaScript"
+    },
+    {
+      "term": "Bundle",
+      "definition": "Fichier unique regroupant plusieurs fichiers JavaScript/CSS pour optimiser le chargement.",
+      "category": "Général"
+    },
+    {
+      "term": "Lazy Loading",
+      "definition": "Technique de chargement différé des ressources jusqu'à ce qu'elles soient nécessaires.",
+      "category": "Performance"
+    },
+    {
+      "term": "Memoization",
+      "definition": "Technique d'optimisation consistant à mettre en cache les résultats de fonctions coûteuses.",
+      "category": "Performance"
+    },
+    {
+      "term": "Virtual DOM",
+      "definition": "Représentation légère du DOM en mémoire utilisée par React pour optimiser les mises à jour.",
+      "category": "React"
+    },
+    {
+      "term": "SSR",
+      "definition": "Server-Side Rendering - Génération du HTML sur le serveur plutôt que côté client.",
+      "category": "React"
+    },
+    {
+      "term": "SSG",
+      "definition": "Static Site Generation - Génération de pages HTML statiques au moment du build.",
+      "category": "React"
+    },
+    {
+      "term": "Hydration",
+      "definition": "Processus d'attachement des event listeners à du HTML pré-rendu côté serveur.",
+      "category": "React"
+    }
+  ]
+}
