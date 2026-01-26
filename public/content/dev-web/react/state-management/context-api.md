@@ -732,25 +732,31 @@ const value = { user, login, logout };  // Nouvel objet à chaque render
 
 ## Quiz de vérification
 
-1. Quel problème résout Context API ?
-   - A) Les performances
-   - B) Le prop drilling ✅
-   - C) La sécurité
+:::quiz
+Q: Quel problème résout Context API ?
+- [ ] Les performances
+- [x] Le prop drilling
+- [ ] La sécurité
+> Context permet de partager des données entre composants sans les passer via les props.
 
-2. Quel hook accède au Context ?
-   - A) `useState`
-   - B) `useContext` ✅
-   - C) `useRef`
+Q: Quel hook accède au Context ?
+- [ ] `useState`
+- [x] `useContext`
+- [ ] `useRef`
+> `useContext(MonContext)` permet de consommer les valeurs fournies par le Provider.
 
-3. Pourquoi mémoïser la value du Provider ?
-   - A) Pour la lisibilité
-   - B) Pour éviter les re-renders inutiles ✅
-   - C) Pour le SEO
+Q: Pourquoi mémoïser la value du Provider ?
+- [ ] Pour la lisibilité
+- [x] Pour éviter les re-renders inutiles
+- [ ] Pour le SEO
+> Sans mémoisation, un nouvel objet est créé à chaque rendu, causant des re-renders de tous les consumers.
 
-4. Quand combiner Context avec useReducer ?
-   - A) Jamais
-   - B) Pour un état complexe avec plusieurs actions ✅
-   - C) Toujours
+Q: Quand combiner Context avec useReducer ?
+- [ ] Jamais
+- [x] Pour un état complexe avec plusieurs actions
+- [ ] Toujours
+> Context + useReducer est un pattern puissant pour gérer un état global complexe.
+:::
 
 ---
 

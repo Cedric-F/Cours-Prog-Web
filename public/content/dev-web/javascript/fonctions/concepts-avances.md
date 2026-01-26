@@ -819,25 +819,31 @@ console.log(expensiveCalculation(5)); // "From cache" puis 25
 
 ## Quiz de vérification
 
-1. Quelle est la différence principale des arrow functions ?
-   - A) Plus rapides
-   - B) `this` lié lexicalement ✅
-   - C) Peuvent être nommées
+:::quiz
+Q: Quelle est la différence principale des arrow functions ?
+- [ ] Plus rapides
+- [x] `this` lié lexicalement
+- [ ] Peuvent être nommées
+> Les arrow functions héritent du `this` de leur contexte parent, contrairement aux fonctions classiques.
 
-2. Qu'est-ce qu'une closure ?
-   - A) Une fonction qui se ferme
-   - B) Une fonction qui accède à des variables de son scope parent ✅
-   - C) Une erreur JavaScript
+Q: Qu'est-ce qu'une closure ?
+- [ ] Une fonction qui se ferme
+- [x] Une fonction qui accède à des variables de son scope parent
+- [ ] Une erreur JavaScript
+> Une closure est une fonction qui "capture" les variables de son environnement lexical.
 
-3. Quel pattern crée un scope isolé immédiatement ?
-   - A) Callback
-   - B) IIFE ✅
-   - C) Arrow function
+Q: Quel pattern crée un scope isolé immédiatement ?
+- [ ] Callback
+- [x] IIFE
+- [ ] Arrow function
+> IIFE (Immediately Invoked Function Expression) crée un scope privé qui s'exécute immédiatement.
 
-4. Que fait `debounce` ?
-   - A) Exécute immédiatement
-   - B) Attend un délai sans nouvel appel avant d'exécuter ✅
-   - C) Répète une fonction
+Q: Que fait `debounce` ?
+- [ ] Exécute immédiatement
+- [x] Attend un délai sans nouvel appel avant d'exécuter
+- [ ] Répète une fonction
+> Le debounce retarde l'exécution jusqu'à ce qu'il n'y ait plus d'appels pendant un certain temps.
+:::
 
 ---
 

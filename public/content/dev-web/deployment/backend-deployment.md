@@ -480,20 +480,25 @@ console.log('DB connected:', process.env.DATABASE_URL ? '✅' : '❌');
 
 ## Quiz de vérification
 
-1. Pourquoi utiliser `process.env.PORT` ?
-   - A) Pour la sécurité
-   - B) La plateforme attribue un port dynamique ✅
-   - C) Pour le développement
+:::quiz
+Q: Pourquoi utiliser `process.env.PORT` ?
+- [ ] Pour la sécurité
+- [x] La plateforme attribue un port dynamique
+- [ ] Pour le développement
+> Les plateformes cloud assignent un port dynamique via la variable `PORT`, ne pas hardcoder le port.
 
-2. Où stocker la base de données en production ?
-   - A) localhost
-   - B) MongoDB Atlas ✅
-   - C) Dans le code
+Q: Où stocker la base de données en production ?
+- [ ] localhost
+- [x] MongoDB Atlas
+- [ ] Dans le code
+> MongoDB Atlas (ou autre service managé) offre haute disponibilité, backups et sécurité.
 
-3. Que faire si l'API met 30s à répondre sur Render ?
-   - A) C'est normal (cold start) ✅
-   - B) Bug dans le code
-   - C) Problème réseau
+Q: Que faire si l'API met 30s à répondre sur Render ?
+- [x] C'est normal (cold start)
+- [ ] Bug dans le code
+- [ ] Problème réseau
+> Sur le plan gratuit, les services sont mis en veille. Le premier appel prend du temps (cold start).
+:::
 
 ---
 

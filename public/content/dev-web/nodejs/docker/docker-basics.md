@@ -662,20 +662,25 @@ RUN npm ci
 
 ## Quiz de vérification
 
-1. Quelle commande construit une image ?
-   - A) `docker run`
-   - B) `docker build` ✅
-   - C) `docker create`
+:::quiz
+Q: Quelle commande construit une image ?
+- [ ] `docker run`
+- [x] `docker build`
+- [ ] `docker create`
+> `docker build` crée une image à partir d'un Dockerfile. `docker run` démarre un conteneur.
 
-2. Comment persister les données MongoDB ?
-   - A) Bind mount
-   - B) Volume nommé ✅
-   - C) Dans le conteneur
+Q: Comment persister les données MongoDB ?
+- [ ] Bind mount
+- [x] Volume nommé
+- [ ] Dans le conteneur
+> Les volumes nommés sont gérés par Docker et persistent même si le conteneur est supprimé.
 
-3. Que fait `docker compose up -d` ?
-   - A) Construit les images
-   - B) Lance en arrière-plan ✅
-   - C) Supprime les conteneurs
+Q: Que fait `docker compose up -d` ?
+- [ ] Construit les images
+- [x] Lance en arrière-plan
+- [ ] Supprime les conteneurs
+> Le flag `-d` (detached) lance les conteneurs en arrière-plan.
+:::
 
 ---
 

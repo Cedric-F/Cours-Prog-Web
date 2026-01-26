@@ -677,20 +677,25 @@ describe('validateEmail', () => {
 
 ## Quiz de vérification
 
-1. Quel matcher pour comparer des objets ?
-   - A) `toBe()`
-   - B) `toEqual()` ✅
-   - C) `toMatch()`
+:::quiz
+Q: Quel matcher pour comparer des objets ?
+- [ ] `toBe()`
+- [x] `toEqual()`
+- [ ] `toMatch()`
+> `toBe()` compare par référence, `toEqual()` compare la valeur en profondeur (idéal pour les objets).
 
-2. Comment mocker un module entier ?
-   - A) `jest.fn()`
-   - B) `jest.mock('./module')` ✅
-   - C) `jest.spy()`
+Q: Comment mocker un module entier ?
+- [ ] `jest.fn()`
+- [x] `jest.mock('./module')`
+- [ ] `jest.spy()`
+> `jest.mock()` remplace automatiquement toutes les exports d'un module par des mocks.
 
-3. Quelle bibliothèque pour tester une API Express ?
-   - A) axios
-   - B) supertest ✅
-   - C) fetch
+Q: Quelle bibliothèque pour tester une API Express ?
+- [ ] axios
+- [x] supertest
+- [ ] fetch
+> Supertest permet de faire des requêtes HTTP sur une app Express sans démarrer un vrai serveur.
+:::
 
 ---
 

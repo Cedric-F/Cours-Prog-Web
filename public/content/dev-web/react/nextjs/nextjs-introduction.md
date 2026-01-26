@@ -701,20 +701,25 @@ src/app/
 
 ## Quiz de vérification
 
-1. Quel fichier définit une route `/about` ?
-   - A) `routes/about.tsx`
-   - B) `app/about/page.tsx` ✅
-   - C) `pages/about.tsx`
+:::quiz
+Q: Quel fichier définit une route `/about` ?
+- [ ] `routes/about.tsx`
+- [x] `app/about/page.tsx`
+- [ ] `pages/about.tsx`
+> Avec l'App Router de Next.js, les routes sont définies par la structure des dossiers dans `app/`.
 
-2. Comment rendre un composant interactif ?
-   - A) `'use server'`
-   - B) `'use client'` ✅
-   - C) `export const dynamic`
+Q: Comment rendre un composant interactif ?
+- [ ] `'use server'`
+- [x] `'use client'`
+- [ ] `export const dynamic`
+> La directive `'use client'` en haut du fichier indique que le composant doit être rendu côté client.
 
-3. Où faire un fetch avec accès DB ?
-   - A) Client Component
-   - B) Server Component ✅
-   - C) Les deux
+Q: Où faire un fetch avec accès DB ?
+- [ ] Client Component
+- [x] Server Component
+- [ ] Les deux
+> Les Server Components peuvent accéder directement à la base de données sans exposer les credentials.
+:::
 
 ---
 

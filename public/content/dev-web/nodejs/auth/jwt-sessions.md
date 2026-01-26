@@ -624,25 +624,31 @@ curl -X POST http://localhost:3000/api/auth/logout \
 
 ## Quiz de vérification
 
-1. Combien de parties composent un JWT ?
-   - A) 2
-   - B) 3 ✅
-   - C) 4
+:::quiz
+Q: Combien de parties composent un JWT ?
+- [ ] 2
+- [x] 3
+- [ ] 4
+> Un JWT est composé de 3 parties séparées par des points : Header, Payload, Signature.
 
-2. Où stocker le refresh token ?
-   - A) localStorage
-   - B) httpOnly cookie ✅
-   - C) Dans l'URL
+Q: Où stocker le refresh token ?
+- [ ] localStorage
+- [x] httpOnly cookie
+- [ ] Dans l'URL
+> Un cookie httpOnly n'est pas accessible par JavaScript, protégeant contre les attaques XSS.
 
-3. Quelle est la durée recommandée pour un access token ?
-   - A) 1 an
-   - B) 15 minutes à 1 heure ✅
-   - C) Infinie
+Q: Quelle est la durée recommandée pour un access token ?
+- [ ] 1 an
+- [x] 15 minutes à 1 heure
+- [ ] Infinie
+> Un access token court limite les dégâts en cas de vol. Le refresh token permet de le renouveler.
 
-4. Quelle différence JWT vs Session ?
-   - A) JWT est plus sécurisé
-   - B) Session stocke l'état côté serveur, JWT côté client ✅
-   - C) Aucune
+Q: Quelle différence JWT vs Session ?
+- [ ] JWT est plus sécurisé
+- [x] Session stocke l'état côté serveur, JWT côté client
+- [ ] Aucune
+> Les sessions nécessitent un stockage serveur, les JWT sont stateless et auto-contenus.
+:::
 
 ---
 

@@ -661,25 +661,31 @@ module.exports = app;
 
 ## Quiz de vérification
 
-1. Combien de paramètres a un middleware d'erreur ?
-   - A) 2
-   - B) 3
-   - C) 4 (err, req, res, next) ✅
+:::quiz
+Q: Combien de paramètres a un middleware d'erreur ?
+- [ ] 2
+- [ ] 3
+- [x] 4 (err, req, res, next)
+> Un middleware d'erreur se distingue par ses 4 paramètres, le premier étant l'erreur.
 
-2. Que fait `next()` ?
-   - A) Termine la requête
-   - B) Passe au middleware suivant ✅
-   - C) Envoie une réponse
+Q: Que fait `next()` ?
+- [ ] Termine la requête
+- [x] Passe au middleware suivant
+- [ ] Envoie une réponse
+> `next()` appelle le prochain middleware dans la chaîne. Sans appel à `next()`, la requête reste bloquée.
 
-3. Comment appliquer un middleware à une seule route ?
-   - A) `app.use(middleware)`
-   - B) `app.get('/route', middleware, handler)` ✅
-   - C) `app.middleware('/route')`
+Q: Comment appliquer un middleware à une seule route ?
+- [ ] `app.use(middleware)`
+- [x] `app.get('/route', middleware, handler)`
+- [ ] `app.middleware('/route')`
+> On peut passer un middleware comme deuxième argument avant le handler de route.
 
-4. Où placer le middleware de gestion d'erreurs ?
-   - A) Au début
-   - B) Après les routes ✅
-   - C) N'importe où
+Q: Où placer le middleware de gestion d'erreurs ?
+- [ ] Au début
+- [x] Après les routes
+- [ ] N'importe où
+> Le middleware d'erreur doit être défini après toutes les routes pour capturer leurs erreurs.
+:::
 
 ---
 

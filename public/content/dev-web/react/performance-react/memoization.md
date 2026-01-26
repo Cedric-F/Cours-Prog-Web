@@ -646,25 +646,31 @@ function App() {
 
 ## Quiz de vérification
 
-1. Quand un composant React se re-render ?
-   - A) Seulement quand ses props changent
-   - B) Quand son state, props ou parent change ✅
-   - C) Jamais automatiquement
+:::quiz
+Q: Quand un composant React se re-render ?
+- [ ] Seulement quand ses props changent
+- [x] Quand son state, props ou parent change
+- [ ] Jamais automatiquement
+> Un composant re-render quand son state change, ses props changent, ou son parent re-render.
 
-2. Que fait `React.memo` ?
-   - A) Mémorise le state
-   - B) Empêche le re-render si props identiques ✅
-   - C) Accélère le DOM
+Q: Que fait `React.memo` ?
+- [ ] Mémorise le state
+- [x] Empêche le re-render si props identiques
+- [ ] Accélère le DOM
+> `React.memo` fait une comparaison superficielle des props et évite le re-render si elles sont identiques.
 
-3. Quand utiliser `useMemo` ?
-   - A) Pour toutes les variables
-   - B) Pour les calculs coûteux ✅
-   - C) Pour les événements
+Q: Quand utiliser `useMemo` ?
+- [ ] Pour toutes les variables
+- [x] Pour les calculs coûteux
+- [ ] Pour les événements
+> `useMemo` mémorise le résultat d'un calcul coûteux pour éviter de le recalculer à chaque rendu.
 
-4. Pourquoi `useCallback` pour une fonction passée en prop ?
-   - A) Pour la rendre plus rapide
-   - B) Pour garder la même référence entre renders ✅
-   - C) Pour la rendre asynchrone
+Q: Pourquoi `useCallback` pour une fonction passée en prop ?
+- [ ] Pour la rendre plus rapide
+- [x] Pour garder la même référence entre renders
+- [ ] Pour la rendre asynchrone
+> `useCallback` évite de recréer la fonction à chaque rendu, préservant ainsi React.memo.
+:::
 
 ---
 

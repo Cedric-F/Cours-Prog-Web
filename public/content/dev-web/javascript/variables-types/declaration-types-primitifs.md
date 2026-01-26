@@ -609,25 +609,31 @@ console.log("10" - 5);  // 5 (conversion en nombre)
 
 ## Quiz de vérification
 
-1. Quelle déclaration empêche la réassignation ?
-   - A) `var`
-   - B) `let`
-   - C) `const` ✅
+:::quiz
+Q: Quelle déclaration empêche la réassignation ?
+- [ ] `var`
+- [ ] `let`
+- [x] `const`
+> `const` crée une variable qui ne peut pas être réassignée (mais les objets/tableaux restent mutables).
 
-2. Quel est le résultat de `typeof null` ?
-   - A) `"null"`
-   - B) `"undefined"`
-   - C) `"object"` ✅ (bug historique)
+Q: Quel est le résultat de `typeof null` ?
+- [ ] `"null"`
+- [ ] `"undefined"`
+- [x] `"object"`
+> C'est un bug historique de JavaScript qui persiste pour des raisons de compatibilité.
 
-3. Que retourne `5 === "5"` ?
-   - A) `true`
-   - B) `false` ✅
-   - C) `undefined`
+Q: Que retourne `5 === "5"` ?
+- [ ] `true`
+- [x] `false`
+- [ ] `undefined`
+> L'opérateur `===` compare valeur ET type. Ici, number !== string.
 
-4. Quelle est la bonne pratique par défaut ?
-   - A) Utiliser `var`
-   - B) Utiliser `let`
-   - C) Utiliser `const` et `let` si nécessaire ✅
+Q: Quelle est la bonne pratique par défaut ?
+- [ ] Utiliser `var`
+- [ ] Utiliser `let`
+- [x] Utiliser `const` et `let` si nécessaire
+> Préférez `const` par défaut, utilisez `let` uniquement si la variable doit être réassignée.
+:::
 
 ---
 

@@ -707,25 +707,31 @@ function ProductCard({ product }) {
 
 ## Quiz de vérification
 
-1. Quelle est la bonne syntaxe pour une classe CSS en JSX ?
-   - A) `class="container"`
-   - B) `className="container"` ✅
-   - C) `cssClass="container"`
+:::quiz
+Q: Quelle est la bonne syntaxe pour une classe CSS en JSX ?
+- [ ] `class="container"`
+- [x] `className="container"`
+- [ ] `cssClass="container"`
+> En JSX, on utilise `className` car `class` est un mot réservé en JavaScript.
 
-2. Comment afficher une variable dans JSX ?
-   - A) `${variable}`
-   - B) `{variable}` ✅
-   - C) `{{variable}}`
+Q: Comment afficher une variable dans JSX ?
+- [ ] `${variable}`
+- [x] `{variable}`
+- [ ] `{{variable}}`
+> Les accolades simples `{}` permettent d'insérer des expressions JavaScript dans le JSX.
 
-3. Que doit retourner un composant React ?
-   - A) Une chaîne
-   - B) Un seul élément (ou fragment) ✅
-   - C) Un tableau
+Q: Que doit retourner un composant React ?
+- [ ] Une chaîne
+- [x] Un seul élément (ou fragment)
+- [ ] Un tableau
+> Un composant doit retourner un seul élément racine. Utilisez `<>...</>` (Fragment) pour grouper plusieurs éléments.
 
-4. Quelle commande crée un projet React avec Vite ?
-   - A) `npm create vite@latest -- --template react` ✅
-   - B) `npm install react`
-   - C) `npx react-app`
+Q: Quelle commande crée un projet React avec Vite ?
+- [x] `npm create vite@latest -- --template react`
+- [ ] `npm install react`
+- [ ] `npx react-app`
+> Vite est l'outil recommandé pour créer un nouveau projet React, plus rapide que Create React App.
+:::
 
 ---
 

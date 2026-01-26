@@ -614,25 +614,31 @@ console.log(processNumbers(1, 2, 3, 4, 5));
 
 ## Quiz de vérification
 
-1. Quelle syntaxe supporte le hoisting ?
-   - A) Function expression
-   - B) Function declaration ✅
-   - C) Arrow function
+:::quiz
+Q: Quelle syntaxe supporte le hoisting ?
+- [ ] Function expression
+- [x] Function declaration
+- [ ] Arrow function
+> Les function declarations sont hoistées, vous pouvez les appeler avant leur définition dans le code.
 
-2. Que retourne une fonction sans `return` ?
-   - A) `null`
-   - B) `0`
-   - C) `undefined` ✅
+Q: Que retourne une fonction sans `return` ?
+- [ ] `null`
+- [ ] `0`
+- [x] `undefined`
+> Sans instruction `return`, une fonction retourne implicitement `undefined`.
 
-3. Comment définir une valeur par défaut ?
-   - A) `function f(x = 10)` ✅
-   - B) `function f(x || 10)`
-   - C) `function f(x : 10)`
+Q: Comment définir une valeur par défaut ?
+- [x] `function f(x = 10)`
+- [ ] `function f(x || 10)`
+- [ ] `function f(x : 10)`
+> ES6 permet de définir des valeurs par défaut directement dans les paramètres avec `=`.
 
-4. Que fait le rest operator `...args` ?
-   - A) Copie un tableau
-   - B) Collecte les arguments restants dans un tableau ✅
-   - C) Détruit un objet
+Q: Que fait le rest operator `...args` ?
+- [ ] Copie un tableau
+- [x] Collecte les arguments restants dans un tableau
+- [ ] Détruit un objet
+> Le rest operator rassemble tous les arguments restants dans un tableau.
+:::
 
 ---
 

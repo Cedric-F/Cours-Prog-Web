@@ -782,25 +782,31 @@ const [isOpen, toggleOpen] = useToggle();
 
 ## Quiz de vérification
 
-1. Quel problème résout `useContext` ?
-   - A) Les performances
-   - B) Le prop drilling ✅
-   - C) Les erreurs
+:::quiz
+Q: Quel problème résout `useContext` ?
+- [ ] Les performances
+- [x] Le prop drilling
+- [ ] Les erreurs
+> `useContext` permet d'accéder à des données sans les passer manuellement à travers chaque niveau de composants.
 
-2. Quand utiliser `useReducer` plutôt que `useState` ?
-   - A) Toujours
-   - B) Pour un état complexe avec plusieurs actions ✅
-   - C) Pour les formulaires uniquement
+Q: Quand utiliser `useReducer` plutôt que `useState` ?
+- [ ] Toujours
+- [x] Pour un état complexe avec plusieurs actions
+- [ ] Pour les formulaires uniquement
+> `useReducer` est idéal pour gérer un état complexe avec une logique de mise à jour structurée.
 
-3. Comment doit commencer le nom d'un custom hook ?
-   - A) `hook`
-   - B) `use` ✅
-   - C) `custom`
+Q: Comment doit commencer le nom d'un custom hook ?
+- [ ] `hook`
+- [x] `use`
+- [ ] `custom`
+> Par convention React, tous les hooks doivent commencer par `use` pour que le linter les reconnaisse.
 
-4. Que retourne typiquement un custom hook ?
-   - A) Rien
-   - B) Un objet ou array avec state et fonctions ✅
-   - C) Uniquement des fonctions
+Q: Que retourne typiquement un custom hook ?
+- [ ] Rien
+- [x] Un objet ou array avec state et fonctions
+- [ ] Uniquement des fonctions
+> Un custom hook retourne généralement des valeurs d'état et des fonctions pour les manipuler.
+:::
 
 ---
 

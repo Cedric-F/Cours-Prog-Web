@@ -731,25 +731,31 @@ module.exports = app;
 
 ## Quiz de vérification
 
-1. Quelle méthode HTTP pour créer une ressource ?
-   - A) GET
-   - B) POST ✅
-   - C) PUT
+:::quiz
+Q: Quelle méthode HTTP pour créer une ressource ?
+- [ ] GET
+- [x] POST
+- [ ] PUT
+> POST est utilisé pour créer de nouvelles ressources, contrairement à PUT qui est pour la mise à jour.
 
-2. Quel code HTTP pour "ressource créée" ?
-   - A) 200
-   - B) 201 ✅
-   - C) 204
+Q: Quel code HTTP pour "ressource créée" ?
+- [ ] 200
+- [x] 201
+- [ ] 204
+> Le code 201 Created indique qu'une nouvelle ressource a été créée avec succès.
 
-3. Quelle URL est RESTful ?
-   - A) `/getUsers`
-   - B) `/users` ✅
-   - C) `/user/list`
+Q: Quelle URL est RESTful ?
+- [ ] `/getUsers`
+- [x] `/users`
+- [ ] `/user/list`
+> Les URLs REST utilisent des noms (pluriels) sans verbes. L'action est déterminée par la méthode HTTP.
 
-4. Qu'est-ce que l'idempotence ?
-   - A) Une réponse rapide
-   - B) Même résultat pour appels multiples ✅
-   - C) Une erreur
+Q: Qu'est-ce que l'idempotence ?
+- [ ] Une réponse rapide
+- [x] Même résultat pour appels multiples
+- [ ] Une erreur
+> Une opération idempotente produit le même résultat peu importe le nombre d'exécutions (GET, PUT, DELETE).
+:::
 
 ---
 

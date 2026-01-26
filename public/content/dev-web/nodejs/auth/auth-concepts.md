@@ -568,25 +568,31 @@ app.post('/auth/login', loginLimiter, authController.login);
 
 ## Quiz de vérification
 
-1. Quelle est la différence entre authentification et autorisation ?
-   - A) C'est la même chose
-   - B) Authentification = qui, Autorisation = permissions ✅
-   - C) Autorisation = qui, Authentification = permissions
+:::quiz
+Q: Quelle est la différence entre authentification et autorisation ?
+- [ ] C'est la même chose
+- [x] Authentification = qui, Autorisation = permissions
+- [ ] Autorisation = qui, Authentification = permissions
+> L'authentification vérifie l'identité (qui êtes-vous ?), l'autorisation vérifie les droits (que pouvez-vous faire ?).
 
-2. Pourquoi utiliser bcrypt plutôt que SHA-256 ?
-   - A) Plus rapide
-   - B) Inclut un sel et est lent volontairement ✅
-   - C) Plus court
+Q: Pourquoi utiliser bcrypt plutôt que SHA-256 ?
+- [ ] Plus rapide
+- [x] Inclut un sel et est lent volontairement
+- [ ] Plus court
+> bcrypt est conçu pour être lent et intègre un sel unique, rendant les attaques par force brute impraticables.
 
-3. Où stocker un JWT côté client ?
-   - A) En variable globale
-   - B) httpOnly cookie ou localStorage ✅
-   - C) Dans l'URL
+Q: Où stocker un JWT côté client ?
+- [ ] En variable globale
+- [x] httpOnly cookie ou localStorage
+- [ ] Dans l'URL
+> Un cookie httpOnly est plus sécurisé (pas accessible via JS), localStorage est plus simple mais vulnérable aux XSS.
 
-4. Qu'est-ce qu'OAuth ?
-   - A) Un algorithme de hachage
-   - B) Délégation d'authentification (Google, GitHub) ✅
-   - C) Un type de token
+Q: Qu'est-ce qu'OAuth ?
+- [ ] Un algorithme de hachage
+- [x] Délégation d'authentification (Google, GitHub)
+- [ ] Un type de token
+> OAuth permet de déléguer l'authentification à un provider externe (Google, GitHub, etc.).
+:::
 
 ---
 

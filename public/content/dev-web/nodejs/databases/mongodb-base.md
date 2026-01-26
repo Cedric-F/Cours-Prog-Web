@@ -541,25 +541,31 @@ module.exports = mongoose.model('User', userSchema);
 
 ## Quiz de vérification
 
-1. Quel est l'équivalent d'une table SQL en MongoDB ?
-   - A) Document
-   - B) Collection ✅
-   - C) Schema
+:::quiz
+Q: Quel est l'équivalent d'une table SQL en MongoDB ?
+- [ ] Document
+- [x] Collection
+- [ ] Schema
+> Une collection regroupe des documents, similairement à une table qui regroupe des lignes en SQL.
 
-2. Quel package est utilisé pour interagir avec MongoDB en Node.js ?
-   - A) mongodb-driver
-   - B) mongoose ✅
-   - C) mongo-client
+Q: Quel package est utilisé pour interagir avec MongoDB en Node.js ?
+- [ ] mongodb-driver
+- [x] mongoose
+- [ ] mongo-client
+> Mongoose est l'ODM (Object Document Mapper) le plus populaire pour MongoDB avec Node.js.
 
-3. Quelle méthode trouve un document par ID ?
-   - A) `find(id)`
-   - B) `findById(id)` ✅
-   - C) `get(id)`
+Q: Quelle méthode trouve un document par ID ?
+- [ ] `find(id)`
+- [x] `findById(id)`
+- [ ] `get(id)`
+> `findById()` est un raccourci Mongoose pour `findOne({ _id: id })`.
 
-4. Comment définir un champ requis dans un schéma ?
-   - A) `{ type: String, required: true }` ✅
-   - B) `{ type: String, mandatory: true }`
-   - C) `{ type: String, notNull: true }`
+Q: Comment définir un champ requis dans un schéma ?
+- [x] `{ type: String, required: true }`
+- [ ] `{ type: String, mandatory: true }`
+- [ ] `{ type: String, notNull: true }`
+> L'option `required: true` rend le champ obligatoire lors de la validation.
+:::
 
 ---
 

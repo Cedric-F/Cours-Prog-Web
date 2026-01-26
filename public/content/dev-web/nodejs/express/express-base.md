@@ -482,25 +482,31 @@ app.listen(3000, () => {
 
 ## Quiz de vérification
 
-1. Comment envoyer une réponse JSON ?
-   - A) `res.send(json)`
-   - B) `res.json(data)` ✅
-   - C) `res.write(JSON.stringify(data))`
+:::quiz
+Q: Comment envoyer une réponse JSON ?
+- [ ] `res.send(json)`
+- [x] `res.json(data)`
+- [ ] `res.write(JSON.stringify(data))`
+> `res.json()` envoie automatiquement le header `Content-Type: application/json` et stringify l'objet.
 
-2. Où sont les paramètres d'URL (`:id`) ?
-   - A) `req.query`
-   - B) `req.body`
-   - C) `req.params` ✅
+Q: Où sont les paramètres d'URL (`:id`) ?
+- [ ] `req.query`
+- [ ] `req.body`
+- [x] `req.params`
+> Les paramètres dynamiques de l'URL sont accessibles via `req.params.id`.
 
-3. Quel middleware parse le JSON du body ?
-   - A) `express.urlencoded()`
-   - B) `express.json()` ✅
-   - C) `express.static()`
+Q: Quel middleware parse le JSON du body ?
+- [ ] `express.urlencoded()`
+- [x] `express.json()`
+- [ ] `express.static()`
+> `express.json()` parse le body des requêtes avec `Content-Type: application/json`.
 
-4. Comment définir le code de statut HTTP ?
-   - A) `res.code(404)`
-   - B) `res.status(404)` ✅
-   - C) `res.httpStatus(404)`
+Q: Comment définir le code de statut HTTP ?
+- [ ] `res.code(404)`
+- [x] `res.status(404)`
+- [ ] `res.httpStatus(404)`
+> `res.status(code)` définit le code HTTP et peut être chaîné avec `.json()` ou `.send()`.
+:::
 
 ---
 

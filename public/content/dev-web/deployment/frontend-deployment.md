@@ -453,20 +453,25 @@ node --version
 
 ## Quiz de vérification
 
-1. Quelle plateforme est optimale pour Next.js ?
-   - A) Netlify
-   - B) Vercel ✅
-   - C) GitHub Pages
+:::quiz
+Q: Quelle plateforme est optimale pour Next.js ?
+- [ ] Netlify
+- [x] Vercel
+- [ ] GitHub Pages
+> Vercel est créé par les développeurs de Next.js, offrant une intégration native et optimale.
 
-2. Comment gérer les routes SPA ?
-   - A) Créer tous les fichiers HTML
-   - B) Rediriger vers index.html ✅
-   - C) Utiliser un backend
+Q: Comment gérer les routes SPA ?
+- [ ] Créer tous les fichiers HTML
+- [x] Rediriger vers index.html
+- [ ] Utiliser un backend
+> Les SPA nécessitent une redirection vers index.html pour que le router côté client puisse gérer les routes.
 
-3. Quel préfixe pour les variables Vite ?
-   - A) `REACT_APP_`
-   - B) `VITE_` ✅
-   - C) `ENV_`
+Q: Quel préfixe pour les variables Vite ?
+- [ ] `REACT_APP_`
+- [x] `VITE_`
+- [ ] `ENV_`
+> Seules les variables commençant par `VITE_` sont exposées au code côté client.
+:::
 
 ---
 

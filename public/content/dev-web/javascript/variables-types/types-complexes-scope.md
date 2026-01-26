@@ -613,25 +613,31 @@ if (true) {
 
 ## Quiz de vérification
 
-1. Quelle est la différence entre valeur et référence ?
-   - A) Aucune différence
-   - B) Les primitifs sont copiés, les objets pointent vers la même adresse ✅
-   - C) Les objets sont copiés
+:::quiz
+Q: Quelle est la différence entre valeur et référence ?
+- [ ] Aucune différence
+- [x] Les primitifs sont copiés, les objets pointent vers la même adresse
+- [ ] Les objets sont copiés
+> Les types primitifs sont copiés par valeur, tandis que les objets sont passés par référence (même adresse mémoire).
 
-2. Quel est le scope d'une variable `let` dans un `if` ?
-   - A) Global
-   - B) Fonction
-   - C) Bloc (entre `{}`) ✅
+Q: Quel est le scope d'une variable `let` dans un `if` ?
+- [ ] Global
+- [ ] Fonction
+- [x] Bloc (entre `{}`)
+> `let` et `const` ont un scope de bloc, contrairement à `var` qui a un scope de fonction.
 
-3. Que fait le hoisting avec `let` ?
-   - A) Déplace la déclaration en haut
-   - B) Crée une TDZ (Temporal Dead Zone) ✅
-   - C) Rien
+Q: Que fait le hoisting avec `let` ?
+- [ ] Déplace la déclaration en haut
+- [x] Crée une TDZ (Temporal Dead Zone)
+- [ ] Rien
+> Avec `let`, la variable existe mais n'est pas accessible avant sa déclaration (Temporal Dead Zone).
 
-4. Comment copier un objet sans lien ?
-   - A) `const copy = obj`
-   - B) `const copy = { ...obj }` ✅
-   - C) `const copy = obj.copy()`
+Q: Comment copier un objet sans lien ?
+- [ ] `const copy = obj`
+- [x] `const copy = { ...obj }`
+- [ ] `const copy = obj.copy()`
+> Le spread operator `...` crée une copie superficielle de l'objet.
+:::
 
 ---
 

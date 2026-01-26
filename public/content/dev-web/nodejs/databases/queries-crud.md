@@ -717,25 +717,31 @@ const monthlyStats = await Order.aggregate([
 
 ## Quiz de vérification
 
-1. Quelle méthode trouve un document par ID ?
-   - A) `find(id)`
-   - B) `findById(id)` ✅
-   - C) `get(id)`
+:::quiz
+Q: Quelle méthode trouve un document par ID ?
+- [ ] `find(id)`
+- [x] `findById(id)`
+- [ ] `get(id)`
+> `findById()` est la méthode Mongoose dédiée à la recherche par identifiant MongoDB.
 
-2. Comment retourner le document après mise à jour ?
-   - A) `{ updated: true }`
-   - B) `{ new: true }` ✅
-   - C) `{ return: true }`
+Q: Comment retourner le document après mise à jour ?
+- [ ] `{ updated: true }`
+- [x] `{ new: true }`
+- [ ] `{ return: true }`
+> L'option `{ new: true }` fait retourner le document modifié au lieu de l'original.
 
-3. Quelle méthode est plus performante pour insertions en masse ?
-   - A) Boucle avec `save()`
-   - B) `insertMany()` ✅
-   - C) `create()` multiple
+Q: Quelle méthode est plus performante pour insertions en masse ?
+- [ ] Boucle avec `save()`
+- [x] `insertMany()`
+- [ ] `create()` multiple
+> `insertMany()` effectue une seule opération bulk, beaucoup plus efficace que des insertions individuelles.
 
-4. Que fait `populate()` ?
-   - A) Ajoute des données
-   - B) Résout les références vers d'autres documents ✅
-   - C) Supprime les doublons
+Q: Que fait `populate()` ?
+- [ ] Ajoute des données
+- [x] Résout les références vers d'autres documents
+- [ ] Supprime les doublons
+> `populate()` remplace les ObjectId par les documents référencés (jointure MongoDB).
+:::
 
 ---
 

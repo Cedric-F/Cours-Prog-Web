@@ -764,25 +764,31 @@ document.addEventListener('keydown', (e) => {
 
 ## Quiz de vérification
 
-1. Quelle méthode ajoute un écouteur d'événement ?
-   - A) `onclick`
-   - B) `addEventListener` ✅
-   - C) `attachEvent`
+:::quiz
+Q: Quelle méthode ajoute un écouteur d'événement ?
+- [ ] `onclick`
+- [x] `addEventListener`
+- [ ] `attachEvent`
+> `addEventListener` est la méthode moderne qui permet d'ajouter plusieurs listeners sur un même élément.
 
-2. Comment empêcher le comportement par défaut ?
-   - A) `e.stopPropagation()`
-   - B) `e.preventDefault()` ✅
-   - C) `return false`
+Q: Comment empêcher le comportement par défaut ?
+- [ ] `e.stopPropagation()`
+- [x] `e.preventDefault()`
+- [ ] `return false`
+> `preventDefault()` empêche l'action par défaut (ex: navigation d'un lien, soumission d'un formulaire).
 
-3. Qu'est-ce que le bubbling ?
-   - A) L'événement descend du parent aux enfants
-   - B) L'événement remonte des enfants au parent ✅
-   - C) L'événement reste sur l'élément
+Q: Qu'est-ce que le bubbling ?
+- [ ] L'événement descend du parent aux enfants
+- [x] L'événement remonte des enfants au parent
+- [ ] L'événement reste sur l'élément
+> Le bubbling fait "remonter" l'événement de l'élément cible vers ses ancêtres dans le DOM.
 
-4. Pourquoi utiliser la délégation ?
-   - A) Pour améliorer les performances avec beaucoup d'éléments ✅
-   - B) Pour accélérer le rendu
-   - C) Pour empêcher les erreurs
+Q: Pourquoi utiliser la délégation ?
+- [x] Pour améliorer les performances avec beaucoup d'éléments
+- [ ] Pour accélérer le rendu
+- [ ] Pour empêcher les erreurs
+> La délégation permet d'avoir un seul listener sur le parent au lieu d'un par enfant, ce qui est plus performant.
+:::
 
 ---
 

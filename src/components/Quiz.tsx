@@ -253,16 +253,20 @@ export function parseQuizFromMarkdown(content: string): {
   contentParts: string[]; 
   quizzes: QuizQuestion[][] 
 } {
-  const quizRegex = /:::quiz\n([\s\S]*?):::/g;
+  // Normalize line endings to LF
+  const normalizedContent = content.replace(/\r\n/g, '\n');
+  
+  // Support both :::quiz and ::: quiz variations
+  const quizRegex = /:::\s*quiz\s*\n([\s\S]*?):::/g;
   const quizzes: QuizQuestion[][] = [];
   const contentParts: string[] = [];
   
   let lastIndex = 0;
   let match;
   
-  while ((match = quizRegex.exec(content)) !== null) {
+  while ((match = quizRegex.exec(normalizedContent)) !== null) {
     // Add content before this quiz
-    contentParts.push(content.slice(lastIndex, match.index));
+    contentParts.push(normalizedContent.slice(lastIndex, match.index));
     
     // Parse quiz content
     const questions = parseQuizContent(match[1]);
@@ -274,7 +278,7 @@ export function parseQuizFromMarkdown(content: string): {
   }
   
   // Add remaining content after last quiz
-  contentParts.push(content.slice(lastIndex));
+  contentParts.push(normalizedContent.slice(lastIndex));
 
   return { contentParts, quizzes };
 }

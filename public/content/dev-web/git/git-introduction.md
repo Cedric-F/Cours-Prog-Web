@@ -540,25 +540,31 @@ git commit -m "chore: configure gitignore"
 
 ## Quiz de vérification
 
-1. Quelle commande initialise un nouveau dépôt Git ?
-   - A) `git start`
-   - B) `git init` ✅
-   - C) `git create`
+:::quiz
+Q: Quelle commande initialise un nouveau dépôt Git ?
+- [ ] `git start`
+- [x] `git init`
+- [ ] `git create`
+> `git init` crée un nouveau dépôt Git dans le dossier courant (crée le dossier .git).
 
-2. Quelle zone contient les fichiers prêts à être commités ?
-   - A) Working Directory
-   - B) Staging Area ✅
-   - C) Repository
+Q: Quelle zone contient les fichiers prêts à être commités ?
+- [ ] Working Directory
+- [x] Staging Area
+- [ ] Repository
+> La Staging Area (ou Index) contient les modifications qui seront incluses dans le prochain commit.
 
-3. Quel fichier permet d'ignorer certains fichiers ?
-   - A) `.gitconfig`
-   - B) `.gitignore` ✅
-   - C) `.gitexclude`
+Q: Quel fichier permet d'ignorer certains fichiers ?
+- [ ] `.gitconfig`
+- [x] `.gitignore`
+- [ ] `.gitexclude`
+> Le fichier `.gitignore` liste les patterns de fichiers que Git doit ignorer.
 
-4. Quelle commande affiche l'état des fichiers ?
-   - A) `git log`
-   - B) `git status` ✅
-   - C) `git show`
+Q: Quelle commande affiche l'état des fichiers ?
+- [ ] `git log`
+- [x] `git status`
+- [ ] `git show`
+> `git status` montre les fichiers modifiés, staged, et non trackés.
+:::
 
 ---
 

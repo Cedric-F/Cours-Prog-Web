@@ -559,25 +559,31 @@ git branch -d feature/nav feature/footer
 
 ## Quiz de vérification
 
-1. Quelle commande crée une branche ET y bascule ?
-   - A) `git branch feature`
-   - B) `git switch -c feature` ✅
-   - C) `git checkout feature`
+:::quiz
+Q: Quelle commande crée une branche ET y bascule ?
+- [ ] `git branch feature`
+- [x] `git switch -c feature`
+- [ ] `git checkout feature`
+> `git switch -c` (ou `git checkout -b`) crée une nouvelle branche et bascule dessus en une seule commande.
 
-2. Que signifie "fast-forward" lors d'un merge ?
-   - A) Le merge est annulé
-   - B) Il y a un conflit
-   - C) La branche est simplement avancée ✅
+Q: Que signifie "fast-forward" lors d'un merge ?
+- [ ] Le merge est annulé
+- [ ] Il y a un conflit
+- [x] La branche est simplement avancée
+> En fast-forward, Git déplace simplement le pointeur de la branche sans créer de commit de merge.
 
-3. Comment résoudre un conflit ?
-   - A) `git conflict --resolve`
-   - B) Éditer le fichier, puis `git add` et `git commit` ✅
-   - C) `git merge --force`
+Q: Comment résoudre un conflit ?
+- [ ] `git conflict --resolve`
+- [x] Éditer le fichier, puis `git add` et `git commit`
+- [ ] `git merge --force`
+> Les conflits se résolvent manuellement en éditant les fichiers, puis en les ajoutant et commitant.
 
-4. Quelle stratégie est recommandée pour les débutants ?
-   - A) Git Flow
-   - B) GitHub Flow ✅
-   - C) Trunk-Based
+Q: Quelle stratégie est recommandée pour les débutants ?
+- [ ] Git Flow
+- [x] GitHub Flow
+- [ ] Trunk-Based
+> GitHub Flow est simple : une branche main et des feature branches, idéal pour débuter.
+:::
 
 ---
 

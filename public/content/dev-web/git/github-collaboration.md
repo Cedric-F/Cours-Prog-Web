@@ -690,25 +690,31 @@ git push -u origin feature/footer
 
 ## Quiz de vérification
 
-1. Quelle commande envoie vos commits vers GitHub ?
-   - A) `git send`
-   - B) `git push` ✅
-   - C) `git upload`
+:::quiz
+Q: Quelle commande envoie vos commits vers GitHub ?
+- [ ] `git send`
+- [x] `git push`
+- [ ] `git upload`
+> `git push` envoie vos commits locaux vers le dépôt distant (origin).
 
-2. Qu'est-ce qu'une Pull Request ?
-   - A) Télécharger du code
-   - B) Demande de fusion de branche ✅
-   - C) Supprimer une branche
+Q: Qu'est-ce qu'une Pull Request ?
+- [ ] Télécharger du code
+- [x] Demande de fusion de branche
+- [ ] Supprimer une branche
+> Une PR permet de proposer des modifications et de les faire relire avant de les merger.
 
-3. Comment récupérer les modifications d'un collègue ?
-   - A) `git download`
-   - B) `git pull` ✅
-   - C) `git sync`
+Q: Comment récupérer les modifications d'un collègue ?
+- [ ] `git download`
+- [x] `git pull`
+- [ ] `git sync`
+> `git pull` récupère les commits distants et les fusionne avec votre branche locale.
 
-4. Quel fichier ne doit JAMAIS être sur GitHub ?
-   - A) `README.md`
-   - B) `.gitignore`
-   - C) `.env` ✅
+Q: Quel fichier ne doit JAMAIS être sur GitHub ?
+- [ ] `README.md`
+- [ ] `.gitignore`
+- [x] `.env`
+> Le fichier `.env` contient des secrets (API keys, passwords) qui ne doivent jamais être publiés.
+:::
 
 ---
 

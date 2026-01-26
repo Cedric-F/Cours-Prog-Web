@@ -720,25 +720,31 @@ useEffect(() => {
 
 ## Quiz de vérification
 
-1. Que retourne `useState(0)` ?
-   - A) Juste la valeur
-   - B) Un tableau `[valeur, setter]` ✅
-   - C) Un objet
+:::quiz
+Q: Que retourne `useState(0)` ?
+- [ ] Juste la valeur
+- [x] Un tableau `[valeur, setter]`
+- [ ] Un objet
+> `useState` retourne un tableau avec la valeur actuelle et une fonction pour la modifier.
 
-2. Quand s'exécute `useEffect(() => {}, [])` ?
-   - A) À chaque rendu
-   - B) Au montage seulement ✅
-   - C) Jamais
+Q: Quand s'exécute `useEffect(() => {}, [])` ?
+- [ ] À chaque rendu
+- [x] Au montage seulement
+- [ ] Jamais
+> Un tableau de dépendances vide `[]` signifie que l'effet ne s'exécute qu'une fois au montage.
 
-3. À quoi sert `useRef` ?
-   - A) Gérer l'état
-   - B) Référencer un élément DOM ou valeur persistante ✅
-   - C) Remplacer `useState`
+Q: À quoi sert `useRef` ?
+- [ ] Gérer l'état
+- [x] Référencer un élément DOM ou valeur persistante
+- [ ] Remplacer `useState`
+> `useRef` permet d'accéder au DOM ou de stocker une valeur qui persiste entre les rendus sans causer de re-render.
 
-4. Comment nettoyer un timer dans useEffect ?
-   - A) `clearInterval(timer)` dans le callback
-   - B) Retourner une fonction de cleanup ✅
-   - C) Utiliser `useRef`
+Q: Comment nettoyer un timer dans useEffect ?
+- [ ] `clearInterval(timer)` dans le callback
+- [x] Retourner une fonction de cleanup
+- [ ] Utiliser `useRef`
+> La fonction retournée par useEffect est appelée au démontage ou avant la prochaine exécution.
+:::
 
 ---
 

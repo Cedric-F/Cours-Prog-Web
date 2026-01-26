@@ -697,20 +697,25 @@ function Modal({ isOpen, children }) {
 
 ## Quiz de vérification
 
-1. Quel ratio de contraste minimum pour le texte (AA) ?
-   - A) 3:1
-   - B) 4.5:1 ✅
-   - C) 7:1
+:::quiz
+Q: Quel ratio de contraste minimum pour le texte (AA) ?
+- [ ] 3:1
+- [x] 4.5:1
+- [ ] 7:1
+> Le niveau AA exige un ratio de 4.5:1 pour le texte normal et 3:1 pour le texte large.
 
-2. Comment lier un label à un input ?
-   - A) `for` sur le label = `id` sur l'input ✅
-   - B) `label-for` attribute
-   - C) CSS
+Q: Comment lier un label à un input ?
+- [x] `for` sur le label = `id` sur l'input
+- [ ] `label-for` attribute
+- [ ] CSS
+> L'attribut `for` du label doit correspondre à l'`id` de l'input pour créer une association accessible.
 
-3. Quel attribut ARIA indique un menu ouvert ?
-   - A) `aria-open`
-   - B) `aria-expanded` ✅
-   - C) `aria-visible`
+Q: Quel attribut ARIA indique un menu ouvert ?
+- [ ] `aria-open`
+- [x] `aria-expanded`
+- [ ] `aria-visible`
+> `aria-expanded="true"` indique aux technologies d'assistance qu'un élément est déplié.
+:::
 
 ---
 

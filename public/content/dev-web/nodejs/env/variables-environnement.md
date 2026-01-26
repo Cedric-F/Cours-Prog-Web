@@ -678,25 +678,31 @@ app.listen(config.port, () => {
 
 ## Quiz de vérification
 
-1. Pourquoi utiliser des variables d'environnement ?
-   - A) Pour accélérer l'application
-   - B) Pour sécuriser les secrets ✅
-   - C) Pour réduire le code
+:::quiz
+Q: Pourquoi utiliser des variables d'environnement ?
+- [ ] Pour accélérer l'application
+- [x] Pour sécuriser les secrets
+- [ ] Pour réduire le code
+> Les variables d'environnement permettent de garder les secrets (API keys, passwords) hors du code source.
 
-2. Quel fichier ne doit JAMAIS être commit ?
-   - A) `.env.example`
-   - B) `.env` ✅
-   - C) `config.js`
+Q: Quel fichier ne doit JAMAIS être commit ?
+- [ ] `.env.example`
+- [x] `.env`
+- [ ] `config.js`
+> Le fichier `.env` contient les secrets réels. Seul `.env.example` (sans valeurs) doit être commité.
 
-3. Comment charger les variables avec dotenv ?
-   - A) `dotenv.load()`
-   - B) `require('dotenv').config()` ✅
-   - C) `import dotenv`
+Q: Comment charger les variables avec dotenv ?
+- [ ] `dotenv.load()`
+- [x] `require('dotenv').config()`
+- [ ] `import dotenv`
+> `require('dotenv').config()` charge les variables du fichier `.env` dans `process.env`.
 
-4. Quel type retourne `process.env.PORT` ?
-   - A) Number
-   - B) String ✅
-   - C) Undefined
+Q: Quel type retourne `process.env.PORT` ?
+- [ ] Number
+- [x] String
+- [ ] Undefined
+> Toutes les variables d'environnement sont des strings. Pensez à les convertir avec `parseInt()` si nécessaire.
+:::
 
 ---
 
