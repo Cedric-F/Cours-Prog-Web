@@ -487,25 +487,31 @@ Créez une page HTML complète avec :
 
 ## Quiz de vérification
 
-1. Quelle balise définit le titre affiché dans l'onglet du navigateur ?
-   - A) `<h1>`
-   - B) `<title>` ✅
-   - C) `<header>`
+:::quiz
+Q: Quelle balise définit le titre affiché dans l'onglet du navigateur ?
+- [ ] `<h1>`
+- [x] `<title>`
+- [ ] `<header>`
+> La balise `<title>` définit le titre qui apparaît dans l'onglet du navigateur et dans les résultats de recherche.
 
-2. Quelle est la bonne façon d'écrire une balise auto-fermante ?
-   - A) `<img src="photo.jpg">`
-   - B) `<img src="photo.jpg" />` ✅
-   - C) `</img src="photo.jpg">`
+Q: Quelle est la bonne façon d'écrire une balise auto-fermante ?
+- [ ] `<img src="photo.jpg">`
+- [x] `<img src="photo.jpg" />`
+- [ ] `</img src="photo.jpg">`
+> Les balises auto-fermantes se terminent par ` />` pour indiquer qu'elles n'ont pas de contenu.
 
-3. Où place-t-on les métadonnées d'une page ?
-   - A) Dans `<body>`
-   - B) Dans `<head>` ✅
-   - C) Dans `<footer>`
+Q: Où place-t-on les métadonnées d'une page ?
+- [ ] Dans `<body>`
+- [x] Dans `<head>`
+- [ ] Dans `<footer>`
+> Le `<head>` contient les métadonnées (charset, viewport, title, links CSS...) qui ne sont pas affichées directement.
 
-4. Quelle balise est obsolète ?
-   - A) `<strong>`
-   - B) `<font>` ✅
-   - C) `<em>`
+Q: Quelle balise est obsolète et ne doit plus être utilisée ?
+- [ ] `<strong>`
+- [x] `<font>`
+- [ ] `<em>`
+> La balise `<font>` est obsolète depuis HTML5. Utilisez CSS pour styliser le texte.
+:::
 
 ---
 

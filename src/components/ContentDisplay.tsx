@@ -1,13 +1,13 @@
 'use client';
 
-import { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import { NavigationItem } from '@/types';
 import PersonalNotes from './PersonalNotes';
+import CodeBlock from './CodeBlock';
+import Quiz, { parseQuizFromMarkdown } from './Quiz';
 
 interface ContentDisplayProps {
   content: string;
@@ -30,6 +30,9 @@ export default function ContentDisplay({ content, currentItem, onScrollToBottom 
 
   // Calculate reading time
   const readingTime = useMemo(() => calculateReadingTime(content), [content]);
+
+  // Parse quizzes from content
+  const { contentParts, quizzes } = useMemo(() => parseQuizFromMarkdown(content), [content]);
 
   // Current section path for notes
   const sectionPath = `${currentItem.axisId}/${currentItem.chapterId}/${currentItem.sectionId}`;
@@ -84,6 +87,56 @@ export default function ContentDisplay({ content, currentItem, onScrollToBottom 
     };
   }, [content, currentItem, hasScrolledToBottom, onScrollToBottom]);
 
+  // Markdown components configuration
+  const markdownComponents = {
+    code({ node, inline, className, children, ...props }: any) {
+      const match = /language-(\w+)/.exec(className || '');
+      const codeString = String(children).replace(/\n$/, '');
+      
+      return !inline && match ? (
+        <CodeBlock language={match[1]}>
+          {codeString}
+        </CodeBlock>
+      ) : (
+        <code className={className} {...props}>
+          {children}
+        </code>
+      );
+    },
+    h2({ node, children, ...props }: any) {
+      const text = String(children);
+      const id = generateId(text);
+      return (
+        <h2 id={id} {...props}>
+          {children}
+        </h2>
+      );
+    },
+    h3({ node, children, ...props }: any) {
+      const text = String(children);
+      const id = generateId(text);
+      return (
+        <h3 id={id} {...props}>
+          {children}
+        </h3>
+      );
+    },
+    // Support for iframe embeds (CodeSandbox, StackBlitz, etc.)
+    iframe({ node, ...props }: any) {
+      return (
+        <div className="not-prose my-6">
+          <iframe
+            {...props}
+            className="w-full h-[500px] rounded-lg border border-gray-200 dark:border-gray-700"
+            loading="lazy"
+            allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+            sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+          />
+        </div>
+      );
+    },
+  };
+
   return (
     <div
       ref={contentRef}
@@ -97,63 +150,26 @@ export default function ContentDisplay({ content, currentItem, onScrollToBottom 
         <span>{readingTime} min de lecture</span>
       </div>
 
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeRaw]}
-        components={{
-          code({ node, inline, className, children, ...props }: any) {
-            const match = /language-(\w+)/.exec(className || '');
-            return !inline && match ? (
-              <SyntaxHighlighter
-                style={vscDarkPlus}
-                language={match[1]}
-                PreTag="div"
-                {...props}
-              >
-                {String(children).replace(/\n$/, '')}
-              </SyntaxHighlighter>
-            ) : (
-              <code className={className} {...props}>
-                {children}
-              </code>
-            );
-          },
-          h2({ node, children, ...props }: any) {
-            const text = String(children);
-            const id = generateId(text);
-            return (
-              <h2 id={id} {...props}>
-                {children}
-              </h2>
-            );
-          },
-          h3({ node, children, ...props }: any) {
-            const text = String(children);
-            const id = generateId(text);
-            return (
-              <h3 id={id} {...props}>
-                {children}
-              </h3>
-            );
-          },
-          // Support for iframe embeds (CodeSandbox, StackBlitz, etc.)
-          iframe({ node, ...props }: any) {
-            return (
-              <div className="not-prose my-6">
-                <iframe
-                  {...props}
-                  className="w-full h-[500px] rounded-lg border border-gray-200 dark:border-gray-700"
-                  loading="lazy"
-                  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-                  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-                />
-              </div>
-            );
-          },
-        }}
-      >
-        {content}
-      </ReactMarkdown>
+      {/* Render content parts with quizzes in between */}
+      {contentParts.map((part, index) => (
+        <React.Fragment key={index}>
+          {part.trim() && (
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              rehypePlugins={[rehypeRaw]}
+              components={markdownComponents}
+            >
+              {part}
+            </ReactMarkdown>
+          )}
+          {/* Render quiz after this content part if one exists */}
+          {quizzes[index] && (
+            <div className="not-prose">
+              <Quiz questions={quizzes[index]} />
+            </div>
+          )}
+        </React.Fragment>
+      ))}
 
       {/* Personal Notes Section */}
       <PersonalNotes sectionPath={sectionPath} />
