@@ -24,7 +24,7 @@ export default function NavigationArrows({ prev, next, visible }: NavigationArro
   };
 
   return (
-    <div className="fixed bottom-8 left-0 md:left-80 right-0 flex justify-center gap-2 md:gap-4 px-4 md:px-8 pointer-events-none z-30">
+    <div className="fixed bottom-8 left-0 md:left-80 right-0 flex justify-center gap-2 md:gap-4 px-4 md:px-8 pointer-events-none z-30 no-print">
       <div className="bg-white dark:bg-gray-800 shadow-lg dark:shadow-gray-900/50 rounded-lg p-2 md:p-4 flex gap-2 md:gap-4 pointer-events-auto border border-gray-200 dark:border-gray-700 max-w-full">
         {prev ? (
           <Link
