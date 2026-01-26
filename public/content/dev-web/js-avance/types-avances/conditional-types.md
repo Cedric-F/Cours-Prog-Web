@@ -647,28 +647,28 @@ const csvData = format({ name: "Alice" }, 'csv');    // string
 
 ## Résumé
 
-**🎯 Conditional Types :**
+**Conditional Types :**
 - Syntaxe : `T extends U ? X : Y`
 - Créer des types dynamiques basés sur des conditions
 - Similaire aux opérateurs ternaires JavaScript
 
-**🔍 Mot-clé `infer` :**
+**Mot-clé `infer` :**
 - Inférer un type à l'intérieur d'une condition
 - Extraire types de Promise, Array, Function
 - Puissant pour créer des utility types
 
-**📦 Distribution :**
+**Distribution :**
 - Conditional types se distribuent sur les unions
 - `NonNullable`, `Exclude`, `Extract`
 - Empêcher avec `[T] extends [any]`
 
-**🔧 Utility Types Natifs :**
+**Utility Types Natifs :**
 - `ReturnType<T>` : Type de retour d'une fonction
 - `Parameters<T>` : Types des paramètres
 - `NonNullable<T>` : Retirer null/undefined
 - `Exclude<T, U>` et `Extract<T, U>`
 
-**♻️ Types Récursifs :**
+**Types Récursifs :**
 - DeepPartial, DeepReadonly
 - Flatten pour arrays multidimensionnels
 - Validation de schémas complexes

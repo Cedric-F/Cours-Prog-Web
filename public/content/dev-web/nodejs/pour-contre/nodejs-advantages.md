@@ -856,31 +856,31 @@ describe('API endpoints', () => {
 
 ## Résumé
 
-**🚀 Performance**
+**Performance**
 - Architecture non-bloquante : milliers de connexions simultanées
 - Moteur V8 optimisé : performances proches du natif
 - Streaming efficace : gestion optimale de la mémoire
 - Scalabilité horizontale et verticale facile
 
-**🔧 JavaScript Full-Stack**
+**JavaScript Full-Stack**
 - Un seul langage pour frontend, backend, mobile, desktop
 - Partage de code et de types (TypeScript)
 - Réutilisation de compétences
 - Équipe unifiée plus productive
 
-**⚡ Productivité**
+**Productivité**
 - Démarrage rapide et prototypage facile
 - NPM : 2+ millions de packages
 - Communauté massive et active
 - Documentation et ressources excellentes
 
-**💰 Coûts Réduits**
+**Coûts Réduits**
 - Consommation mémoire faible (3-5x moins que Java)
 - Infrastructure moins coûteuse
 - Temps de développement réduit
 - Équipe plus petite nécessaire
 
-**🌐 Use Cases Idéaux**
+**Use Cases Idéaux**
 - APIs REST et GraphQL
 - Applications temps réel (chat, notifications)
 - Microservices et serverless

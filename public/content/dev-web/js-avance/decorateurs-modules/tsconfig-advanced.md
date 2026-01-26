@@ -834,46 +834,46 @@ npx tsc-watch --onSuccess "node dist/index.js"
 
 ## Résumé
 
-**⚙️ tsconfig.json :**
+**tsconfig.json :**
 - `compilerOptions` : Options de compilation
 - `include`/`exclude` : Fichiers à traiter
 - `extends` : Hériter d'une config
 - `references` : Project references
 
-**🎯 Options Clés :**
+**Options Clés :**
 - `target` et `lib` : Version JavaScript et APIs
 - `module` et `moduleResolution` : Système de modules
 - `strict` : Mode strict (recommandé)
 - `paths` : Alias de chemins
 
-**📦 Project References :**
+**Project References :**
 - Monorepos et multi-projets
 - `composite: true` requis
 - Build incrémental
 - `tsc --build`
 
-**🗂️ Path Mapping :**
+**Path Mapping :**
 - `baseUrl` et `paths`
 - Simplifier imports
 - Synchroniser avec bundler
 
-**📝 Declaration Files :**
+**Declaration Files :**
 - `.d.ts` pour types
 - `declaration: true`
 - Types customs et globals
 
-**⚡ Optimisations :**
+**Optimisations :**
 - `incremental: true`
 - `skipLibCheck: true`
 - Exclude node_modules
 - Project references parallèles
 
-**🌍 Multi-environnements :**
+**Multi-environnements :**
 - Dev, prod, test configs
 - `extends` pour réutilisation
 - Scripts npm par environnement
 
-**🔧 Plugins :**
+**Plugins :**
 - Language service plugins
 - Compiler plugins
 - Watch options

@@ -660,25 +660,27 @@ Change l'ordre visuel des items (sans toucher au HTML).
 
 ## Quiz de vérification
 
-1. Quelle propriété aligne sur l'axe principal ?
-   - A) `align-items`
-   - B) `justify-content` ✅
-   - C) `align-content`
+:::quiz
+Q: Quelle propriété aligne sur l'axe principal ?
+- [] `align-items`
+- [x] `justify-content`
+- [] `align-content`
 
-2. Que fait `flex: 1` ?
-   - A) Fixe la largeur à 1px
-   - B) L'élément prend l'espace disponible ✅
-   - C) Définit l'ordre
+Q: Que fait `flex: 1` ?
+- [] Fixe la largeur à 1px
+- [x] L'élément prend l'espace disponible
+- [] Définit l'ordre
 
-3. Comment centrer verticalement et horizontalement ?
-   - A) `text-align: center`
-   - B) `justify-content: center; align-items: center` ✅
-   - C) `margin: auto`
+Q: Comment centrer verticalement et horizontalement ?
+- [] `text-align: center`
+- [x] `justify-content: center; align-items: center`
+- [] `margin: auto`
 
-4. Quelle propriété permet aux items de passer à la ligne ?
-   - A) `flex-direction: wrap`
-   - B) `flex-wrap: wrap` ✅
-   - C) `flex-flow: wrap`
+Q: Quelle propriété permet aux items de passer à la ligne ?
+- [] `flex-direction: wrap`
+- [x] `flex-wrap: wrap`
+- [] `flex-flow: wrap`
+:::
 
 ---
 

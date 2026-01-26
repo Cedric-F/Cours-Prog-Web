@@ -4,14 +4,14 @@ Implémentez la pagination et le filtrage pour vos API REST avec de grandes coll
 
 ---
 
-## 📚 Ce que vous allez apprendre
+## Ce que vous allez apprendre
 
 - Implémenter la pagination offset et cursor
 - Ajouter le tri et le filtrage
 - Créer des réponses API standardisées
 - Optimiser les performances
 
-## ⚠️ Prérequis
+## Prérequis
 
 - [Création d'API REST](./api-rest.md)
 - [MongoDB & Mongoose](../databases/mongodb-base.md)
@@ -693,30 +693,32 @@ Product.find({ $text: { $search: 'laptop' } });
 
 ## ✅ Quiz Rapide
 
-1. Quelle méthode Mongoose saute N documents ?
-   - A) `offset()`
-   - B) `skip()` ✅
-   - C) `jump()`
+:::quiz
+Q: Quelle méthode Mongoose saute N documents ?
+- [] `offset()`
+- [x] `skip()`
+- [] `jump()`
 
-2. Pourquoi limiter le `limit` maximum ?
-   - A) Pour le style
-   - B) Éviter de surcharger le serveur ✅
-   - C) MongoDB l'exige
+Q: Pourquoi limiter le `limit` maximum ?
+- [] Pour le style
+- [x] Éviter de surcharger le serveur
+- [] MongoDB l'exige
 
-3. Quel type de pagination est meilleur pour l'infinite scroll ?
-   - A) Offset
-   - B) Cursor ✅
-   - C) Les deux sont égaux
+Q: Quel type de pagination est meilleur pour l'infinite scroll ?
+- [] Offset
+- [x] Cursor
+- [] Les deux sont égaux
+:::
 
 ---
 
-## 🔗 Pour aller plus loin
+## Pour aller plus loin
 
 - [MongoDB - Query Optimization](https://docs.mongodb.com/manual/core/query-optimization/)
 - [Mongoose - Queries](https://mongoosejs.com/docs/queries.html)
 
 ---
 
-## ➡️ Prochaine étape
+## Prochaine étape
 
 Découvrez l'[Upload de fichiers](../files/upload-fichiers.md) pour gérer les images de vos produits.

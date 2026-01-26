@@ -418,4 +418,4 @@ Optimisez une page avec resource hints :
 
 ---
 
-**Prochaine étape** : [HTTP Caching](../caching/http-caching.md) pour un cache navigateur optimal ! 💾
+**Prochaine étape** : [HTTP Caching](../caching/http-caching.md) pour un cache navigateur optimal !

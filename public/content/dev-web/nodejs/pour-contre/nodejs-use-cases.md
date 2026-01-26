@@ -978,37 +978,37 @@ app.post('/generate-pdf', async (req, res) => {
 
 ## Résumé des Cas d'Usage
 
-**🌐 APIs REST**
+**APIs REST**
 - Gestion efficace de milliers de requêtes simultanées
 - JSON natif, validation, authentification JWT
 - Frameworks matures : Express, Fastify, Koa
 
-**⚡ Temps Réel**
+**Temps Réel**
 - WebSockets, Socket.io pour chat et notifications
 - Server-Sent Events pour updates unidirectionnels
 - Tableaux de bord et monitoring en direct
 
-**🔧 Microservices**
+**Microservices**
 - Léger, démarrage rapide (vs Java Spring)
 - Communication HTTP ou Message Queues (RabbitMQ)
 - Conteneurisation optimale avec Docker
 
-**📊 Streaming**
+**Streaming**
 - Upload/download de gros fichiers sans saturer la RAM
 - Streaming vidéo avec range requests
 - Export de données volumineuses (CSV, JSON)
 
-**☁️ Serverless**
+**Serverless**
 - AWS Lambda, Vercel, Netlify Functions
 - Cold start rapide (~100ms vs Java 5s)
 - Pay-per-execution, scalabilité automatique
 
-**🤖 Automation**
+**Automation**
 - Web scraping avec Puppeteer
 - Génération de PDFs, screenshots
 - Automatisation de tâches répétitives
 
-**❌ Non Recommandé Pour :**
+**Non Recommandé Pour :**
 - Calculs CPU-intensifs (ML, encodage vidéo)
 - Applications scientifiques (préférer Python/R)
 - Jeux 3D ou simulations physiques complexes

@@ -1,14 +1,14 @@
 # Projet - Application Météo avec API
 
-## 🎯 Objectif
+## Objectif
 
 Créer une application web de consultation météo en utilisant **HTML, CSS et JavaScript** avec appel à une **API météo externe**. Ce projet vous permettra de maîtriser les requêtes HTTP, la manipulation de données JSON, les Promises et async/await.
 
-## 🌤️ Description du Projet
+## Description du Projet
 
 L'application permet à l'utilisateur de rechercher la météo d'une ville et d'afficher les informations météorologiques actuelles ainsi que les prévisions. Les données proviennent d'une API externe (OpenWeatherMap, WeatherAPI, ou équivalent).
 
-## 🎨 Contraintes Techniques
+## Contraintes Techniques
 
 ### Obligatoire
 - **HTML5** : Structure sémantique
@@ -24,7 +24,7 @@ L'application permet à l'utilisateur de rechercher la météo d'une ville et d'
 - Fetch API ou Axios
 - OpenWeatherMap API, WeatherAPI, ou autre API gratuite
 
-## 📝 Fonctionnalités Minimum Attendues
+## Fonctionnalités Minimum Attendues
 
 ### Fonctionnalités de Base (Obligatoires)
 1. **Recherche de ville**
@@ -62,7 +62,7 @@ L'application permet à l'utilisateur de rechercher la météo d'une ville et d'
 - **Détails avancés** : Pression atmosphérique, UV index, lever/coucher du soleil
 - **Autocomplete** : Suggestions de villes pendant la saisie
 
-## 💡 Suggestions et Pistes
+## Suggestions et Pistes
 
 ### Choix de l'API
 
@@ -351,7 +351,7 @@ function getLocationWeather() {
 }
 ```
 
-## 🚀 Étapes Suggérées
+## Étapes Suggérées
 
 1. **Inscription à l'API**
    - Créer un compte sur OpenWeatherMap
@@ -384,7 +384,7 @@ function getLocationWeather() {
    - localStorage pour favoris
    - Animations
 
-## 📦 Livrables
+## Livrables
 
 - **index.html** : Structure de l'application
 - **style.css** : Styles
@@ -392,7 +392,7 @@ function getLocationWeather() {
 - **.env ou config.js** : Clé API (ne JAMAIS commit la clé sur Git public !)
 - **README.md** : Documentation avec instructions d'utilisation
 
-## ✅ Critères d'Évaluation
+## Critères d'Évaluation
 
 - **Appel API** : Requête correcte, gestion erreurs, async/await
 - **Parsing JSON** : Extraction et affichage des bonnes données
@@ -401,7 +401,7 @@ function getLocationWeather() {
 - **Design** : Interface moderne et responsive
 - **Gestion d'erreurs** : Tous les cas gérés (réseau, ville introuvable...)
 
-## 🎓 Compétences Travaillées
+## Compétences Travaillées
 
 - **Fetch API** : Requêtes HTTP asynchrones
 - **Async/Await** : Gestion de l'asynchrone
@@ -413,7 +413,7 @@ function getLocationWeather() {
 - **Geolocation API** : Accès à la position de l'utilisateur (bonus)
 - **localStorage** : Persistance de données (bonus)
 
-## 📚 Ressources Utiles
+## Ressources Utiles
 
 - [OpenWeatherMap API Docs](https://openweathermap.org/api)
 - [MDN - Fetch API](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API)
@@ -421,7 +421,7 @@ function getLocationWeather() {
 - [MDN - Geolocation API](https://developer.mozilla.org/fr/docs/Web/API/Geolocation_API)
 - [HTTP Status Codes](https://developer.mozilla.org/fr/docs/Web/HTTP/Status)
 
-## ⚠️ Sécurité
+## Sécurité
 
 **Ne JAMAIS exposer votre clé API publiquement !**
 - Ne commitez pas votre clé API sur GitHub
@@ -430,4 +430,4 @@ function getLocationWeather() {
 
 ---
 
-**Bon développement ! 🌦️**
+**Bon développement !**

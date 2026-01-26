@@ -551,4 +551,4 @@ Optimisez une application React :
 
 ---
 
-**Prochaine étape** : [Resource Hints](./resource-hints.md) pour optimiser le chargement ! 🚀
+**Prochaine étape** : [Resource Hints](./resource-hints.md) pour optimiser le chargement !

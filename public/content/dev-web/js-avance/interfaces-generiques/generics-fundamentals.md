@@ -851,32 +851,32 @@ if (result.isOk()) {
 
 ## Résumé
 
-**🎯 Génériques :**
+**Génériques :**
 - Créer des composants réutilisables type-safe
 - Syntaxe : `<T>` pour un paramètre de type
 - Éviter `any` : Conserver les informations de type
 
-**📝 Fonctions Génériques :**
+**Fonctions Génériques :**
 - `function fn<T>(param: T): T`
 - Contraintes avec `extends`
 - `keyof` pour accès aux propriétés type-safe
 
-**🏗️ Classes Génériques :**
+**Classes Génériques :**
 - `class Stack<T>`
 - Repository pattern
 - Collections type-safe
 
-**🔌 Interfaces Génériques :**
+**Interfaces Génériques :**
 - `interface Box<T>`
 - Collections et containers
 - Promise et async operations
 
-**⚙️ Type Parameters :**
+**Type Parameters :**
 - Multiple parameters : `<T, U, V>`
 - Defaults : `<T = string>`
 - Contraintes : `<T extends Base>`
 
-**🎨 Patterns :**
+**Patterns :**
 - Option/Maybe type
 - Result type pour error handling
 - Builder pattern

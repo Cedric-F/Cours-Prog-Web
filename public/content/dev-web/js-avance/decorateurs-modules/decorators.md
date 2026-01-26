@@ -880,37 +880,37 @@ class ApiService {
 
 ## Résumé
 
-**🎨 Décorateurs :**
+**Décorateurs :**
 - Annotations pour classes, méthodes, propriétés, paramètres
 - `experimentalDecorators: true` dans tsconfig.json
 - Factory pattern pour paramètres
 
-**🏢 Décorateurs de Classe :**
+**Décorateurs de Classe :**
 - Modifier le constructeur
 - Singleton, Component, Entity patterns
 - Composition bottom-up
 
-**⚙️ Décorateurs de Méthode :**
+**Décorateurs de Méthode :**
 - Log, mesure de performance
 - Retry, validation, caching
 - Modifier le comportement
 
-**🔧 Décorateurs de Propriété :**
+**Décorateurs de Propriété :**
 - Readonly, validation
 - Getters/setters custom
 - Format et transformation
 
-**📝 Décorateurs de Paramètre :**
+**Décorateurs de Paramètre :**
 - Validation de paramètres
 - Dependency injection
 - Métadonnées
 
-**🗃️ Reflect Metadata :**
+**Reflect Metadata :**
 - Stocker des métadonnées
 - ORM patterns (Entity, Column)
 - Dependency injection
 
-**🎯 Patterns :**
+**Patterns :**
 - Memoization
 - Dependency injection container
 - Route decorators (Express-style)

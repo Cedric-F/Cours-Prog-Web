@@ -487,7 +487,7 @@ Configurez un CDN pour votre site :
 
 ---
 
-🎉 **Félicitations !** Vous avez terminé tous les chapitres APIs Avancées et Performance Web ! 🚀
+**Félicitations !** Vous avez terminé tous les chapitres APIs Avancées et Performance Web !
 
 **Récapitulatif complet** :
 - ✅ WebSockets (3 fichiers)
@@ -496,5 +496,3 @@ Configurez un CDN pour votre site :
 - ✅ Web Vitals & Optimisation (3 fichiers)
 - ✅ Chargement Ressources (3 fichiers)
 - ✅ Caching (3 fichiers)
-
-**Total : 18 fichiers créés** avec ~90 000 mots de contenu technique de qualité ! 💪

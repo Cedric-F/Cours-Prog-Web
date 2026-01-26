@@ -483,4 +483,4 @@ Configurez le cache HTTP pour :
 
 ---
 
-**Prochaine étape** : [Service Worker Cache](./service-worker-cache.md) pour le cache avancé ! 💾
+**Prochaine étape** : [Service Worker Cache](./service-worker-cache.md) pour le cache avancé !

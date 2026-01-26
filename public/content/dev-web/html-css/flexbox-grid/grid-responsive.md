@@ -705,25 +705,27 @@ Hérite de la grille parent.
 
 ## Quiz de vérification
 
-1. Quelle propriété définit les colonnes d'une grille ?
-   - A) `grid-columns`
-   - B) `grid-template-columns` ✅
-   - C) `columns`
+:::quiz
+Q: Quelle propriété définit les colonnes d'une grille ?
+- [] `grid-columns`
+- [x] `grid-template-columns`
+- [] `columns`
 
-2. Que signifie `1fr` ?
-   - A) 1 pixel fixe
-   - B) Une fraction de l'espace disponible ✅
-   - C) 1% de la largeur
+Q: Que signifie `1fr` ?
+- [] 1 pixel fixe
+- [x] Une fraction de l'espace disponible
+- [] 1% de la largeur
 
-3. Comment faire une grille responsive automatiquement ?
-   - A) `repeat(auto-fit, minmax(250px, 1fr))` ✅
-   - B) `repeat(3, 1fr)`
-   - C) `grid-auto-columns: auto`
+Q: Comment faire une grille responsive automatiquement ?
+- [x] `repeat(auto-fit, minmax(250px, 1fr))`
+- [] `repeat(3, 1fr)`
+- [] `grid-auto-columns: auto`
 
-4. Quelle propriété fait occuper plusieurs colonnes à un item ?
-   - A) `grid-width: 2`
-   - B) `grid-column: span 2` ✅
-   - C) `column-span: 2`
+Q: Quelle propriété fait occuper plusieurs colonnes à un item ?
+- [] `grid-width: 2`
+- [x] `grid-column: span 2`
+- [] `column-span: 2`
+:::
 
 ---
 

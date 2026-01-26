@@ -10,10 +10,10 @@ Maîtrisez l'**optimisation des images, fonts et autres assets** pour des pages 
 
 | Format | Compression | Transparence | Animation | Support |
 |--------|-------------|--------------|-----------|---------|
-| **JPEG** | ✅ Avec perte | ❌ | ❌ | 100% |
-| **PNG** | ⚠️ Sans perte | ✅ | ❌ | 100% |
-| **WebP** | ✅✅ Meilleure | ✅ | ✅ | 97% |
-| **AVIF** | 🚀 La meilleure | ✅ | ✅ | 85% |
+| **JPEG** | Avec perte | ❌ | ❌ | 100% |
+| **PNG** | Sans perte | ✅ | ❌ | 100% |
+| **WebP** | Meilleure | ✅ | ✅ | 97% |
+| **AVIF** | La meilleure | ✅ | ✅ | 85% |
 | **SVG** | Vectoriel | ✅ | ✅ | 100% |
 
 ### Balise `<picture>` avec fallback
@@ -536,4 +536,4 @@ Optimisez un site web :
 
 ---
 
-**Prochaine étape** : [Lazy Loading](../chargement-ressources/lazy-loading.md) pour charger intelligemment ! ⚡
+**Prochaine étape** : [Lazy Loading](../chargement-ressources/lazy-loading.md) pour charger intelligemment !

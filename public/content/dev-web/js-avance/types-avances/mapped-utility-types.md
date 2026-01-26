@@ -813,13 +813,13 @@ type UserOptional = OptionalProps<User>; // { email?: string; phone?: string }
 
 ## Résumé
 
-**🗺️ Mapped Types :**
+**Mapped Types :**
 - Transformer les propriétés d'un type existant
 - Syntaxe : `{ [P in keyof T]: NewType }`
 - Modificateurs : `readonly`, `?`, `-readonly`, `-?`
 - Key remapping avec `as`
 
-**🛠️ Utility Types Natifs :**
+**Utility Types Natifs :**
 - **Partial<T>** : Propriétés optionnelles
 - **Required<T>** : Propriétés requises
 - **Readonly<T>** : Propriétés readonly
@@ -829,13 +829,13 @@ type UserOptional = OptionalProps<User>; // { email?: string; phone?: string }
 - **ReturnType<T>** : Type de retour
 - **Parameters<T>** : Types des paramètres
 
-**🎨 Utility Types Personnalisés :**
+**Utility Types Personnalisés :**
 - DeepPartial, DeepReadonly, DeepMutable
 - PickByType, OmitByType
 - Getters et Setters automatiques
 - Conversion DTO avec template literals
 
-**🔑 Key Remapping :**
+**Key Remapping :**
 - `as` pour transformer les noms de clés
 - Template literal types
 - Filtrer les propriétés selon condition

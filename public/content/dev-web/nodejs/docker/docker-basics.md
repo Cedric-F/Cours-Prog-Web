@@ -48,8 +48,8 @@ Résultat:     Bug mystérieux 💥
 | Conteneur | Machine Virtuelle |
 |-----------|-------------------|
 | Partage le kernel OS | OS complet isolé |
-| ⚡ Démarre en secondes | 🐢 Démarre en minutes |
-| 💾 ~100 MB | 💾 ~10 GB |
+| Démarre en secondes | Démarre en minutes |
+| ~100 MB | ~10 GB |
 | Milliers par serveur | Dizaines par serveur |
 
 ---
@@ -638,7 +638,7 @@ RUN npm ci
 
 ---
 
-## 🏋️ Exercice Pratique
+## Exercice Pratique
 
 **Objectif** : Dockeriser votre API Express
 

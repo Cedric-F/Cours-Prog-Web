@@ -4,14 +4,14 @@ Gérez la navigation entre les pages de votre application React avec React Route
 
 ---
 
-## 📚 Ce que vous allez apprendre
+## Ce que vous allez apprendre
 
 - Installer et configurer React Router v6
 - Créer des routes et des liens
 - Gérer les paramètres d'URL
 - Implémenter des routes protégées
 
-## ⚠️ Prérequis
+## Prérequis
 
 - [Composants et JSX](../composants-jsx/jsx-composants-base.md)
 - [Hooks de base](../hooks/hooks-base.md)
@@ -760,37 +760,39 @@ function ProtectedRoute({ children }) {
 
 ---
 
-## ✅ Quiz Rapide
+## Quiz Rapide
 
-1. Quel composant permet la navigation sans rechargement ?
-   - A) `<a>`
-   - B) `<Link>` ✅
-   - C) `<Button>`
+:::quiz
+Q: Quel composant permet la navigation sans rechargement ?
+- [] `<a>`
+- [x] `<Link>`
+- [] `<Button>`
 
-2. Quel hook récupère les paramètres d'URL ?
-   - A) `useParams()` ✅
-   - B) `useQuery()`
-   - C) `useURL()`
+Q: Quel hook récupère les paramètres d'URL ?
+- [x] `useParams()`
+- [] `useQuery()`
+- [] `useURL()`
 
-3. Comment afficher les routes enfants ?
-   - A) `<Children />`
-   - B) `<Outlet />` ✅
-   - C) `{children}`
+Q: Comment afficher les routes enfants ?
+- [] `<Children />`
+- [x] `<Outlet />`
+- [] `{children}`
 
-4. Quelle route gère les pages 404 ?
-   - A) `path="/404"`
-   - B) `path="*"` ✅
-   - C) `path="/not-found"`
+Q: Quelle route gère les pages 404 ?
+- [] `path="/404"`
+- [x] `path="*"`
+- [] `path="/not-found"`
+:::
 
 ---
 
-## 🔗 Pour aller plus loin
+## Pour aller plus loin
 
 - [Documentation React Router](https://reactrouter.com/)
 - [Tutorial officiel](https://reactrouter.com/en/main/start/tutorial)
 
 ---
 
-## ➡️ Prochaine étape
+## Prochaine étape
 
 Apprenez à [gérer les formulaires](./forms-validation.md) dans React pour créer des interfaces interactives.

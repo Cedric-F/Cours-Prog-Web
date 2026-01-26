@@ -616,25 +616,28 @@ div#content div.wrapper div.container p.text { }
 
 ## Quiz de vérification
 
-1. Quel sélecteur cible les enfants directs ?
-   - A) `parent child`
-   - B) `parent > child` ✅
-   - C) `parent + child`
+:::quiz
+Q: Quel sélecteur cible les enfants directs ?
+- [] `parent child`
+- [x] `parent > child` ✅
+- [] `parent + child`
 
-2. Que sélectionne `.card.active` ?
-   - A) `.card` puis `.active`
-   - B) Éléments avec les deux classes ✅
-   - C) `.active` dans `.card`
+Q: Que sélectionne `.card.active` ?
+- [] `.card` puis `.active`
+- [x] Éléments avec les deux classes ✅
+- [] `.active` dans `.card`
 
-3. Quel sélecteur est le plus spécifique ?
-   - A) `.button`
-   - B) `#submit` ✅
-   - C) `button.primary`
+Q: Quel sélecteur est le plus spécifique ?
+- [] `.button`
+- [x] `#submit` ✅
+- [] `button.primary`
+> `#` représente un ID unique tandis que le `.` est une classe qui peut être attribuée à plusieurs éléments !
 
-4. Que fait `input[type="email"]` ?
-   - A) Tous les inputs
-   - B) Inputs de type email ✅
-   - C) Erreur de syntaxe
+Q: Que fait `input[type="email"]` ?
+- [] Tous les inputs
+- [x] Inputs de type email ✅
+- [] Erreur de syntaxe
+:::
 
 ---
 

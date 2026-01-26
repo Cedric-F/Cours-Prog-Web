@@ -580,4 +580,4 @@ Créez une PWA offline-first avec :
 
 ---
 
-**Prochaine étape** : [CDN Strategies](./cdn-strategies.md) pour la distribution mondiale ! 🌍
+**Prochaine étape** : [CDN Strategies](./cdn-strategies.md) pour la distribution mondiale !

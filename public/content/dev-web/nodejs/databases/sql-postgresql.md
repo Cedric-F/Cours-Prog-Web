@@ -4,7 +4,7 @@ Découvrez les bases de données relationnelles comme alternative à MongoDB.
 
 ---
 
-## 📚 Ce que vous allez apprendre
+## Ce que vous allez apprendre
 
 - Comprendre le modèle relationnel
 - Écrire des requêtes SQL
@@ -692,26 +692,26 @@ const { rows } = await pool.query(`
 
 ---
 
-## ✅ Quiz Rapide
+## Quiz Rapide
 
-1. Quel type pour un prix en SQL ?
-   - A) `FLOAT`
-   - B) `DECIMAL(10,2)` ✅
-   - C) `INTEGER`
+Q: Quel type pour un prix en SQL ?
+- [] `FLOAT`
+- [x] `DECIMAL(10,2)`
+- [] `INTEGER`
 
-2. Comment éviter l'injection SQL ?
-   - A) Échapper les guillemets
-   - B) Paramètres préparés ($1, $2...) ✅
-   - C) Valider côté client
+Q: Comment éviter l'injection SQL ?
+- [] Échapper les guillemets
+- [x] Paramètres préparés ($1, $2...)
+- [] Valider côté client
 
-3. Que fait `RETURNING *` ?
-   - A) Annule la requête
-   - B) Retourne les lignes affectées ✅
-   - C) Commit la transaction
+Q: Que fait `RETURNING *` ?
+- [] Annule la requête
+- [x] Retourne les lignes affectées
+- [] Commit la transaction
 
 ---
 
-## 🔗 Pour aller plus loin
+## Pour aller plus loin
 
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 - [Prisma Documentation](https://www.prisma.io/docs)
@@ -719,6 +719,6 @@ const { rows } = await pool.query(`
 
 ---
 
-## ➡️ Prochaine étape
+## Prochaine étape
 
 Découvrez l'[authentification](../auth/auth-concepts.md) pour sécuriser votre application.

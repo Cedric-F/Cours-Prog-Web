@@ -764,33 +764,33 @@ project/
 
 ## Résumé des Limitations
 
-**🚫 CPU-Intensif**
+**CPU-Intensif**
 - Single-thread bloque pour calculs lourds
 - Non adapté : ML, traitement image/vidéo, encodage
 - Solutions : Worker Threads, Queue System, microservices
 
-**🌀 Complexité Asynchrone**
+**Complexité Asynchrone**
 - Callback hell (résolu avec async/await)
 - Gestion d'erreurs complexe
 - Courbe d'apprentissage pour débutants
 
-**📦 Écosystème Immature**
+**Écosystème Immature**
 - Fragmentation des packages (trop de choix)
 - Dépendances profondes, node_modules gonflé
 - Packages abandonnés, breaking changes fréquents
 - Vulnérabilités de sécurité
 
-**🐛 Absence de Type Safety**
+**Absence de Type Safety**
 - Erreurs détectées à l'exécution uniquement
 - TypeScript requis pour projets sérieux
 - Bugs silencieux difficiles à déboguer
 
-**💾 Gestion Mémoire**
+**Gestion Mémoire**
 - Fuites mémoire courantes (listeners, timers, cache)
 - Heap size limitée par V8
 - GC pauses peuvent impacter performances
 
-**📚 Documentation Variable**
+**Documentation Variable**
 - Qualité inconsistante entre packages
 - Manque de standards officiels
 - Structure de projet non standardisée

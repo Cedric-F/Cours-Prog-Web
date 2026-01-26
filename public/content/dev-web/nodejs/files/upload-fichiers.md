@@ -4,14 +4,14 @@ Gérez l'upload de fichiers (images, documents) dans votre application Node.js/E
 
 ---
 
-## 📚 Ce que vous allez apprendre
+## Ce que vous allez apprendre
 
 - Configurer Multer pour l'upload
 - Valider les fichiers (type, taille)
 - Stocker localement ou sur le cloud
 - Gérer les images (redimensionnement)
 
-## ⚠️ Prérequis
+## Prérequis
 
 - [Express.js - Base](../express/express-base.md)
 - [Middleware & Routing](../express/middleware-routing.md)
@@ -580,7 +580,7 @@ app.get('/files/:filename', authMiddleware, (req, res) => {
 4. Mettre à jour l'utilisateur en BDD
 
 <details>
-<summary>💡 Solution</summary>
+<summary>Solution</summary>
 
 ```javascript
 // middleware/avatarUpload.js
@@ -702,29 +702,31 @@ router.post(
 
 ## ✅ Quiz Rapide
 
-1. Quel package gère l'upload de fichiers avec Express ?
-   - A) express-upload
-   - B) multer ✅
-   - C) formidable
+:::quiz
+Q: Quel package gère l'upload de fichiers avec Express ?
+- [] express-upload
+- [x] multer
+- [] formidable
 
-2. Comment envoyer un fichier depuis le client ?
-   - A) JSON.stringify()
-   - B) FormData ✅
-   - C) Base64
+Q: Comment envoyer un fichier depuis le client ?
+- [] JSON.stringify()
+- [x] FormData
+- [] Base64
 
-3. Quel package permet le redimensionnement d'images ?
-   - A) jimp
-   - B) sharp ✅
-   - C) imagemagick
+Q: Quel package permet le redimensionnement d'images ?
+- [] jimp
+- [x] sharp
+- [] imagemagick
 
-4. Pourquoi utiliser le stockage cloud ?
-   - A) C'est moins cher
-   - B) CDN + réplication + transformations ✅
-   - C) C'est obligatoire
+Q: Pourquoi utiliser le stockage cloud ?
+- [] C'est moins cher
+- [x] CDN + réplication + transformations
+- [] C'est obligatoire
+:::
 
 ---
 
-## 🔗 Pour aller plus loin
+## Pour aller plus loin
 
 - [Multer Documentation](https://github.com/expressjs/multer)
 - [Cloudinary Documentation](https://cloudinary.com/documentation)
@@ -732,6 +734,6 @@ router.post(
 
 ---
 
-## ➡️ Prochaine étape
+## Prochaine étape
 
 Découvrez les [variables d'environnement](./variables-environnement.md) pour sécuriser vos configurations.

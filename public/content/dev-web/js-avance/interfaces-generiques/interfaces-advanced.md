@@ -925,33 +925,33 @@ class ReadOnlyRepository<T> implements Readable<T> {
 
 ## Résumé
 
-**📋 Interfaces :**
+**Interfaces :**
 - Définissent la structure des objets
 - Extension avec `extends`
 - Declaration merging unique aux interfaces
 - Préférer pour les APIs publiques
 
-**🆚 Interfaces vs Types :**
+**Interfaces vs Types :**
 - Interfaces : extension, declaration merging, objets
 - Types : unions, intersections, computed properties
 - Choisir selon le cas d'usage
 
-**🔑 Index Signatures :**
+**Index Signatures :**
 - `[key: string]: Type` pour dictionnaires
 - Compatible avec propriétés nommées
 - Template literal keys pour patterns
 
-**🔀 Declaration Merging :**
+**Declaration Merging :**
 - Fusionner plusieurs déclarations d'interface
 - Étendre types globaux (Window, Request, etc.)
 - Combiner avec namespaces
 
-**🎯 Interfaces Génériques :**
+**Interfaces Génériques :**
 - Type parameters avec `<T>`
 - Contraintes avec `extends`
 - Repository pattern, Builder pattern
 
-**🏗️ Patterns Avancés :**
+**Patterns Avancés :**
 - Mixins avec interfaces
 - Interface Segregation (SOLID)
 - Discriminated unions

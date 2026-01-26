@@ -1,14 +1,14 @@
 # Projet - Blog Personnel avec React
 
-## 🎯 Objectif
+## Objectif
 
 Créer une application de blog personnel complète en utilisant **React**. Ce projet intermédiaire vous permettra d'approfondir vos compétences React : routing, formulaires complexes, gestion d'état avancée, et communication avec une API backend (ou mock).
 
-## 📋 Description du Projet
+## Description du Projet
 
 Une application de blog où les utilisateurs peuvent lire des articles, et l'administrateur peut créer, modifier et supprimer des articles. Le projet couvre le cycle CRUD complet (Create, Read, Update, Delete) et introduit des concepts plus avancés comme le routing et la gestion de formulaires complexes.
 
-## 🎨 Contraintes Techniques
+## Contraintes Techniques
 
 ### Obligatoire
 - **React 18+** : Composants fonctionnels et hooks
@@ -27,7 +27,7 @@ Une application de blog où les utilisateurs peuvent lire des articles, et l'adm
 ### Pas de State Management Global (pour ce projet)
 - Pas de Redux, MobX, Zustand : utilisez Context API si nécessaire
 
-## 📝 Fonctionnalités Minimum Attendues
+## Fonctionnalités Minimum Attendues
 
 ### Fonctionnalités de Base (Obligatoires)
 
@@ -80,7 +80,7 @@ Une application de blog où les utilisateurs peuvent lire des articles, et l'adm
 - **Dark mode** : Toggle thème clair/sombre
 - **SEO** : Meta tags dynamiques (react-helmet)
 
-## 💡 Suggestions et Pistes
+## Suggestions et Pistes
 
 ### Structure de Routes
 
@@ -507,7 +507,7 @@ export const deletePost = (id) => {
 };
 ```
 
-## 🚀 Étapes Suggérées
+## Étapes Suggérées
 
 1. **Setup**
    - Créer le projet React avec Vite
@@ -548,14 +548,14 @@ export const deletePost = (id) => {
    - Commentaires
    - Filtres et recherche
 
-## 📦 Livrables
+## Livrables
 
 - **Projet React complet**
 - **README.md** avec instructions
 - **Screenshots** de l'application
 - **Documentation** des fonctionnalités implémentées
 
-## ✅ Critères d'Évaluation
+## Critères d'Évaluation
 
 - **Routing** : React Router bien configuré
 - **CRUD complet** : Create, Read, Update, Delete fonctionnels
@@ -565,7 +565,7 @@ export const deletePost = (id) => {
 - **Gestion d'état** : Mise à jour correcte des listes après CRUD
 - **Responsive** : Mobile-friendly
 
-## 🎓 Compétences Travaillées
+## Compétences Travaillées
 
 - **React Router** : Navigation, params, navigation programmatique
 - **Hooks avancés** : useParams, useNavigate, useLocation
@@ -575,7 +575,7 @@ export const deletePost = (id) => {
 - **Composition de composants** : Réutilisation, props drilling
 - **localStorage** : Alternative au backend
 
-## 📚 Ressources Utiles
+## Ressources Utiles
 
 - [React Router Documentation](https://reactrouter.com/)
 - [React Hook Form](https://react-hook-form.com/) (optionnel)
@@ -584,4 +584,4 @@ export const deletePost = (id) => {
 
 ---
 
-**Bon développement ! 📝**
+**Bon développement !**

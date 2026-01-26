@@ -4,14 +4,14 @@ Créez des formulaires interactifs avec validation en React.
 
 ---
 
-## 📚 Ce que vous allez apprendre
+## Ce que vous allez apprendre
 
 - Gérer les inputs contrôlés et non-contrôlés
 - Valider les données côté client
 - Utiliser React Hook Form
 - Afficher les erreurs de validation
 
-## ⚠️ Prérequis
+## Prérequis
 
 - [Hooks de base](../hooks/hooks-base.md) - useState
 - [Événements](../composants-jsx/evenements-rendu.md)
@@ -769,7 +769,7 @@ function ContactForm() {
 4. CGU obligatoire
 
 <details>
-<summary>💡 Solution avec Zod</summary>
+<summary>Solution avec Zod</summary>
 
 ```jsx
 import { useForm } from 'react-hook-form';
@@ -823,31 +823,33 @@ function RegisterForm() {
 
 ---
 
-## ✅ Quiz Rapide
+## Quiz Rapide
 
-1. Qu'est-ce qu'un input contrôlé ?
-   - A) Un input désactivé
-   - B) Un input dont React gère la valeur ✅
-   - C) Un input avec validation
+:::quiz
+Q: Qu'est-ce qu'un input contrôlé ?
+- [] Un input désactivé
+- [x] Un input dont React gère la valeur
+- [] Un input avec validation
 
-2. Quelle bibliothèque simplifie la gestion des formulaires ?
-   - A) React Forms
-   - B) React Hook Form ✅
-   - C) Formik (aussi valide, mais RHF est plus moderne)
+Q: Quelle bibliothèque simplifie la gestion des formulaires ?
+- [] React Forms
+- [x] React Hook Form
+- [] Formik (aussi valide, mais RHF est plus moderne)
 
-3. Comment empêcher le rechargement de page ?
-   - A) `e.stopPropagation()`
-   - B) `e.preventDefault()` ✅
-   - C) `return false`
+Q: Comment empêcher le rechargement de page ?
+- [] `e.stopPropagation()`
+- [x] `e.preventDefault()`
+- [] `return false`
 
-4. Quel prop utiliser pour une checkbox ?
-   - A) `value`
-   - B) `checked` ✅
-   - C) `selected`
+Q: Quel prop utiliser pour une checkbox ?
+- [] `value`
+- [x] `checked`
+- [] `selected`
+:::
 
 ---
 
-## 🔗 Pour aller plus loin
+## Pour aller plus loin
 
 - [React Hook Form](https://react-hook-form.com/)
 - [Zod Documentation](https://zod.dev/)
@@ -855,6 +857,6 @@ function RegisterForm() {
 
 ---
 
-## ➡️ Prochaine étape
+## Prochaine étape
 
 Découvrez le [State Management](../state-management/context-api.md) pour gérer l'état global de votre application.

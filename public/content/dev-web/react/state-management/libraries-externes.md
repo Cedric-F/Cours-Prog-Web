@@ -736,4 +736,4 @@ Créez une **App E-commerce** avec :
 
 ---
 
-**Prochaine étape** : [Patterns & Architecture](./patterns-architecture.md) ! 🏗️
+**Prochaine étape** : [Patterns & Architecture](./patterns-architecture.md) !

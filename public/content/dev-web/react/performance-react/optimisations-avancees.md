@@ -761,6 +761,4 @@ Optimisez une **App Dashboard** avec :
 
 ---
 
-🎉 **Félicitations** ! Vous maîtrisez maintenant les optimisations avancées de React ! 🚀
-
-**Prochaine étape** : Explorez [TypeScript](../../typescript/introduction.md) pour typer votre code ! 💙
+**Prochaine étape** : Explorez [TypeScript](../../typescript/introduction.md) pour typer votre code !

@@ -798,31 +798,31 @@ API_KEY=abc123
 
 ## Résumé
 
-**📦 Installation Node.js**
+**Installation Node.js**
 - Site officiel : LTS (production) vs Current (dev)
 - Windows : MSI, Chocolatey, Winget
 - macOS : PKG, Homebrew
 - Linux : NodeSource, gestionnaires de paquets
 
-**🔄 NVM : Version Manager**
+**NVM : Version Manager**
 - Gérer plusieurs versions simultanément
 - Basculer facilement : `nvm use 18`
 - .nvmrc pour spécifier la version par projet
 - Recommandé pour tous les développeurs
 
-**⚙️ Configuration**
+**Configuration**
 - Variables d'environnement avec .env
 - Configuration NPM (.npmrc)
 - VS Code : extensions et debugging
 - PM2 pour la production
 
-**🛠️ Outils Essentiels**
+**Outils Essentiels**
 - Nodemon : auto-restart en développement
 - PM2 : process manager en production
 - ESLint + Prettier : qualité de code
 - Debugging avec VS Code
 
-**✅ Bonnes Pratiques**
+**Bonnes Pratiques**
 - Utiliser NVM
 - Éviter sudo avec npm
 - .nvmrc pour chaque projet

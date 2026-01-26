@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 
 interface QuizQuestion {
   question: string;
@@ -12,13 +12,31 @@ interface QuizProps {
   questions: QuizQuestion[];
 }
 
+// Fisher-Yates shuffle algorithm
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 export default function Quiz({ questions }: QuizProps) {
+  // Shuffle questions and options on mount
+  const shuffledQuestions = useMemo(() => {
+    return shuffleArray(questions).map(q => ({
+      ...q,
+      options: shuffleArray(q.options)
+    }));
+  }, [questions]);
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<(number | null)[]>(
-    new Array(questions.length).fill(null)
+    new Array(shuffledQuestions.length).fill(null)
   );
   const [showResults, setShowResults] = useState<boolean[]>(
-    new Array(questions.length).fill(false)
+    new Array(shuffledQuestions.length).fill(false)
   );
   const [quizCompleted, setQuizCompleted] = useState(false);
 
@@ -39,7 +57,7 @@ export default function Quiz({ questions }: QuizProps) {
   };
 
   const handleNext = () => {
-    if (currentQuestion < questions.length - 1) {
+    if (currentQuestion < shuffledQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       setQuizCompleted(true);
@@ -54,13 +72,13 @@ export default function Quiz({ questions }: QuizProps) {
 
   const handleReset = () => {
     setCurrentQuestion(0);
-    setSelectedAnswers(new Array(questions.length).fill(null));
-    setShowResults(new Array(questions.length).fill(false));
+    setSelectedAnswers(new Array(shuffledQuestions.length).fill(null));
+    setShowResults(new Array(shuffledQuestions.length).fill(false));
     setQuizCompleted(false);
   };
 
   const getScore = () => {
-    return questions.reduce((score, q, index) => {
+    return shuffledQuestions.reduce((score, q, index) => {
       const selected = selectedAnswers[index];
       if (selected !== null && q.options[selected]?.isCorrect) {
         return score + 1;
@@ -69,13 +87,13 @@ export default function Quiz({ questions }: QuizProps) {
     }, 0);
   };
 
-  const question = questions[currentQuestion];
+  const question = shuffledQuestions[currentQuestion];
   const isAnswered = showResults[currentQuestion];
   const selectedIndex = selectedAnswers[currentQuestion];
 
   if (quizCompleted) {
     const score = getScore();
-    const percentage = Math.round((score / questions.length) * 100);
+    const percentage = Math.round((score / shuffledQuestions.length) * 100);
     
     return (
       <div className="my-8 p-6 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-900 rounded-xl border border-blue-200 dark:border-gray-700">
@@ -87,7 +105,7 @@ export default function Quiz({ questions }: QuizProps) {
             Quiz terminé !
           </h3>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-            Score : <span className="font-bold text-blue-600 dark:text-blue-400">{score}/{questions.length}</span> ({percentage}%)
+            Score : <span className="font-bold text-blue-600 dark:text-blue-400">{score}/{shuffledQuestions.length}</span> ({percentage}%)
           </p>
           <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 mb-6">
             <div
@@ -125,7 +143,7 @@ export default function Quiz({ questions }: QuizProps) {
           <span className="font-semibold text-gray-900 dark:text-white">Quiz</span>
         </div>
         <span className="text-sm text-gray-500 dark:text-gray-400">
-          Question {currentQuestion + 1}/{questions.length}
+          Question {currentQuestion + 1}/{shuffledQuestions.length}
         </span>
       </div>
 
@@ -133,7 +151,7 @@ export default function Quiz({ questions }: QuizProps) {
       <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1.5 mb-6">
         <div
           className="bg-blue-600 h-1.5 rounded-full transition-all duration-300"
-          style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
+          style={{ width: `${((currentQuestion + 1) / shuffledQuestions.length) * 100}%` }}
         />
       </div>
 
@@ -239,7 +257,7 @@ export default function Quiz({ questions }: QuizProps) {
               onClick={handleNext}
               className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
             >
-              {currentQuestion === questions.length - 1 ? 'Voir le score' : 'Suivant →'}
+              {currentQuestion === shuffledQuestions.length - 1 ? 'Voir le score' : 'Suivant →'}
             </button>
           )}
         </div>

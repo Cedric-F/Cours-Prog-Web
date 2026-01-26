@@ -1045,13 +1045,13 @@ app.listen(3000);
 
 ## Résumé
 
-**📦 NPM : Gestionnaire de Packages**
+**NPM : Gestionnaire de Packages**
 - Plus de 2 millions de packages disponibles
 - Commandes essentielles : install, update, uninstall, audit
 - `package.json` : configuration du projet
 - `package-lock.json` : versions verrouillées
 
-**🛠️ Packages Incontournables**
+**Packages Incontournables**
 - **Web :** Express, Fastify
 - **BDD :** Mongoose, Prisma
 - **Utilitaires :** dotenv, lodash, date-fns
@@ -1059,11 +1059,11 @@ app.listen(3000);
 - **Logging :** Winston, Morgan
 - **Sécurité :** Helmet, bcrypt
 
-**🔄 Alternatives à NPM**
+**Alternatives à NPM**
 - **Yarn :** Plus rapide, commandes simplifiées
 - **PNPM :** Économie d'espace, strict par défaut
 
-**🔧 Outils de Dev**
+**Outils de Dev**
 - **Nodemon :** Redémarrage automatique
 - **ESLint :** Linting du code
 - **Prettier :** Formatage automatique

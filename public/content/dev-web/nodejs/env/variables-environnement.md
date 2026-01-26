@@ -607,7 +607,7 @@ app.listen(process.env.PORT, () => {
 4. Exporter un objet structuré
 
 <details>
-<summary>💡 Solution</summary>
+<summary>Solution</summary>
 
 ```javascript
 // config/index.js

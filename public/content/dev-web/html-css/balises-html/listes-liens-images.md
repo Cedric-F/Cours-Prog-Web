@@ -576,25 +576,31 @@ L'attribut `alt` est **essentiel** pour :
 
 ## Quiz de vérification
 
-1. Quelle balise crée une liste non ordonnée ?
-   - A) `<ol>`
-   - B) `<ul>` ✅
-   - C) `<list>`
+:::quiz
+Q: Quelle balise crée une liste non ordonnée ?
+- [] `<ol>`
+- [x] `<ul>`
+- [] `<list>`
+> `<ul>` pour "unordered" list.
 
-2. Quel attribut rend une image accessible ?
-   - A) `title`
-   - B) `alt` ✅
-   - C) `src`
+Q: Quel attribut rend une image accessible ?
+- [] `title`
+- [x] `alt`
+- [] `src`
+> `alt` signifie "alternative". C'est le texte qui s'affiche lorsque l'image ne peut pas être chargé, et qui est lu par les screen readers.
 
-3. Comment ouvrir un lien dans un nouvel onglet ?
-   - A) `href="_new"`
-   - B) `target="_blank"` ✅
-   - C) `open="new"`
+Q: Comment ouvrir un lien dans un nouvel onglet ?
+- [] `href="_new"`
+- [x] `target="_blank"`
+- [] `open="new"`
+> On utilise l'attribut "target".
 
-4. Quelle balise contient les en-têtes d'un tableau ?
-   - A) `<thead>` ✅
-   - B) `<th>`
-   - C) `<header>`
+Q: Quelle balise contient les en-têtes d'un tableau ?
+- [x] `<thead>`
+- [] `<th>`
+- [] `<header>`
+> `<thead>` est la balise sémantique qui contient la ligne d'en-têtes.
+:::quiz
 
 ---
 

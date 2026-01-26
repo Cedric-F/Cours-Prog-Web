@@ -874,32 +874,32 @@ type AllPaths = Paths<NestedObject>;
 
 ## Résumé
 
-**🔄 Variance :**
+**Variance :**
 - **Covariance** : Type plus spécifique → plus général (return types)
 - **Contravariance** : Type plus général → plus spécifique (parameters)
 - **Invariance** : Pas de conversion (mutable structures)
 
-**🎯 Contraintes Avancées :**
+**Contraintes Avancées :**
 - `keyof T` pour accès type-safe
 - Conditional constraints avec `extends`
 - Contraintes récursives pour structures imbriquées
 
-**🚀 Higher-Order Generics :**
+**Higher-Order Generics :**
 - Generics retournant des generics
 - Currying et composition
 - Generic methods dans generic classes
 
-**🔀 Conditional Types :**
+**Conditional Types :**
 - Distributive conditional types
 - `infer` pour extraction de types
 - Filtrage d'union types
 
-**🛠️ Utility Types Personnalisés :**
+**Utility Types Personnalisés :**
 - DeepPartial, DeepReadonly, DeepMutable
 - PickByType, OmitByType
 - RequiredKeys, OptionalKeys
 
-**🎨 Patterns Avancés :**
+**Patterns Avancés :**
 - Type-safe Redux actions
 - Generic query builders
 - Form validation type-safe

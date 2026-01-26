@@ -887,22 +887,22 @@ for (let i = 0; i < 5; i++) {
 
 ## Résumé
 
-**🏗️ Architecture de Node.js :**
+**Architecture de Node.js :**
 - V8 (moteur JavaScript) + libuv (Event Loop et I/O)
 - Single-thread pour JavaScript, multi-threads pour I/O
 - Thread Pool (4 threads par défaut) pour opérations CPU-intensive
 
-**⚡ I/O Non-Bloquant :**
+**I/O Non-Bloquant :**
 - Permet des milliers de connexions simultanées
 - Opérations asynchrones gérées par libuv
 - Optimal pour applications I/O-intensive (APIs, real-time)
 
-**📦 Système de Modules :**
+**Système de Modules :**
 - CommonJS (require/module.exports) - standard actuel
 - ES Modules (import/export) - support moderne
 - Cache des modules pour optimiser les performances
 
-**🔧 Modules Core Essentiels :**
+**Modules Core Essentiels :**
 - `process` : Informations et contrôle du processus
 - `Buffer` : Manipulation de données binaires
 - `fs`, `http`, `crypto`, `path`, etc.

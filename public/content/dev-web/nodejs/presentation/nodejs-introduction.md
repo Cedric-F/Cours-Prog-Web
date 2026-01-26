@@ -831,21 +831,21 @@ processFile();
 
 Node.js est un environnement d'exécution JavaScript côté serveur qui révolutionne le développement web. Voici les points clés :
 
-**🎯 Points Essentiels :**
+**Points Essentiels :**
 - Runtime JavaScript basé sur le moteur V8 de Chrome
 - Architecture événementielle et non-bloquante
 - JavaScript côté client ET serveur (full-stack JS)
 - Event Loop : gestion intelligente des opérations asynchrones
 - Performances exceptionnelles pour les applications I/O intensives
 
-**⚙️ Concepts Techniques :**
+**Concepts Techniques :**
 - V8 : compilation JIT, optimisations dynamiques
 - Event Loop : phases (timers, poll, check, close)
 - Microtasks vs Macrotasks : ordre d'exécution
 - Non-blocking I/O : plusieurs opérations simultanées
 - APIs Node.js : process, Buffer, modules système
 
-**🚀 Premier Pas :**
+**Premier Pas :**
 - Serveur HTTP minimal en quelques lignes
 - Approche asynchrone avec callbacks, Promises, async/await
 - Différences avec l'environnement navigateur

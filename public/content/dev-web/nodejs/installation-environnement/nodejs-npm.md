@@ -802,37 +802,37 @@ npm config list -l
 
 ## Résumé
 
-**📦 NPM Basics :**
+**NPM Basics :**
 - `npm init` : Initialiser un projet
 - `npm install` : Installer les dépendances
 - `npm install <package>` : Installer un package
 - `package.json` : Manifest du projet
 
-**📝 Scripts :**
+**Scripts :**
 - Définir dans `"scripts": {}`
 - Exécuter avec `npm run <script>`
 - Hooks : pre/post scripts
 
-**🔒 Lockfile :**
+**Lockfile :**
 - `package-lock.json` : Versions exactes
 - `npm ci` : Installation reproductible
 - Commit dans Git
 
-**🔐 Sécurité :**
+**Sécurité :**
 - `npm audit` : Vérifier les vulnérabilités
 - `npm audit fix` : Corriger automatiquement
 - Vérifier les packages avant installation
 
-**🚀 Alternatives :**
+**Alternatives :**
 - **Yarn** : Plus rapide que npm
 - **pnpm** : Très rapide, économe en espace
 
-**📤 Publication :**
+**Publication :**
 - `npm publish` : Publier un package
 - Semantic versioning
 - .npmignore pour exclure fichiers
 
-**⚡ Optimisation :**
+**Optimisation :**
 - `npm ci` pour CI/CD
 - `--production` pour production
 - pnpm pour économiser de l'espace

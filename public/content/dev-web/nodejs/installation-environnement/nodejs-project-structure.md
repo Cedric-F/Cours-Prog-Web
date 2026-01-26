@@ -887,44 +887,44 @@ my-app/
 
 ## Résumé
 
-**📁 Structure Simple :**
+**Structure Simple :**
 - `src/` : Code source
 - `tests/` : Tests
 - `.env` : Variables d'environnement
 - Convient pour petits projets
 
-**🏗️ Structure MVC :**
+**Structure MVC :**
 - **Models** : Données
 - **Views** : (API REST dans Node.js)
 - **Controllers** : Logique de présentation
 - Convient pour applications moyennes
 
-**🏢 Architecture en Couches :**
+**Architecture en Couches :**
 - **Controllers** : Requêtes HTTP
 - **Services** : Logique métier
 - **Repositories** : Accès données
 - **Models** : Définition des entités
 - Convient pour grandes applications
 
-**⚙️ Configuration :**
+**Configuration :**
 - `.env` pour variables d'environnement
 - `config/` pour configuration centralisée
 - Différents environnements (dev, test, prod)
 
-**📝 Fichiers Essentiels :**
+**Fichiers Essentiels :**
 - `.gitignore` : Exclure fichiers
 - `.eslintrc` : Linting
 - `.prettierrc` : Formatting
 - `jest.config.js` : Tests
 
-**🎯 Bonnes Pratiques :**
+**Bonnes Pratiques :**
 - **Separation of Concerns** : Chaque module a une responsabilité
 - **DRY** : Don't Repeat Yourself
 - **Dependency Injection** : Facilite les tests
 - **Error Handling** : Gestion centralisée des erreurs
 - **TypeScript** : Types pour sécurité
 
-**🚀 Scalabilité :**
+**Scalabilité :**
 - Versioning API (`/api/v1`, `/api/v2`)
 - Microservices si nécessaire
 - Domain-Driven Design pour grandes apps

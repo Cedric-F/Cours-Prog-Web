@@ -869,39 +869,39 @@ config.set('apiUrl', 'https://api.example.com');
 
 ## Résumé
 
-**📦 ES Modules :**
+**ES Modules :**
 - `import`/`export` pour modules ES6
 - Default et named exports
 - Re-exports et barrel files
 - Dynamic imports pour lazy loading
 
-**🔍 Module Resolution :**
+**Module Resolution :**
 - Stratégies : classic, node, nodenext
 - Path mapping avec `baseUrl` et `paths`
 - Root directories
 
-**🏢 Namespaces :**
+**Namespaces :**
 - Organisation hiérarchique
 - Namespaces imbriqués et aliases
 - Merging de namespaces
 - ⚠️ Préférer modules pour code applicatif
 
-**🌐 Ambient Modules :**
+**Ambient Modules :**
 - Declaration files (`.d.ts`)
 - Wildcard modules (`*.css`, `*.png`)
 - Global augmentation
 
-**🔧 Module Augmentation :**
+**Module Augmentation :**
 - Étendre modules existants
 - Plugin pattern type-safe
 - Interface augmentation
 
-**📝 Formats de Module :**
+**Formats de Module :**
 - CommonJS, AMD, UMD, ES Modules
 - Configuration dans `tsconfig.json`
 - Compatibilité Node.js
 
-**🎯 Patterns :**
+**Patterns :**
 - Plugin system
 - Facade pattern
 - Singleton module
