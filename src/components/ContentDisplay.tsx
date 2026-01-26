@@ -15,9 +15,10 @@ interface ContentDisplayProps {
   onScrollToBottom: () => void;
 }
 
-// Calculate reading time based on word count (average 180 words/min for technical content)
+// Calculate reading time based on word count
+// TODO: rendre configurable ? 180 mots/min c'est peut-être trop optimiste
 function calculateReadingTime(content: string): number {
-  const wordsPerMinute = 180;
+  const wordsPerMinute = 180; // moyenne pour du contenu technique
   const text = content.replace(/```[\s\S]*?```/g, ''); // Remove code blocks
   const wordCount = text.split(/\s+/).filter(word => word.length > 0).length;
   return Math.max(1, Math.ceil(wordCount / wordsPerMinute));

@@ -12,7 +12,8 @@ interface QuizProps {
   questions: QuizQuestion[];
 }
 
-// Fisher-Yates shuffle algorithm
+// Fisher-Yates shuffle - le plus fiable pour ça
+// (j'avais testé sort(() => Math.random() - 0.5) mais c'est biaisé)
 function shuffleArray<T>(array: T[]): T[] {
   const shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {

@@ -7,14 +7,7 @@ import { getAllNavigationItems, isSectionRead, getProgressPercentage } from '@/u
 import structure from '@/data/structure.json';
 import { useFavorites } from '@/hooks/useFavorites';
 
-// Icônes pour chaque axe
-const axisIcons: Record<string, string> = {
-  'les-bases': '🌐',
-  'frontend-avance': '⚛️',
-  'backend': '🖥️',
-  'devops': '🚀',
-};
-
+// Couleurs par axe - c'est un peu répétitif mais plus lisible que des computed styles
 const axisColors: Record<string, { bg: string; border: string; text: string; darkBg: string; darkBorder: string; darkText: string }> = {
   'les-bases': { bg: 'bg-blue-50', border: 'border-blue-200', text: 'text-blue-700', darkBg: 'dark:bg-blue-900/30', darkBorder: 'dark:border-blue-700', darkText: 'dark:text-blue-300' },
   'frontend-avance': { bg: 'bg-purple-50', border: 'border-purple-200', text: 'text-purple-700', darkBg: 'dark:bg-purple-900/30', darkBorder: 'dark:border-purple-700', darkText: 'dark:text-purple-300' },
@@ -265,7 +258,6 @@ export default function HomePage() {
           {structure.axes.map((axis: any) => {
             const axisProgress = getAxisProgress(axis.id);
             const colors = axisColors[axis.id] || axisColors['les-bases'];
-            const icon = axisIcons[axis.id] || '📚';
             
             // Premier chapitre/section de l'axe
             const firstChapter = axis.chapters[0];
@@ -280,9 +272,6 @@ export default function HomePage() {
                 className={`p-4 rounded-lg bg-white dark:bg-gray-800 border ${colors.border} ${colors.darkBorder} hover:shadow-md dark:hover:shadow-gray-900/50 transition-all group`}
               >
                 <div className="flex items-start gap-3">
-                  <div className={`text-2xl p-2 rounded-lg ${colors.bg} ${colors.darkBg}`}>
-                    {icon}
-                  </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="font-semibold text-base text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">
                       {axis.name}
