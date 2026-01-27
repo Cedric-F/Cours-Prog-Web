@@ -257,6 +257,17 @@
               "file": "dev-web/error-handling/logging-monitoring.md"
             }
           ]
+        },
+        {
+          "id": "bonnes-pratiques",
+          "name": "Bonnes Pratiques",
+          "sections": [
+            {
+              "id": "documentation",
+              "name": "Documentation & README",
+              "file": "dev-web/bonnes-pratiques/documentation.md"
+            }
+          ]
         }
       ]
     },
