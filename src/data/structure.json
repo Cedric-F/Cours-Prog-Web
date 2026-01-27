@@ -533,6 +533,11 @@
               "id": "owasp-top10",
               "name": "OWASP Top 10",
               "file": "dev-web/securite/owasp-top10.md"
+            },
+            {
+              "id": "https-certificats",
+              "name": "HTTPS & Certificats",
+              "file": "dev-web/securite/https-certificats.md"
             }
           ]
         }
