@@ -2,7 +2,7 @@
   "axes": [
     {
       "id": "les-bases",
-      "name": "Les Bases du Frontend",
+      "name": "Les Bases",
       "chapters": [
         {
           "id": "fondamentaux",
@@ -255,6 +255,17 @@
               "id": "logging-monitoring",
               "name": "Logging et monitoring",
               "file": "dev-web/error-handling/logging-monitoring.md"
+            }
+          ]
+        },
+        {
+          "id": "bonnes-pratiques",
+          "name": "Bonnes Pratiques",
+          "sections": [
+            {
+              "id": "documentation",
+              "name": "Documentation & README",
+              "file": "dev-web/bonnes-pratiques/documentation.md"
             }
           ]
         }
