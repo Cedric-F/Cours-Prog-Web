@@ -528,6 +528,11 @@
               "id": "cors",
               "name": "CORS en détail",
               "file": "dev-web/securite/cors.md"
+            },
+            {
+              "id": "owasp-top10",
+              "name": "OWASP Top 10",
+              "file": "dev-web/securite/owasp-top10.md"
             }
           ]
         }
