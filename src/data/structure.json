@@ -86,6 +86,22 @@
               "id": "accessibilite",
               "name": "Accessibilité (a11y)",
               "file": "dev-web/html-css/accessibilite.md"
+            },
+            {
+              "id": "tailwind",
+              "name": "Tailwind CSS",
+              "subsections": [
+                {
+                  "id": "tailwind-introduction",
+                  "name": "Introduction à Tailwind",
+                  "file": "dev-web/tailwind/introduction.md"
+                },
+                {
+                  "id": "tailwind-avance",
+                  "name": "Techniques avancées",
+                  "file": "dev-web/tailwind/avance.md"
+                }
+              ]
             }
           ]
         },
