@@ -189,6 +189,32 @@
               "file": "dev-web/git/github-collaboration.md"
             }
           ]
+        },
+        {
+          "id": "debugging",
+          "name": "Debugging & DevTools",
+          "sections": [
+            {
+              "id": "console-bases",
+              "name": "Console : Au-delà de console.log",
+              "file": "dev-web/debugging/console-bases.md"
+            },
+            {
+              "id": "breakpoints-debugger",
+              "name": "Breakpoints et Debugger",
+              "file": "dev-web/debugging/breakpoints-debugger.md"
+            },
+            {
+              "id": "network-tab",
+              "name": "Network Tab : Analyser les requêtes",
+              "file": "dev-web/debugging/network-tab.md"
+            },
+            {
+              "id": "elements-styles",
+              "name": "Elements & Styles : Inspecter le DOM",
+              "file": "dev-web/debugging/elements-styles.md"
+            }
+          ]
         }
       ]
     },
