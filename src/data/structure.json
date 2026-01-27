@@ -187,6 +187,11 @@
               "id": "github-collaboration",
               "name": "GitHub & Collaboration",
               "file": "dev-web/git/github-collaboration.md"
+            },
+            {
+              "id": "code-review",
+              "name": "Code Review",
+              "file": "dev-web/bonnes-pratiques/code-review.md"
             }
           ]
         }
