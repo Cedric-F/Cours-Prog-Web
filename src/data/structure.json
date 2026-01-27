@@ -519,6 +519,17 @@
               "file": "dev-web/nodejs/docker/docker-basics.md"
             }
           ]
+        },
+        {
+          "id": "securite",
+          "name": "Sécurité Web",
+          "sections": [
+            {
+              "id": "cors",
+              "name": "CORS en détail",
+              "file": "dev-web/securite/cors.md"
+            }
+          ]
         }
       ]
     },
