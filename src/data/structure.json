@@ -189,6 +189,27 @@
               "file": "dev-web/git/github-collaboration.md"
             }
           ]
+        },
+        {
+          "id": "error-handling",
+          "name": "Gestion des Erreurs",
+          "sections": [
+            {
+              "id": "try-catch",
+              "name": "Try/Catch et exceptions",
+              "file": "dev-web/error-handling/try-catch.md"
+            },
+            {
+              "id": "error-boundaries",
+              "name": "Error Boundaries en React",
+              "file": "dev-web/error-handling/error-boundaries.md"
+            },
+            {
+              "id": "logging-monitoring",
+              "name": "Logging et monitoring",
+              "file": "dev-web/error-handling/logging-monitoring.md"
+            }
+          ]
         }
       ]
     },
