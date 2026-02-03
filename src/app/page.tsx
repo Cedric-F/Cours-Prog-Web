@@ -136,7 +136,7 @@ export default function HomePage() {
   return (
     <div className="min-h-full bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-r from-slate-800 via-indigo-800 to-slate-800 bg-[length:200%_100%] animate-gradient text-white">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-50"></div>
         <div className="relative max-w-6xl mx-auto px-6 py-8">
           <div className="text-center">
