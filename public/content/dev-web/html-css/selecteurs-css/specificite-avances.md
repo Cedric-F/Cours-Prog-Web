@@ -545,6 +545,4 @@ body div.container div.content article.post p.paragraph { }
 
 ---
 
-**Félicitations ! 🎉** Vous maîtrisez maintenant les sélecteurs CSS de fond en comble !
-
-**Prochaine section** : Flexbox pour des layouts modernes ! 📐
+**Prochaine section** : Flexbox pour des layouts modernes !

@@ -704,24 +704,24 @@ router.post(
 
 :::quiz
 Q: Quel package gère l'upload de fichiers avec Express ?
-- [] express-upload
+- [ ] express-upload
 - [x] multer
-- [] formidable
+- [ ] formidable
 
 Q: Comment envoyer un fichier depuis le client ?
-- [] JSON.stringify()
+- [ ] JSON.stringify()
 - [x] FormData
-- [] Base64
+- [ ] Base64
 
 Q: Quel package permet le redimensionnement d'images ?
-- [] jimp
+- [ ] jimp
 - [x] sharp
-- [] imagemagick
+- [ ] imagemagick
 
 Q: Pourquoi utiliser le stockage cloud ?
-- [] C'est moins cher
+- [ ] C'est moins cher
 - [x] CDN + réplication + transformations
-- [] C'est obligatoire
+- [ ] C'est obligatoire
 :::
 
 ---

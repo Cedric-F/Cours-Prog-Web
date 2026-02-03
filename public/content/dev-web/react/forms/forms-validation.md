@@ -827,24 +827,24 @@ function RegisterForm() {
 
 :::quiz
 Q: Qu'est-ce qu'un input contrôlé ?
-- [] Un input désactivé
+- [ ] Un input désactivé
 - [x] Un input dont React gère la valeur
-- [] Un input avec validation
+- [ ] Un input avec validation
 
 Q: Quelle bibliothèque simplifie la gestion des formulaires ?
-- [] React Forms
+- [ ] React Forms
 - [x] React Hook Form
-- [] Formik (aussi valide, mais RHF est plus moderne)
+- [ ] Formik (aussi valide, mais RHF est plus moderne)
 
 Q: Comment empêcher le rechargement de page ?
-- [] `e.stopPropagation()`
+- [ ] `e.stopPropagation()`
 - [x] `e.preventDefault()`
-- [] `return false`
+- [ ] `return false`
 
 Q: Quel prop utiliser pour une checkbox ?
-- [] `value`
+- [ ] `value`
 - [x] `checked`
-- [] `selected`
+- [ ] `selected`
 :::
 
 ---

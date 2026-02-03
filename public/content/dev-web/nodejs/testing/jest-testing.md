@@ -630,7 +630,7 @@ test('returns user by id', async () => {
 
 ---
 
-## 🏋️ Exercice Pratique
+## Exercice Pratique
 
 **Objectif** : Tester une fonction de validation
 

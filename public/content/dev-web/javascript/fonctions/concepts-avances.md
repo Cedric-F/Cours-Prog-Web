@@ -732,7 +732,7 @@ for (var i = 0; i < 3; i++) {
 
 ## Exercice pratique
 
-### 🎯 Fonctions avancées
+### Fonctions avancées
 
 Créez `advanced-functions-exercise.js` :
 

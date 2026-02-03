@@ -631,7 +631,7 @@ button.addEventListener('click', () => { }); // ❌ Impossible à retirer
 
 ## Exercice pratique
 
-### 🎯 Application interactive
+### Application interactive
 
 Créez `events-exercise.html` :
 

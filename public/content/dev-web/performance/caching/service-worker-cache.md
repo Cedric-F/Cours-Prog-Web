@@ -490,7 +490,7 @@ async function cleanExpiredCache(cacheName, maxAge) {
     
     if ((now - cachedDate) / 1000 > maxAge) {
       await cache.delete(request);
-      console.log('🗑️ Cache expiré:', request.url);
+      console.log('Cache expiré:', request.url);
     }
   }
 }

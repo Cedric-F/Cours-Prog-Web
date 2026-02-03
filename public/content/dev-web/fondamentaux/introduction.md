@@ -70,20 +70,22 @@ Dans les sections suivantes, nous explorerons :
 
 ## Quiz de vérification
 
+:::quiz
 1. Quels sont les trois piliers du développement web front-end ?
-   - A) PHP, MySQL, Apache
-   - B) HTML, CSS, JavaScript ✅
-   - C) React, Vue, Angular
+- [ ] PHP, MySQL, Apache
+- [x] HTML, CSS, JavaScript ✅
+- [ ] React, Vue, Angular
 
 2. Que signifie "full-stack" ?
-   - A) Uniquement le front-end
-   - B) Uniquement le back-end
-   - C) Front-end et back-end combinés ✅
+- [ ] Uniquement le front-end
+- [ ] Uniquement le back-end
+- [x] Front-end et back-end combinés ✅
 
 3. Quel langage gère la structure d'une page web ?
-   - A) CSS
-   - B) JavaScript
-   - C) HTML ✅
+- [ ] CSS
+- [ ] JavaScript
+- [x] HTML ✅
+:::
 
 ---
 

@@ -759,7 +759,7 @@ promise
 
 ## Exercice pratique
 
-### 🎯 API Client avec retry et cache
+### API Client avec retry et cache
 
 Créez `api-client.js` :
 

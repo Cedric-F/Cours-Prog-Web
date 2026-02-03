@@ -721,7 +721,7 @@ textarea::placeholder {
 
 ## Exercice pratique
 
-### 🎯 Créez un formulaire avec validations visuelles
+### Créez un formulaire avec validations visuelles
 
 Créez `form-validation.html` avec :
 

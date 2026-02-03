@@ -673,7 +673,7 @@ function Modal({ isOpen, children }) {
 
 ---
 
-## 🏋️ Exercice Pratique
+## Exercice Pratique
 
 **Objectif** : Auditer et corriger l'accessibilité d'une page
 

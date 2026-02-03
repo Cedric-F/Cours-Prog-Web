@@ -18,7 +18,7 @@ Découvrez les bases de données relationnelles comme alternative à MongoDB.
 
 ---
 
-## SQL vs NoSQL
+## SQL vs NoSQL (récap)
 
 ### Quand choisir SQL ?
 
@@ -694,20 +694,22 @@ const { rows } = await pool.query(`
 
 ## Quiz Rapide
 
+:::quiz
 Q: Quel type pour un prix en SQL ?
-- [] `FLOAT`
+- [ ] `FLOAT`
 - [x] `DECIMAL(10,2)`
-- [] `INTEGER`
+- [ ] `INTEGER`
 
 Q: Comment éviter l'injection SQL ?
-- [] Échapper les guillemets
+- [ ] Échapper les guillemets
 - [x] Paramètres préparés ($1, $2...)
-- [] Valider côté client
+- [ ] Valider côté client
 
 Q: Que fait `RETURNING *` ?
-- [] Annule la requête
+- [ ] Annule la requête
 - [x] Retourne les lignes affectées
-- [] Commit la transaction
+- [ ] Commit la transaction
+:::
 
 ---
 

@@ -868,4 +868,4 @@ Créez un dashboard avec :
 
 ---
 
-**Prochaine sous-section** : Programmation Asynchrone ! 🚀
+**Prochaine sous-section** : Programmation Asynchrone !

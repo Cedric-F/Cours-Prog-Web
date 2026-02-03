@@ -707,24 +707,24 @@ Hérite de la grille parent.
 
 :::quiz
 Q: Quelle propriété définit les colonnes d'une grille ?
-- [] `grid-columns`
+- [ ] `grid-columns`
 - [x] `grid-template-columns`
-- [] `columns`
+- [ ] `columns`
 
 Q: Que signifie `1fr` ?
-- [] 1 pixel fixe
+- [ ] 1 pixel fixe
 - [x] Une fraction de l'espace disponible
-- [] 1% de la largeur
+- [ ] 1% de la largeur
 
 Q: Comment faire une grille responsive automatiquement ?
 - [x] `repeat(auto-fit, minmax(250px, 1fr))`
-- [] `repeat(3, 1fr)`
-- [] `grid-auto-columns: auto`
+- [ ] `repeat(3, 1fr)`
+- [ ] `grid-auto-columns: auto`
 
 Q: Quelle propriété fait occuper plusieurs colonnes à un item ?
-- [] `grid-width: 2`
+- [ ] `grid-width: 2`
 - [x] `grid-column: span 2`
-- [] `column-span: 2`
+- [ ] `column-span: 2`
 :::
 
 ---

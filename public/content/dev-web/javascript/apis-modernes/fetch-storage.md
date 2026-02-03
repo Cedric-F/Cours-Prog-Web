@@ -892,24 +892,24 @@ app.fetchFromAPI().then(notes => {
 
 :::quiz
 Q: Quelle méthode convertit la réponse en JSON ?
-   - [] `response.text()`
+   - [ ] `response.text()`
    - [x] `response.json()` ✅
-   - [] `JSON.parse(response)`
+   - [ ] `JSON.parse(response)`
 
 Q: Quand `fetch()` rejette-t-il la Promise ?
-   - [] Sur erreur HTTP (404, 500)
+   - [ ] Sur erreur HTTP (404, 500)
    - [x] Sur erreur réseau uniquement ✅
-   - [] Jamais
+   - [ ] Jamais
 
 Q: Quelle est la différence localStorage vs sessionStorage ?
-   - [] localStorage est plus rapide
+   - [ ] localStorage est plus rapide
    - [x] sessionStorage expire à la fermeture du navigateur ✅
-   - [] Aucune différence
+   - [ ] Aucune différence
 
 Q: Comment envoyer du JSON avec POST ?
-   - [] `body: data`
+   - [ ] `body: data`
    - [x] `body: JSON.stringify(data)` avec header Content-Type ✅
-   - [] `json: data`
+   - [ ] `json: data`
 :::
 
 ---

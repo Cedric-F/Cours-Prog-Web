@@ -764,24 +764,24 @@ function ProtectedRoute({ children }) {
 
 :::quiz
 Q: Quel composant permet la navigation sans rechargement ?
-- [] `<a>`
+- [ ] `<a>`
 - [x] `<Link>`
-- [] `<Button>`
+- [ ] `<Button>`
 
 Q: Quel hook récupère les paramètres d'URL ?
 - [x] `useParams()`
-- [] `useQuery()`
-- [] `useURL()`
+- [ ] `useQuery()`
+- [ ] `useURL()`
 
 Q: Comment afficher les routes enfants ?
-- [] `<Children />`
+- [ ] `<Children />`
 - [x] `<Outlet />`
-- [] `{children}`
+- [ ] `{children}`
 
 Q: Quelle route gère les pages 404 ?
-- [] `path="/404"`
+- [ ] `path="/404"`
 - [x] `path="*"`
-- [] `path="/not-found"`
+- [ ] `path="/not-found"`
 :::
 
 ---

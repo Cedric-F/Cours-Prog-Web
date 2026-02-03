@@ -559,7 +559,7 @@ function calculate(a, b) {
 
 ## Exercice pratique
 
-### 🎯 Créer des fonctions utilitaires
+### Créer des fonctions utilitaires
 
 Créez `functions-basics-exercise.js` :
 

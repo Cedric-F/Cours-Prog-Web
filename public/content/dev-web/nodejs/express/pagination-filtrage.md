@@ -695,19 +695,19 @@ Product.find({ $text: { $search: 'laptop' } });
 
 :::quiz
 Q: Quelle méthode Mongoose saute N documents ?
-- [] `offset()`
+- [ ] `offset()`
 - [x] `skip()`
-- [] `jump()`
+- [ ] `jump()`
 
 Q: Pourquoi limiter le `limit` maximum ?
-- [] Pour le style
+- [ ] Pour le style
 - [x] Éviter de surcharger le serveur
-- [] MongoDB l'exige
+- [ ] MongoDB l'exige
 
 Q: Quel type de pagination est meilleur pour l'infinite scroll ?
-- [] Offset
+- [ ] Offset
 - [x] Cursor
-- [] Les deux sont égaux
+- [ ] Les deux sont égaux
 :::
 
 ---

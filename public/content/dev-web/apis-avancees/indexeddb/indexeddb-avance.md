@@ -685,6 +685,4 @@ Créez une **application de blog offline-first** avec :
 
 ---
 
-🎉 **Félicitations** ! Vous maîtrisez IndexedDB ! 🚀
-
 **Prochaine étape** : [Web Vitals](../performance/metriques-optimisation/web-vitals.md) pour la performance !
