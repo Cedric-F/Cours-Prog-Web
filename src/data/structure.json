@@ -920,6 +920,11 @@
                   "id": "board-games",
                   "name": "Jeux de plateau en ligne",
                   "file": "dev-web/projets/sujets/board-games.md"
+                },
+                {
+                  "id": "clones",
+                  "name": "Clones d'applications",
+                  "file": "dev-web/projets/sujets/clones.md"
                 }
               ]
             }
