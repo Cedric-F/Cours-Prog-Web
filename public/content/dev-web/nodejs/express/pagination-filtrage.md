@@ -13,8 +13,8 @@ Implémentez la pagination et le filtrage pour vos API REST avec de grandes coll
 
 ## Prérequis
 
-- [Création d'API REST](./api-rest.md)
-- [MongoDB & Mongoose](../databases/mongodb-base.md)
+- [Création d'API REST](./api-rest)
+- [MongoDB & Mongoose](../databases/mongodb-base)
 
 ---
 
@@ -695,19 +695,19 @@ Product.find({ $text: { $search: 'laptop' } });
 
 :::quiz
 Q: Quelle méthode Mongoose saute N documents ?
-- [] `offset()`
+- [ ] `offset()`
 - [x] `skip()`
-- [] `jump()`
+- [ ] `jump()`
 
 Q: Pourquoi limiter le `limit` maximum ?
-- [] Pour le style
+- [ ] Pour le style
 - [x] Éviter de surcharger le serveur
-- [] MongoDB l'exige
+- [ ] MongoDB l'exige
 
 Q: Quel type de pagination est meilleur pour l'infinite scroll ?
-- [] Offset
+- [ ] Offset
 - [x] Cursor
-- [] Les deux sont égaux
+- [ ] Les deux sont égaux
 :::
 
 ---
@@ -721,4 +721,4 @@ Q: Quel type de pagination est meilleur pour l'infinite scroll ?
 
 ## Prochaine étape
 
-Découvrez l'[Upload de fichiers](../files/upload-fichiers.md) pour gérer les images de vos produits.
+Découvrez l'[Upload de fichiers](../files/upload-fichiers) pour gérer les images de vos produits.

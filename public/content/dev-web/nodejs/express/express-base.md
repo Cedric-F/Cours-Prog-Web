@@ -13,9 +13,9 @@ Express.js est le framework web minimaliste et flexible le plus populaire pour N
 
 ## Prérequis
 
-- [Node.js - Installation](../installation-environnement/nodejs-installation.md)
-- [Node.js - NPM](../installation-environnement/nodejs-npm.md)
-- [JavaScript - Fonctions](../../javascript/fonctions/bases-fonctions.md)
+- [Node.js - Installation](../installation-environnement/nodejs-installation)
+- [Node.js - NPM](../installation-environnement/nodejs-npm)
+- [JavaScript - Fonctions](../../javascript/fonctions/bases-fonctions)
 
 ---
 
@@ -529,4 +529,4 @@ Q: Comment définir le code de statut HTTP ?
 
 ## Prochaine étape
 
-Découvrez les [Middleware & Routing](./middleware-routing.md) pour structurer votre application.
+Découvrez les [Middleware & Routing](./middleware-routing) pour structurer votre application.

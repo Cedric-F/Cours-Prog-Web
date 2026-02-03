@@ -13,8 +13,8 @@ Apprenez à optimiser vos composants avec **React.memo**, **useMemo** et **useCa
 
 ## Prérequis
 
-- [React - Hooks](../hooks/hooks-base.md)
-- [React - Composants](../composants-jsx/jsx-composants-base.md)
+- [React - Hooks](../hooks/hooks-base)
+- [React - Composants](../composants-jsx/jsx-composants-base)
 
 ---
 
@@ -687,4 +687,4 @@ Q: Pourquoi `useCallback` pour une fonction passée en prop ?
 
 ## Prochaine étape
 
-Découvrez le [Code Splitting](./code-splitting.md) pour réduire la taille du bundle.
+Découvrez le [Code Splitting](./code-splitting) pour réduire la taille du bundle.

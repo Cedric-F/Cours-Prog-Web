@@ -515,4 +515,4 @@ Créez une **galerie d'images lazy-loaded** avec :
 
 ---
 
-**Prochaine étape** : [Code Splitting](./code-splitting.md) pour optimiser vos bundles JS !
+**Prochaine étape** : [Code Splitting](./code-splitting) pour optimiser vos bundles JS !

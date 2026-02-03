@@ -13,7 +13,7 @@ Maîtrisez les bases de JavaScript : déclaration de variables, types primitifs,
 
 ## Prérequis
 
-- [HTML & CSS - Bases](../../html-css/balises-html/structure-essentielles.md)
+- [HTML & CSS - Bases](../../html-css/balises-html/structure-essentielles)
 - Notions de programmation (optionnel)
 
 Ressource complémentaire : [JavaScript.pdf](/ressources/JavaScript.pdf)
@@ -639,4 +639,4 @@ Q: Quelle est la bonne pratique par défaut ?
 
 ## Prochaine étape
 
-Découvrez les [Types Complexes & Scope](./types-complexes-scope.md).
+Découvrez les [Types Complexes & Scope](./types-complexes-scope).

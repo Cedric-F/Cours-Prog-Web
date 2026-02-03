@@ -13,7 +13,7 @@ Maîtrisez les fondamentaux des sélecteurs CSS pour cibler précisément les é
 
 ## Prérequis
 
-- [HTML - Balises essentielles](../balises-html/structure-essentielles.md)
+- [HTML - Balises essentielles](../balises-html/structure-essentielles)
 - Un éditeur de code ou [CodePen](https://codepen.io/pen/)
 
 ---
@@ -618,25 +618,25 @@ div#content div.wrapper div.container p.text { }
 
 :::quiz
 Q: Quel sélecteur cible les enfants directs ?
-- [] `parent child`
+- [ ] `parent child`
 - [x] `parent > child` ✅
-- [] `parent + child`
+- [ ] `parent + child`
 
 Q: Que sélectionne `.card.active` ?
-- [] `.card` puis `.active`
+- [ ] `.card` puis `.active`
 - [x] Éléments avec les deux classes ✅
-- [] `.active` dans `.card`
+- [ ] `.active` dans `.card`
 
 Q: Quel sélecteur est le plus spécifique ?
-- [] `.button`
+- [ ] `.button`
 - [x] `#submit` ✅
-- [] `button.primary`
+- [ ] `button.primary`
 > `#` représente un ID unique tandis que le `.` est une classe qui peut être attribuée à plusieurs éléments !
 
 Q: Que fait `input[type="email"]` ?
-- [] Tous les inputs
+- [ ] Tous les inputs
 - [x] Inputs de type email ✅
-- [] Erreur de syntaxe
+- [ ] Erreur de syntaxe
 :::
 
 ---
@@ -667,4 +667,4 @@ Créez une barre de navigation avec :
 
 ## Prochaine étape
 
-Découvrez les [pseudo-classes et pseudo-éléments](./pseudo-classes-elements.md) pour des sélecteurs plus puissants.
+Découvrez les [pseudo-classes et pseudo-éléments](./pseudo-classes-elements) pour des sélecteurs plus puissants.

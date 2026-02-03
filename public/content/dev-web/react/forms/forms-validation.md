@@ -13,8 +13,8 @@ Créez des formulaires interactifs avec validation en React.
 
 ## Prérequis
 
-- [Hooks de base](../hooks/hooks-base.md) - useState
-- [Événements](../composants-jsx/evenements-rendu.md)
+- [Hooks de base](../hooks/hooks-base) - useState
+- [Événements](../composants-jsx/evenements-rendu)
 
 ---
 
@@ -827,24 +827,24 @@ function RegisterForm() {
 
 :::quiz
 Q: Qu'est-ce qu'un input contrôlé ?
-- [] Un input désactivé
+- [ ] Un input désactivé
 - [x] Un input dont React gère la valeur
-- [] Un input avec validation
+- [ ] Un input avec validation
 
 Q: Quelle bibliothèque simplifie la gestion des formulaires ?
-- [] React Forms
+- [ ] React Forms
 - [x] React Hook Form
-- [] Formik (aussi valide, mais RHF est plus moderne)
+- [ ] Formik (aussi valide, mais RHF est plus moderne)
 
 Q: Comment empêcher le rechargement de page ?
-- [] `e.stopPropagation()`
+- [ ] `e.stopPropagation()`
 - [x] `e.preventDefault()`
-- [] `return false`
+- [ ] `return false`
 
 Q: Quel prop utiliser pour une checkbox ?
-- [] `value`
+- [ ] `value`
 - [x] `checked`
-- [] `selected`
+- [ ] `selected`
 :::
 
 ---
@@ -859,4 +859,4 @@ Q: Quel prop utiliser pour une checkbox ?
 
 ## Prochaine étape
 
-Découvrez le [State Management](../state-management/context-api.md) pour gérer l'état global de votre application.
+Découvrez le [State Management](../state-management/context-api) pour gérer l'état global de votre application.

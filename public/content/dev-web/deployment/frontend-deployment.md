@@ -13,7 +13,7 @@ Mettez votre application React en ligne sur Vercel ou Netlify.
 
 ## Prérequis
 
-- [Git & GitHub](../git/github-collaboration.md)
+- [Git & GitHub](../git/github-collaboration)
 - Une application React fonctionnelle
 - Un compte GitHub
 
@@ -71,10 +71,10 @@ const API_URL = import.meta.env.VITE_API_URL;
 
 | Avantage | Description |
 |----------|-------------|
-| ⚡ Performance | CDN global, Edge Functions |
-| 🔄 Preview | Chaque PR a son URL de preview |
-| 🚀 Zero config | Détection automatique du framework |
-| 💰 Gratuit | Généreux pour les projets perso |
+| Performance | CDN global, Edge Functions |
+| Preview | Chaque PR a son URL de preview |
+| Zero config | Détection automatique du framework |
+| Gratuit | Généreux pour les projets perso |
 
 ### Déploiement via GitHub
 
@@ -485,4 +485,4 @@ Q: Quel préfixe pour les variables Vite ?
 
 ## Prochaine étape
 
-Déployez maintenant votre [backend sur Render](./backend-deployment.md).
+Déployez maintenant votre [backend sur Render](./backend-deployment).

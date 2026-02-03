@@ -682,4 +682,4 @@ Créez un **Système de Navigation** avec :
 
 ---
 
-**Prochaine étape** : [Événements & Rendu](./evenements-rendu.md) pour l'interactivité ! 🎯
+**Prochaine étape** : [Événements & Rendu](./evenements-rendu) pour l'interactivité !

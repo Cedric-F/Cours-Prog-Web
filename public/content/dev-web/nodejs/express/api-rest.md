@@ -14,8 +14,8 @@ Apprenez à concevoir et implémenter des API RESTful professionnelles avec Expr
 
 ## Prérequis
 
-- [Express - Bases](./express-base.md)
-- [Express - Middleware et Routing](./middleware-routing.md)
+- [Express - Bases](./express-base)
+- [Express - Middleware et Routing](./middleware-routing)
 
 ---
 
@@ -785,4 +785,4 @@ Q: Qu'est-ce que l'idempotence ?
 
 ## Prochaine étape
 
-Découvrez la [Pagination et Filtrage](./pagination-filtrage.md) pour gérer les grandes collections de données.
+Découvrez la [Pagination et Filtrage](./pagination-filtrage) pour gérer les grandes collections de données.

@@ -13,7 +13,7 @@ Explorez les objets, tableaux, et comprenez les règles de portée (scope) et le
 
 ## Prérequis
 
-- [JavaScript - Déclaration et types primitifs](./declaration-types-primitifs.md)
+- [JavaScript - Déclaration et types primitifs](./declaration-types-primitifs)
 
 ---
 
@@ -643,4 +643,4 @@ Q: Comment copier un objet sans lien ?
 
 ## Prochaine étape
 
-Découvrez les [Fonctions](../fonctions/bases-fonctions.md) pour structurer votre code.
+Découvrez les [Fonctions](../fonctions/bases-fonctions) pour structurer votre code.

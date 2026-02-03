@@ -13,8 +13,8 @@ Rendez votre site utilisable par tous, y compris les personnes en situation de h
 
 ## Prérequis
 
-- [Balises HTML](./balises-html/structure-essentielles.md)
-- [Sélecteurs CSS](./selecteurs-css/selecteurs-base.md)
+- [Balises HTML](./balises-html/structure-essentielles)
+- [Sélecteurs CSS](./selecteurs-css/selecteurs-base)
 
 ---
 
@@ -673,7 +673,7 @@ function Modal({ isOpen, children }) {
 
 ---
 
-## 🏋️ Exercice Pratique
+## Exercice Pratique
 
 **Objectif** : Auditer et corriger l'accessibilité d'une page
 
@@ -730,4 +730,4 @@ Q: Quel attribut ARIA indique un menu ouvert ?
 
 ## Prochaine étape
 
-Découvrez [Flexbox et Grid](./flexbox-grid/flexbox.md) pour créer des layouts accessibles et responsives.
+Découvrez [Flexbox et Grid](./flexbox-grid/flexbox) pour créer des layouts accessibles et responsives.

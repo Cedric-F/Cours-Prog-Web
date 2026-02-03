@@ -536,4 +536,4 @@ Optimisez un site web :
 
 ---
 
-**Prochaine étape** : [Lazy Loading](../chargement-ressources/lazy-loading.md) pour charger intelligemment !
+**Prochaine étape** : [Lazy Loading](../chargement-ressources/lazy-loading) pour charger intelligemment !

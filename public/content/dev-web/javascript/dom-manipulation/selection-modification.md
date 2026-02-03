@@ -13,8 +13,8 @@ Maîtrisez la sélection d'éléments et la manipulation du DOM avec JavaScript 
 
 ## Prérequis
 
-- [JavaScript - Fonctions](../fonctions/bases-fonctions.md)
-- [HTML - Structure](../../html-css/balises-html/structure-essentielles.md)
+- [JavaScript - Fonctions](../fonctions/bases-fonctions)
+- [HTML - Structure](../../html-css/balises-html/structure-essentielles)
 
 ---
 
@@ -648,28 +648,28 @@ element.textContent = "Text"; // ❌ TypeError si null
 
 :::quiz
 Q: Quelle méthode sélectionne tous les éléments correspondants ?
-- [] `querySelector`
+- [ ] `querySelector`
 - [x] `querySelectorAll` ✅
-- [] `getElementById`
+- [ ] `getElementById`
 
 Q: Comment modifier le texte d'un élément en sécurité ?
-- [] `element.innerHTML = userInput`
+- [ ] `element.innerHTML = userInput`
 - [x] `element.textContent = userInput` ✅
-- [] `element.innerText = userInput`
+- [ ] `element.innerText = userInput`
 
 Q: Comment ajouter une classe sans écraser les autres ?
-- [] `element.className = "new"`
+- [ ] `element.className = "new"`
 - [x] `element.classList.add("new")` ✅
-- [] `element.class = "new"`
+- [ ] `element.class = "new"`
 
 Q: Que retourne `querySelector` si aucun élément n'est trouvé ?
-- [] `undefined`
+- [ ] `undefined`
 - [x] `null` ✅
-- [] Une erreur
+- [ ] Une erreur
 :::
 
 ---
 
 ## Prochaine étape
 
-Découvrez les [Événements](./evenements.md) pour rendre vos pages interactives.
+Découvrez les [Événements](./evenements) pour rendre vos pages interactives.

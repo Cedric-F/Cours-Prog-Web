@@ -13,8 +13,8 @@ Les middlewares et le système de routage sont au cœur d'Express.js. Comprendre
 
 ## Prérequis
 
-- [Express.js - Introduction](./express-base.md)
-- [JavaScript - Fonctions](../../javascript/fonctions/bases-fonctions.md)
+- [Express.js - Introduction](./express-base)
+- [JavaScript - Fonctions](../../javascript/fonctions/bases-fonctions)
 
 ---
 
@@ -706,4 +706,4 @@ Q: Où placer le middleware de gestion d'erreurs ?
 
 ## Prochaine étape
 
-Découvrez la [Création d'API REST](./api-rest.md) pour construire des APIs complètes.
+Découvrez la [Création d'API REST](./api-rest) pour construire des APIs complètes.

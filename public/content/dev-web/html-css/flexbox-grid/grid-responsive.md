@@ -14,8 +14,8 @@ Maîtrisez CSS Grid pour créer des layouts 2D complexes et apprenez les techniq
 
 ## Prérequis
 
-- [Flexbox](./flexbox.md)
-- [Sélecteurs CSS](../selecteurs-css/selecteurs-base.md)
+- [Flexbox](./flexbox)
+- [Sélecteurs CSS](../selecteurs-css/selecteurs-base)
 
 ---
 
@@ -707,28 +707,28 @@ Hérite de la grille parent.
 
 :::quiz
 Q: Quelle propriété définit les colonnes d'une grille ?
-- [] `grid-columns`
+- [ ] `grid-columns`
 - [x] `grid-template-columns`
-- [] `columns`
+- [ ] `columns`
 
 Q: Que signifie `1fr` ?
-- [] 1 pixel fixe
+- [ ] 1 pixel fixe
 - [x] Une fraction de l'espace disponible
-- [] 1% de la largeur
+- [ ] 1% de la largeur
 
 Q: Comment faire une grille responsive automatiquement ?
 - [x] `repeat(auto-fit, minmax(250px, 1fr))`
-- [] `repeat(3, 1fr)`
-- [] `grid-auto-columns: auto`
+- [ ] `repeat(3, 1fr)`
+- [ ] `grid-auto-columns: auto`
 
 Q: Quelle propriété fait occuper plusieurs colonnes à un item ?
-- [] `grid-width: 2`
+- [ ] `grid-width: 2`
 - [x] `grid-column: span 2`
-- [] `column-span: 2`
+- [ ] `column-span: 2`
 :::
 
 ---
 
 ## Prochaine étape
 
-Passez à [JavaScript - Variables et Types](../../javascript/variables-types/declaration-types-primitifs.md) pour commencer la programmation.
+Passez à [JavaScript - Variables et Types](../../javascript/variables-types/declaration-types-primitifs) pour commencer la programmation.

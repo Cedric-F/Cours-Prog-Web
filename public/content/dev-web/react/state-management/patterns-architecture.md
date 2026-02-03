@@ -703,4 +703,4 @@ Créez une **App de gestion de projets** avec :
 
 ---
 
-**Prochaine étape** : [Memoization](../performance-react/memoization.md) pour optimiser !
+**Prochaine étape** : [Memoization](../performance-react/memoization) pour optimiser !

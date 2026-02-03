@@ -603,4 +603,4 @@ Créez un **Chat en temps réel** avec :
 
 ---
 
-**Prochaine étape** : [Gestion Avancée](./websockets-avances.md) pour la reconnexion, les rooms et la gestion d'erreurs ! 🚀
+**Prochaine étape** : [Gestion Avancée](./websockets-avances) pour la reconnexion, les rooms et la gestion d'erreurs !

@@ -7,12 +7,12 @@ Maîtrisez **IndexedDB**, la base de données côté client pour stocker de **gr
 ## Qu'est-ce qu'IndexedDB ?
 
 **IndexedDB** est une API de base de données **NoSQL** intégrée au navigateur :
-- 📦 Stockage **illimité** (selon quota du navigateur)
-- 🔄 Support des **transactions** ACID
-- 🗂️ Organisation en **object stores** (comme des tables)
-- 🔍 **Index** pour recherches rapides
-- 🚀 **Asynchrone** (promesses)
-- 💾 Persistant entre les sessions
+- Stockage **illimité** (selon quota du navigateur)
+- Support des **transactions** ACID
+- Organisation en **object stores** (comme des tables)
+- **Index** pour recherches rapides
+- **Asynchrone** (promesses)
+- Persistant entre les sessions
 
 ### Cas d'usage
 
@@ -515,4 +515,4 @@ Créez une **application de notes offline** avec IndexedDB :
 
 ---
 
-**Prochaine étape** : [IndexedDB CRUD](./indexeddb-crud.md) pour les opérations avancées ! 🗄️
+**Prochaine étape** : [IndexedDB CRUD](./indexeddb-crud) pour les opérations avancées !

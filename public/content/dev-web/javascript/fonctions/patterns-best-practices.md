@@ -656,7 +656,7 @@ function calculatePrice(price) {
 
 ## Exercice pratique
 
-### 🎯 Patterns avancés
+### Patterns avancés
 
 Créez `patterns-exercise.js` :
 
@@ -732,4 +732,4 @@ const unreliableAPI = withRetry(async (url) => {
 
 ---
 
-**Prochaine sous-section** : DOM Manipulation - Sélection & Modification ! 🚀
+**Prochaine sous-section** : DOM Manipulation - Sélection & Modification !

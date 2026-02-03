@@ -759,7 +759,7 @@ promise
 
 ## Exercice pratique
 
-### 🎯 API Client avec retry et cache
+### API Client avec retry et cache
 
 Créez `api-client.js` :
 
@@ -817,4 +817,4 @@ demo();
 
 ---
 
-**Prochaine sous-section** : Fetch API & Storage ! 🚀
+**Prochaine sous-section** : Fetch API & Storage !

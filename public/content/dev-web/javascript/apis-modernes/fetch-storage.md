@@ -13,8 +13,8 @@ Maîtrisez les appels HTTP avec Fetch API et la persistance de données avec loc
 
 ## Prérequis
 
-- [JavaScript - Async/Await](../fonctions/concepts-avances.md)
-- [JavaScript - Objets et JSON](../variables-types/objets-tableaux.md)
+- [JavaScript - Async/Await](../fonctions/concepts-avances)
+- [JavaScript - Objets et JSON](../variables-types/objets-tableaux)
 
 ---
 
@@ -892,28 +892,28 @@ app.fetchFromAPI().then(notes => {
 
 :::quiz
 Q: Quelle méthode convertit la réponse en JSON ?
-   - [] `response.text()`
+   - [ ] `response.text()`
    - [x] `response.json()` ✅
-   - [] `JSON.parse(response)`
+   - [ ] `JSON.parse(response)`
 
 Q: Quand `fetch()` rejette-t-il la Promise ?
-   - [] Sur erreur HTTP (404, 500)
+   - [ ] Sur erreur HTTP (404, 500)
    - [x] Sur erreur réseau uniquement ✅
-   - [] Jamais
+   - [ ] Jamais
 
 Q: Quelle est la différence localStorage vs sessionStorage ?
-   - [] localStorage est plus rapide
+   - [ ] localStorage est plus rapide
    - [x] sessionStorage expire à la fermeture du navigateur ✅
-   - [] Aucune différence
+   - [ ] Aucune différence
 
 Q: Comment envoyer du JSON avec POST ?
-   - [] `body: data`
+   - [ ] `body: data`
    - [x] `body: JSON.stringify(data)` avec header Content-Type ✅
-   - [] `json: data`
+   - [ ] `json: data`
 :::
 
 ---
 
 ## Prochaine étape
 
-Découvrez la [Programmation Asynchrone](./programmation-asynchrone.md) pour maîtriser Promises et async/await.
+Découvrez la [Programmation Asynchrone](./programmation-asynchrone) pour maîtriser Promises et async/await.

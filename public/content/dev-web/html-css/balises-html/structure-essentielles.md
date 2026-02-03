@@ -517,4 +517,4 @@ Q: Quelle balise est obsolète et ne doit plus être utilisée ?
 
 ## Prochaine étape
 
-Découvrez les [listes, liens et images](./listes-liens-images.md) en détail.
+Découvrez les [listes, liens et images](./listes-liens-images) en détail.

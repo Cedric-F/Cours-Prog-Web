@@ -13,8 +13,8 @@ Maîtrisez les hooks avancés : **useContext**, **useReducer** et **custom hooks
 
 ## Prérequis
 
-- [React - Hooks de base](./hooks-base.md)
-- [JavaScript - Fonctions avancées](../../javascript/fonctions/concepts-avances.md)
+- [React - Hooks de base](./hooks-base)
+- [JavaScript - Fonctions avancées](../../javascript/fonctions/concepts-avances)
 
 ---
 
@@ -822,4 +822,4 @@ Créez une app de gestion de panier avec :
 
 ## Prochaine étape
 
-Découvrez l'[Optimisation avec les Hooks](./optimisation-hooks.md) pour améliorer les performances.
+Découvrez l'[Optimisation avec les Hooks](./optimisation-hooks) pour améliorer les performances.

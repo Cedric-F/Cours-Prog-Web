@@ -13,8 +13,8 @@ GitHub est la plateforme de collaboration pour les projets Git. Apprenez à part
 
 ## Prérequis
 
-- [Introduction à Git](./git-introduction.md)
-- [Branches et Merging](./branches-merging.md)
+- [Introduction à Git](./git-introduction)
+- [Branches et Merging](./branches-merging)
 - Un compte GitHub (gratuit)
 
 ---
@@ -728,4 +728,4 @@ Q: Quel fichier ne doit JAMAIS être sur GitHub ?
 
 ## Prochaine étape
 
-Vous maîtrisez maintenant Git et GitHub ! Retournez aux [projets](../projets/consignes.md) pour appliquer ces compétences dans vos réalisations.
+Vous maîtrisez maintenant Git et GitHub ! Retournez aux [projets](../projets/consignes) pour appliquer ces compétences dans vos réalisations.

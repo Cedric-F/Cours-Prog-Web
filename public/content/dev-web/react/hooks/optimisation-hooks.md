@@ -570,4 +570,4 @@ Créez une **App de Data Table** avec :
 
 ---
 
-**Chapitre suivant** : [Context API](../state-management/context-api.md) pour le state global !
+**Chapitre suivant** : [Context API](../state-management/context-api) pour le state global !

@@ -490,7 +490,7 @@ async function cleanExpiredCache(cacheName, maxAge) {
     
     if ((now - cachedDate) / 1000 > maxAge) {
       await cache.delete(request);
-      console.log('🗑️ Cache expiré:', request.url);
+      console.log('Cache expiré:', request.url);
     }
   }
 }
@@ -580,4 +580,4 @@ Créez une PWA offline-first avec :
 
 ---
 
-**Prochaine étape** : [CDN Strategies](./cdn-strategies.md) pour la distribution mondiale !
+**Prochaine étape** : [CDN Strategies](./cdn-strategies) pour la distribution mondiale !

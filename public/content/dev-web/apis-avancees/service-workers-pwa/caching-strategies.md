@@ -483,4 +483,4 @@ Créez une **app avec cache intelligent** :
 
 ---
 
-**Prochaine étape** : [PWA & Manifest](./pwa-manifest.md) pour une vraie PWA ! 📱
+**Prochaine étape** : [PWA & Manifest](./pwa-manifest) pour une vraie PWA ! 📱

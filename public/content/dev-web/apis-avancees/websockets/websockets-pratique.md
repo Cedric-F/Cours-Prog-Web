@@ -516,11 +516,11 @@ function generateId() {
   return Math.random().toString(36).substr(2, 9);
 }
 
-console.log('🚀 WebSocket server lancé sur ws://localhost:8080');
+console.log('WebSocket server lancé sur ws://localhost:8080');
 ```
 
 Fichier créé ! Continuons avec les autres chapitres. Je vais maintenant créer les fichiers pour Service Workers & PWA, IndexedDB, et Performance Web de manière efficace.
 
 ---
 
-**Prochaine étape** : Service Workers & PWA ! 🚀
+**Prochaine étape** : Service Workers & PWA !

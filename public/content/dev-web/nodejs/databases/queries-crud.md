@@ -14,8 +14,8 @@ Maîtrisez les opérations CRUD (Create, Read, Update, Delete) avec Mongoose pou
 
 ## Prérequis
 
-- [MongoDB - Les Bases](./mongodb-base.md)
-- [Express - API REST](../express/api-rest.md)
+- [MongoDB - Les Bases](./mongodb-base)
+- [Express - API REST](../express/api-rest)
 
 ---
 
@@ -772,4 +772,4 @@ Q: Que fait `populate()` ?
 
 ## Prochaine étape
 
-Découvrez [SQL avec PostgreSQL](./sql-postgresql.md) pour une alternative relationnelle à MongoDB.
+Découvrez [SQL avec PostgreSQL](./sql-postgresql) pour une alternative relationnelle à MongoDB.

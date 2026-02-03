@@ -13,7 +13,7 @@ Les branches permettent de travailler sur différentes fonctionnalités en paral
 
 ## Prérequis
 
-- [Introduction à Git](./git-introduction.md) - Commandes de base
+- [Introduction à Git](./git-introduction) - Commandes de base
 
 ---
 
@@ -597,4 +597,4 @@ Q: Quelle stratégie est recommandée pour les débutants ?
 
 ## Prochaine étape
 
-Apprenez à [collaborer avec GitHub](./github-collaboration.md) pour partager votre code et travailler en équipe.
+Apprenez à [collaborer avec GitHub](./github-collaboration) pour partager votre code et travailler en équipe.

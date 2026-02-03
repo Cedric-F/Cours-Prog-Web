@@ -13,8 +13,8 @@ Implémentez l'authentification avec JSON Web Tokens (JWT) ou les sessions class
 
 ## Prérequis
 
-- [Concepts d'Authentification](./auth-concepts.md)
-- [Express - Middleware](../express/middleware-routing.md)
+- [Concepts d'Authentification](./auth-concepts)
+- [Express - Middleware](../express/middleware-routing)
 
 ---
 
@@ -676,4 +676,4 @@ Q: Quelle différence JWT vs Session ?
 
 ## Prochaine étape
 
-Découvrez les [Stratégies OAuth](./oauth-social.md) pour l'authentification via Google, GitHub, etc.
+Découvrez les [Stratégies OAuth](./oauth-social) pour l'authentification via Google, GitHub, etc.

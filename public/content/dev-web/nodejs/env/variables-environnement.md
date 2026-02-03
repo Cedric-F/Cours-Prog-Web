@@ -13,7 +13,7 @@ Gérez la configuration de votre application de manière sécurisée avec les va
 
 ## Prérequis
 
-- [Introduction à Node.js](../presentation/nodejs-introduction.md)
+- [Introduction à Node.js](../presentation/nodejs-introduction)
 - Notions de Git (pour le .gitignore)
 
 ---
@@ -716,4 +716,4 @@ Q: Quel type retourne `process.env.PORT` ?
 
 ## Prochaine étape
 
-Découvrez le [déploiement](../../deployment/frontend-deployment.md) de votre application sur le cloud.
+Découvrez le [déploiement](../../deployment/frontend-deployment) de votre application sur le cloud.

@@ -13,8 +13,8 @@ Gérez l'état global de votre application avec la **Context API** de React, san
 
 ## Prérequis
 
-- [React - Hooks](../hooks/hooks-base.md)
-- [React - Composants](../composants-jsx/jsx-composants-base.md)
+- [React - Hooks](../hooks/hooks-base)
+- [React - Composants](../composants-jsx/jsx-composants-base)
 
 ---
 
@@ -773,4 +773,4 @@ Créez un système e-commerce avec :
 
 ## Prochaine étape
 
-Découvrez les [Libraries Externes](./libraries-externes.md) (Redux, Zustand) pour des besoins plus complexes.
+Découvrez les [Libraries Externes](./libraries-externes) (Redux, Zustand) pour des besoins plus complexes.

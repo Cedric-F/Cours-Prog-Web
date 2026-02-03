@@ -548,13 +548,6 @@ export const deletePost = (id) => {
    - Commentaires
    - Filtres et recherche
 
-## Livrables
-
-- **Projet React complet**
-- **README.md** avec instructions
-- **Screenshots** de l'application
-- **Documentation** des fonctionnalités implémentées
-
 ## Critères d'Évaluation
 
 - **Routing** : React Router bien configuré

@@ -713,6 +713,4 @@ input.addEventListener('input', function() {
 
 ---
 
-**Félicitations ! 🎉** Vous maîtrisez maintenant les balises HTML essentielles, de la structure de base aux formulaires complexes !
-
-**Prochaine section** : Apprenez à styliser tout ça avec les sélecteurs CSS ! 🎨
+**Prochaine section** : Apprenez à styliser tout ça avec les sélecteurs CSS !

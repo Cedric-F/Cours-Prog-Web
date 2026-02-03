@@ -761,4 +761,4 @@ Optimisez une **App Dashboard** avec :
 
 ---
 
-**Prochaine étape** : Explorez [TypeScript](../../typescript/introduction.md) pour typer votre code !
+**Prochaine étape** : Explorez [TypeScript](../../typescript/introduction) pour typer votre code !

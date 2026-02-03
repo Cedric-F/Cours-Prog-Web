@@ -13,8 +13,8 @@ Gérez la navigation entre les pages de votre application React avec React Route
 
 ## Prérequis
 
-- [Composants et JSX](../composants-jsx/jsx-composants-base.md)
-- [Hooks de base](../hooks/hooks-base.md)
+- [Composants et JSX](../composants-jsx/jsx-composants-base)
+- [Hooks de base](../hooks/hooks-base)
 
 ---
 
@@ -764,24 +764,24 @@ function ProtectedRoute({ children }) {
 
 :::quiz
 Q: Quel composant permet la navigation sans rechargement ?
-- [] `<a>`
+- [ ] `<a>`
 - [x] `<Link>`
-- [] `<Button>`
+- [ ] `<Button>`
 
 Q: Quel hook récupère les paramètres d'URL ?
 - [x] `useParams()`
-- [] `useQuery()`
-- [] `useURL()`
+- [ ] `useQuery()`
+- [ ] `useURL()`
 
 Q: Comment afficher les routes enfants ?
-- [] `<Children />`
+- [ ] `<Children />`
 - [x] `<Outlet />`
-- [] `{children}`
+- [ ] `{children}`
 
 Q: Quelle route gère les pages 404 ?
-- [] `path="/404"`
+- [ ] `path="/404"`
 - [x] `path="*"`
-- [] `path="/not-found"`
+- [ ] `path="/not-found"`
 :::
 
 ---
@@ -795,4 +795,4 @@ Q: Quelle route gère les pages 404 ?
 
 ## Prochaine étape
 
-Apprenez à [gérer les formulaires](./forms-validation.md) dans React pour créer des interfaces interactives.
+Apprenez à [gérer les formulaires](./forms-validation) dans React pour créer des interfaces interactives.

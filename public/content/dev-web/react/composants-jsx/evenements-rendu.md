@@ -728,4 +728,4 @@ Créez une **App de Gestion de Produits** avec :
 
 ---
 
-**Chapitre suivant** : [Hooks de Base](../hooks/hooks-base.md) pour gérer l'état ! 🪝
+**Chapitre suivant** : [Hooks de Base](../hooks/hooks-base) pour gérer l'état !

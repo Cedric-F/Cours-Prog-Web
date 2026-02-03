@@ -38,18 +38,18 @@ Tailwind CSS est un framework CSS "utility-first" qui a révolutionné la façon
 
 ### Avantages
 
-✅ **Pas de CSS à écrire** : Tout est dans le HTML
-✅ **Design system intégré** : Espacements, couleurs, tailles cohérentes
-✅ **Pas de conflits de noms** : Fini les `.card`, `.card2`, `.new-card`
-✅ **Responsive natif** : `sm:`, `md:`, `lg:` préfixes
-✅ **Mode sombre facile** : Préfixe `dark:`
-✅ **Fichier CSS optimisé** : Seules les classes utilisées sont incluses
+- ✅ **Pas de CSS à écrire** : Tout est dans le HTML
+- ✅ **Design system intégré** : Espacements, couleurs, tailles cohérentes
+- ✅ **Pas de conflits de noms** : Fini les `.card`, `.card2`, `.new-card`
+- ✅ **Responsive natif** : `sm:`, `md:`, `lg:` préfixes
+- ✅ **Mode sombre facile** : Préfixe `dark:`
+- ✅ **Fichier CSS optimisé** : Seules les classes utilisées sont incluses
 
 ### Inconvénients
 
-❌ HTML plus verbeux
-❌ Courbe d'apprentissage des classes
-❌ Peut sembler chaotique au début
+- ❌ HTML plus verbeux
+- ❌ Courbe d'apprentissage des classes
+- ❌ Peut sembler chaotique au début
 
 ---
 

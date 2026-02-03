@@ -13,8 +13,8 @@ Conteneurisez votre application pour un déploiement reproductible.
 
 ## Prérequis
 
-- [Node.js - Installation](../installation-environnement/nodejs-installation.md)
-- [Déploiement Backend](../../deployment/backend-deployment.md)
+- [Node.js - Installation](../installation-environnement/nodejs-installation)
+- [Déploiement Backend](../../deployment/backend-deployment)
 
 ---
 
@@ -224,7 +224,7 @@ Dockerfile
 .git
 .gitignore
 .env
-*.md
+*
 tests
 coverage
 .nyc_output
@@ -694,4 +694,4 @@ Q: Que fait `docker compose up -d` ?
 
 ## Prochaine étape
 
-Découvrez [Next.js](../../react/nextjs/nextjs-introduction.md) pour le rendu côté serveur.
+Découvrez [Next.js](../../react/nextjs/nextjs-introduction) pour le rendu côté serveur.

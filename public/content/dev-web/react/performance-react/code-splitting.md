@@ -652,4 +652,4 @@ Optimisez une **App Dashboard** avec :
 
 ---
 
-**Prochaine étape** : [Optimisations Avancées](./optimisations-avancees.md) pour aller encore plus loin !
+**Prochaine étape** : [Optimisations Avancées](./optimisations-avancees) pour aller encore plus loin !

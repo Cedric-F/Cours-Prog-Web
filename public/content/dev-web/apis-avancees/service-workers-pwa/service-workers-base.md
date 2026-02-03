@@ -595,4 +595,4 @@ Créez une **app offline-first** avec :
 
 ---
 
-**Prochaine étape** : [Stratégies de Cache](./caching-strategies.md) pour optimiser ! ⚡
+**Prochaine étape** : [Stratégies de Cache](./caching-strategies) pour optimiser !

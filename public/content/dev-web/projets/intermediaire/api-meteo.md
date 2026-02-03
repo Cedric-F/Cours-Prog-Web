@@ -384,14 +384,6 @@ function getLocationWeather() {
    - localStorage pour favoris
    - Animations
 
-## Livrables
-
-- **index.html** : Structure de l'application
-- **style.css** : Styles
-- **script.js** : Logique et appels API
-- **.env ou config.js** : Clé API (ne JAMAIS commit la clé sur Git public !)
-- **README.md** : Documentation avec instructions d'utilisation
-
 ## Critères d'Évaluation
 
 - **Appel API** : Requête correcte, gestion erreurs, async/await

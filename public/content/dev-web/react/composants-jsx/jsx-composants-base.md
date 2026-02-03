@@ -13,9 +13,9 @@ Découvrez les fondamentaux de React : JSX, composants fonctionnels, et les base
 
 ## Prérequis
 
-- [JavaScript - Fonctions](../../javascript/fonctions/bases-fonctions.md)
-- [JavaScript - DOM](../../javascript/dom-manipulation/selection-modification.md)
-- [ES6+ (arrow functions, destructuring)](../../javascript/fonctions/concepts-avances.md)
+- [JavaScript - Fonctions](../../javascript/fonctions/bases-fonctions)
+- [JavaScript - DOM](../../javascript/dom-manipulation/selection-modification)
+- [ES6+ (arrow functions, destructuring)](../../javascript/fonctions/concepts-avances)
 
 ---
 
@@ -764,4 +764,4 @@ function BlogPost({ title, author, date, content }) {
 
 ## Prochaine étape
 
-Découvrez [Props & Composition](./props-composition.md) pour rendre vos composants dynamiques.
+Découvrez [Props & Composition](./props-composition) pour rendre vos composants dynamiques.

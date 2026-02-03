@@ -13,8 +13,8 @@ Maîtrisez la gestion des événements DOM pour créer des interactions utilisat
 
 ## Prérequis
 
-- [DOM - Sélection et modification](./selection-modification.md)
-- [JavaScript - Fonctions](../fonctions/bases-fonctions.md)
+- [DOM - Sélection et modification](./selection-modification)
+- [JavaScript - Fonctions](../fonctions/bases-fonctions)
 
 ---
 
@@ -631,7 +631,7 @@ button.addEventListener('click', () => { }); // ❌ Impossible à retirer
 
 ## Exercice pratique
 
-### 🎯 Application interactive
+### Application interactive
 
 Créez `events-exercise.html` :
 
@@ -794,4 +794,4 @@ Q: Pourquoi utiliser la délégation ?
 
 ## Prochaine étape
 
-Découvrez les [APIs Modernes](../apis-modernes/fetch-api.md) pour communiquer avec des serveurs.
+Découvrez les [APIs Modernes](../apis-modernes/fetch-api) pour communiquer avec des serveurs.

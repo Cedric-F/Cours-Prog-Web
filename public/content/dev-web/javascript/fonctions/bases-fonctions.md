@@ -13,7 +13,7 @@ Maîtrisez les fondamentaux des fonctions JavaScript : déclaration, paramètres
 
 ## Prérequis
 
-- [Variables et Types](../variables-types/declaration-types-primitifs.md)
+- [Variables et Types](../variables-types/declaration-types-primitifs)
 
 ---
 
@@ -559,7 +559,7 @@ function calculate(a, b) {
 
 ## Exercice pratique
 
-### 🎯 Créer des fonctions utilitaires
+### Créer des fonctions utilitaires
 
 Créez `functions-basics-exercise.js` :
 
@@ -644,4 +644,4 @@ Q: Que fait le rest operator `...args` ?
 
 ## Prochaine étape
 
-Découvrez les [Concepts Avancés](./concepts-avances.md) : Arrow Functions, Callbacks, Closures.
+Découvrez les [Concepts Avancés](./concepts-avances) : Arrow Functions, Callbacks, Closures.

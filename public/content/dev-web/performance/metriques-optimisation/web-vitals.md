@@ -564,4 +564,4 @@ Optimisez une page pour atteindre :
 
 ---
 
-**Prochaine étape** : [Optimisation JavaScript](./optimisation-js.md) pour du code ultra-rapide !
+**Prochaine étape** : [Optimisation JavaScript](./optimisation-js) pour du code ultra-rapide !

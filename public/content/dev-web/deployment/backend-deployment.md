@@ -13,8 +13,8 @@ Mettez votre API Node.js/Express en ligne sur Render ou Railway.
 
 ## Prérequis
 
-- [Variables d'environnement](../nodejs/env/variables-environnement.md)
-- [Git & GitHub](../git/github-collaboration.md)
+- [Variables d'environnement](../nodejs/env/variables-environnement)
+- [Git & GitHub](../git/github-collaboration)
 - Une API Express fonctionnelle
 
 ---

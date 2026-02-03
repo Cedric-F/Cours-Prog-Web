@@ -13,8 +13,8 @@ MongoDB est une base de données NoSQL orientée documents. Apprenez à l'utilis
 
 ## Prérequis
 
-- [Node.js - Express Base](../express/express-base.md)
-- [JavaScript - Async/Await](../../javascript/fonctions/concepts-avances.md)
+- [Node.js - Express Base](../express/express-base)
+- [JavaScript - Async/Await](../../javascript/fonctions/concepts-avances)
 
 ---
 
@@ -594,4 +594,4 @@ Q: Comment définir un champ requis dans un schéma ?
 
 ## Prochaine étape
 
-Découvrez les [Requêtes et CRUD avancés](./queries-crud.md) pour maîtriser les opérations MongoDB.
+Découvrez les [Requêtes et CRUD avancés](./queries-crud) pour maîtriser les opérations MongoDB.

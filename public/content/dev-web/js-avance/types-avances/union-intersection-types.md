@@ -13,7 +13,7 @@ Maîtrisez les Union et Intersection Types pour créer des types flexibles et co
 
 ## Prérequis
 
-- [JavaScript - Variables et Types](../../javascript/variables-types/declaration-types-primitifs.md)
+- [JavaScript - Variables et Types](../../javascript/variables-types/declaration-types-primitifs)
 - Notions de base TypeScript (interfaces, types)
 
 ---

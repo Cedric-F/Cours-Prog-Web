@@ -766,4 +766,4 @@ Créez un **Chat avec rooms** incluant :
 
 ---
 
-**Prochaine étape** : [Projets Pratiques](./websockets-pratique.md) pour construire des apps complètes ! 💬
+**Prochaine étape** : [Projets Pratiques](./websockets-pratique) pour construire des apps complètes !

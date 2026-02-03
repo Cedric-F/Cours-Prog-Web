@@ -42,10 +42,10 @@ Système de contrôle de version distribué, indispensable pour tout développeu
 ```
 
 Git enregistre **chaque modification** avec :
-- 📅 La date et l'heure
-- 👤 L'auteur
-- 💬 Un message descriptif
-- 🔗 Un identifiant unique (hash)
+- La date et l'heure
+- L'auteur
+- Un message descriptif
+- Un identifiant unique (hash)
 
 ---
 
@@ -578,4 +578,4 @@ Q: Quelle commande affiche l'état des fichiers ?
 
 ## Prochaine étape
 
-Maintenant que vous maîtrisez les bases, apprenez à [travailler avec les branches](./branches-merging.md) pour gérer plusieurs versions de votre code en parallèle.
+Maintenant que vous maîtrisez les bases, apprenez à [travailler avec les branches](./branches-merging) pour gérer plusieurs versions de votre code en parallèle.

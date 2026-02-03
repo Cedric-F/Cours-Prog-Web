@@ -703,4 +703,4 @@ Créez un **gestionnaire de contacts** avec :
 
 ---
 
-**Prochaine étape** : [IndexedDB Avancé](./indexeddb-avance.md) pour les techniques expertes ! 🚀
+**Prochaine étape** : [IndexedDB Avancé](./indexeddb-avance) pour les techniques expertes !

@@ -13,8 +13,8 @@ L'authentification est le processus de vérification de l'identité d'un utilisa
 
 ## Prérequis
 
-- [Express - Middleware et Routing](../express/middleware-routing.md)
-- [MongoDB - Les Bases](../databases/mongodb-base.md)
+- [Express - Middleware et Routing](../express/middleware-routing)
+- [MongoDB - Les Bases](../databases/mongodb-base)
 
 ---
 
@@ -620,4 +620,4 @@ Q: Qu'est-ce qu'OAuth ?
 
 ## Prochaine étape
 
-Implémentez les [JWT et Sessions](./jwt-sessions.md) pour sécuriser votre application.
+Implémentez les [JWT et Sessions](./jwt-sessions) pour sécuriser votre application.

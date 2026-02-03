@@ -13,9 +13,9 @@ Le framework React pour la production avec rendu côté serveur.
 
 ## Prérequis
 
-- [React - Composants](../composants-jsx/jsx-composants-base.md)
-- [React - Hooks](../hooks/hooks-base.md)
-- [React Router](../routing/react-router.md)
+- [React - Composants](../composants-jsx/jsx-composants-base)
+- [React - Hooks](../hooks/hooks-base)
+- [React Router](../routing/react-router)
 
 ---
 
@@ -733,4 +733,4 @@ Q: Où faire un fetch avec accès DB ?
 
 ## Prochaine étape
 
-Retournez aux [projets](../../projets/consignes.md) pour appliquer ces connaissances !
+Retournez aux [projets](../../projets/consignes) pour appliquer ces connaissances !

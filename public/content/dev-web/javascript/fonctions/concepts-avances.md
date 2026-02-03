@@ -13,8 +13,8 @@ Explorez les arrow functions, callbacks, closures, et IIFE pour maîtriser les p
 
 ## Prérequis
 
-- [JavaScript - Bases des fonctions](./bases-fonctions.md)
-- [JavaScript - Variables et Types](../variables-types/declaration-types-primitifs.md)
+- [JavaScript - Bases des fonctions](./bases-fonctions)
+- [JavaScript - Variables et Types](../variables-types/declaration-types-primitifs)
 
 ---
 
@@ -732,7 +732,7 @@ for (var i = 0; i < 3; i++) {
 
 ## Exercice pratique
 
-### 🎯 Fonctions avancées
+### Fonctions avancées
 
 Créez `advanced-functions-exercise.js` :
 
@@ -849,4 +849,4 @@ Q: Que fait `debounce` ?
 
 ## Prochaine étape
 
-Découvrez la [Manipulation du DOM](../dom-manipulation/selection-modification.md) pour interagir avec les éléments de la page.
+Découvrez la [Manipulation du DOM](../dom-manipulation/selection-modification) pour interagir avec les éléments de la page.

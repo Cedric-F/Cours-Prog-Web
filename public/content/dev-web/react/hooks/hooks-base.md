@@ -13,8 +13,8 @@ Maîtrisez les hooks fondamentaux de React : **useState**, **useEffect** et **us
 
 ## Prérequis
 
-- [React - JSX & Composants](../composants-jsx/jsx-composants-base.md)
-- [React - Props & Composition](../composants-jsx/props-composition.md)
+- [React - JSX & Composants](../composants-jsx/jsx-composants-base)
+- [React - Props & Composition](../composants-jsx/props-composition)
 
 ---
 
@@ -785,4 +785,4 @@ function WeatherApp() {
 
 ## Prochaine étape
 
-Découvrez les [Hooks Avancés](./hooks-avances.md) pour aller plus loin.
+Découvrez les [Hooks Avancés](./hooks-avances) pour aller plus loin.

@@ -602,4 +602,4 @@ Optimisez une application React :
 
 ---
 
-**Prochaine étape** : [Optimisation des Assets](./optimisation-assets.md) pour images et fonts ultra-légères !
+**Prochaine étape** : [Optimisation des Assets](./optimisation-assets) pour images et fonts ultra-légères !

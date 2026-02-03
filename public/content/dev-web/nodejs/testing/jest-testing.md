@@ -13,8 +13,8 @@
 
 ## Prérequis
 
-- [JavaScript - Fonctions](../../javascript/fonctions/bases-fonctions.md)
-- [Express.js - API REST](../express/api-rest.md)
+- [JavaScript - Fonctions](../../javascript/fonctions/bases-fonctions)
+- [Express.js - API REST](../express/api-rest)
 
 ---
 
@@ -630,7 +630,7 @@ test('returns user by id', async () => {
 
 ---
 
-## 🏋️ Exercice Pratique
+## Exercice Pratique
 
 **Objectif** : Tester une fonction de validation
 
@@ -709,4 +709,4 @@ Q: Quelle bibliothèque pour tester une API Express ?
 
 ## Prochaine étape
 
-Découvrez [Docker](../docker/docker-basics.md) pour conteneuriser votre application.
+Découvrez [Docker](../docker/docker-basics) pour conteneuriser votre application.

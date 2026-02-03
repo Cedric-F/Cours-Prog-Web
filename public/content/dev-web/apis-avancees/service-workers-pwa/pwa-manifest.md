@@ -581,6 +581,4 @@ Créez une **PWA complète** avec :
 
 ---
 
-🎉 **Félicitations** ! Vous maîtrisez maintenant les PWA ! 🚀
-
-**Prochaine étape** : [IndexedDB Base](../indexeddb/indexeddb-base.md) pour le stockage avancé !
+**Prochaine étape** : [IndexedDB Base](../indexeddb/indexeddb-base) pour le stockage avancé !
