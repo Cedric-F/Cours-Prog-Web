@@ -887,49 +887,6 @@
               "file": "dev-web/projets/intermediaire/blog-personnel.md"
             }
           ]
-        },
-        {
-          "id": "finals",
-          "name": "Projet final",
-          "sections": [
-            {
-              "id": "consignes",
-              "name": "Consignes",
-              "file": "dev-web/projets/consignes.md"
-            },
-            {
-              "id": "sujets",
-              "name": "Sujets",
-              "subsections": [
-                {
-                  "id": "e-commerce",
-                  "name": "Site E-Commerce",
-                  "file": "dev-web/projets/sujets/e-commerce.md"
-                },
-                {
-                  "id": "chat-realtime",
-                  "name": "Application de Chat en Temps Réel",
-                  "file": "dev-web/projets/sujets/chat-realtime.md"
-                },
-                {
-                  "id": "social-media",
-                  "name": "Réseau social basique",
-                  "file": "dev-web/projets/sujets/social-media.md"
-                },
-                {
-                  "id": "board-games",
-                  "name": "Jeux de plateau en ligne",
-                  "file": "dev-web/projets/sujets/board-games.md"
-                },
-                {
-                  "id": "clones",
-                  "name": "Clones d'applications",
-                  "file": "dev-web/projets/sujets/clones.md"
-                }
-              ]
-            }
-            
-          ]
         }
       ]
     }
