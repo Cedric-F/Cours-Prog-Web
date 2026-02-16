@@ -848,7 +848,7 @@
       "chapters": [
         {
           "id": "prise-en-main",
-          "name": "Prise en main",
+          "name": "TP/TD",
           "sections": [
             {
               "id": "cv",
@@ -874,7 +874,7 @@
         },
         {
           "id": "intermediaire",
-          "name": "Intermédiaire",
+          "name": "Pour aller plus loin (REST API)",
           "sections": [
             {
               "id": "api-meteo",
