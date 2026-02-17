@@ -887,6 +887,17 @@
               "file": "dev-web/projets/intermediaire/blog-personnel.md"
             }
           ]
+        },
+        {
+          "id": "projet-final",
+          "name": "Projet Final",
+          "sections": [
+            {
+              "id": "mini-craiglist",
+              "name": "Mini Craiglist",
+              "file": "dev-web/projets/projet-final/sujet-final.md"
+            }
+          ]
         }
       ]
     }
