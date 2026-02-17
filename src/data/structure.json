@@ -895,7 +895,11 @@
             {
               "id": "mini-craiglist",
               "name": "Mini Craiglist",
+<<<<<<< HEAD
               "file": "dev-web/projets/projet-final/sujet-final.md"
+=======
+              "file": "dev-web/projets/projet-final/mini-craiglist.md"
+>>>>>>> c6c051d35bae813eff543e3b29e6e87c631789a0
             }
           ]
         }
