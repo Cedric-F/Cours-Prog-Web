@@ -120,7 +120,7 @@ Règles :
 
 ### Etats avancés
 - DRAFT, PUBLISHED, ARCHIVED
-- Archivage automatique après N jours (cron, ou logique au chargement)
+- Archivage automatique après N jours
 
 ### Reviews
 - Système permettant aux utilisateurs de laisser un avis sur la page de profil d'une personne.
