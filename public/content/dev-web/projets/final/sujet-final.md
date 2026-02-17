@@ -1,4 +1,4 @@
-# Projet Prog Web (1re année) Full JS : "ServiceBoard" (mini CraigList de services)
+# Projet Prog Web Full JS : "ServiceBoard" (mini CraigList de services)
 
 ## Objectif
 Développer seul une application web complète permettant de publier et consulter des **annonces de services** :
