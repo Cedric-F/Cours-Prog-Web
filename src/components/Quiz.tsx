@@ -1,11 +1,14 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import Prism from 'prismjs';
+import 'prismjs/themes/prism.css';
 
 interface QuizQuestion {
   question: string;
   options: { text: string; isCorrect: boolean }[];
   explanation?: string;
+  code?: string; // Ajout pour afficher le premier bloc code trouvé
 }
 
 interface QuizProps {
@@ -161,6 +164,19 @@ export default function Quiz({ questions }: QuizProps) {
         {question.question}
       </h4>
 
+      {/* Code snippets */}
+      {question.code && (
+        <pre className="mb-6 p-4 rounded-lg overflow-x-auto">
+          <code
+            className="text-sm language-js"
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{
+              __html: Prism.highlight(question.code, Prism.languages.js, 'js'),
+            }}
+          />
+        </pre>
+      )}
+
       {/* Options */}
       <div className="space-y-3 mb-6">
         {question.options.map((option, index) => {
@@ -309,17 +325,24 @@ function parseQuizContent(content: string): QuizQuestion[] {
   for (const block of questionBlocks) {
     const lines = block.trim().split('\n');
     const questionText = lines[0]?.trim();
-    
     if (!questionText) continue;
 
     const options: { text: string; isCorrect: boolean }[] = [];
     let explanation = '';
+    let code = '';
+
+    // Rejoindre tout le bloc pour chercher les snippets code
+    const blockText = block.trim();
+    const codeRegex = /```(\w+)?\n([\s\S]*?)```/g;
+    const codeMatch = codeRegex.exec(blockText);
+    if (codeMatch) {
+      code = codeMatch[2].trim();
+    }
 
     for (let i = 1; i < lines.length; i++) {
       const line = lines[i].trim();
-      
       // Parse options: - [x] correct or - [ ] incorrect
-      const optionMatch = line.match(/^-\s*\[(x| )\]\s*(.+)$/i);
+      const optionMatch = line.match(/^\-\s*\[(x| )\]\s*(.+)$/i);
       if (optionMatch) {
         options.push({
           isCorrect: optionMatch[1].toLowerCase() === 'x',
@@ -327,7 +350,6 @@ function parseQuizContent(content: string): QuizQuestion[] {
         });
         continue;
       }
-
       // Parse explanation: > text
       if (line.startsWith('>')) {
         explanation = line.slice(1).trim();
@@ -338,10 +360,10 @@ function parseQuizContent(content: string): QuizQuestion[] {
       questions.push({
         question: questionText,
         options,
-        explanation: explanation || undefined
+        explanation: explanation || undefined,
+        code: code || undefined
       });
     }
   }
-
   return questions;
 }

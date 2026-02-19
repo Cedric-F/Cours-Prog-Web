@@ -144,3 +144,16 @@ body {
 .markdown-content details pre {
   @apply m-0 rounded-none;
 }
+
+
+/* Désactive le text-shadow de PrismJS */
+code[class*="language-"], pre[class*="language-"] {
+  text-shadow: none !important;
+  background-color: transparent !important;
+}
+/* Supprime le fond sur les opérateurs PrismJS */
+.token.operator {
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
