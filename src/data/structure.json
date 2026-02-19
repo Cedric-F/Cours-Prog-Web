@@ -918,6 +918,11 @@
               "id": "qcm-node-express-2",
               "name": "QCM Node.js & Express - Partie 2",
               "file": "dev-web/QCM/Node-Express-2.md"
+            },
+            {
+              "id": "qcm-node-express-3",
+              "name": "QCM Node.js & Express - Partie 3",
+              "file": "dev-web/QCM/Node-Express-3.md"
             }
           ]
         }
