@@ -543,14 +543,14 @@ const user = await prisma.user.findUnique({
   include: { orders: true }
 });
 
-// PostgreSQL (pg)
-const { rows } = await pool.query(`
+// PostgreSQL
+const { rows } = await sql(`
   SELECT u.*, json_agg(o.*) as orders
   FROM users u
   LEFT JOIN orders o ON o.user_id = u.id
-  WHERE u.email = $1
+  WHERE u.email = ${email}
   GROUP BY u.id
-`, [email]);
+`);
 ```
 
 ---
@@ -571,13 +571,13 @@ CREATE INDEX idx_products_category ON products(category_id);
 
 ```javascript
 // ❌ N+1 : 1 requête + N requêtes pour les relations
-const orders = await pool.query('SELECT * FROM orders');
+const orders = await sql(`SELECT * FROM orders');
 for (const order of orders.rows) {
-  const user = await pool.query('SELECT * FROM users WHERE id = $1', [order.user_id]);
+  const user = await sql(`SELECT * FROM users WHERE id = ${order.user_id}`);
 }
 
 // ✅ Un seul JOIN
-const { rows } = await pool.query(`
+const { rows } = await sql(`
   SELECT o.*, u.name as user_name
   FROM orders o
   JOIN users u ON o.user_id = u.id
