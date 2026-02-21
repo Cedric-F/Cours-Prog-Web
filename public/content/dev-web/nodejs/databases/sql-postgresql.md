@@ -278,142 +278,86 @@ WHERE o.id = 1;
 
 ---
 
-## Node.js avec pg
+## Node.js avec postgresql
 
 ### Installation
 
 ```bash
-npm install pg
+npm install postgres
 ```
 
 ### Connexion
 
 ```javascript
 // config/database.js
-const { Pool } = require('pg');
+const postgres = require('postgres');
 
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  // Ou configuration détaillée :
-  // host: 'localhost',
-  // port: 5432,
-  // database: 'myapp',
-  // user: 'postgres',
-  // password: 'secret',
-  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false
-});
+const sql = postgres(process.env.DATABASE_URL);
 
-// Tester la connexion
-pool.query('SELECT NOW()', (err, res) => {
-  if (err) {
-    console.error('❌ PostgreSQL connection error:', err);
-  } else {
-    console.log('✅ PostgreSQL connected:', res.rows[0].now);
+(async () => {
+  try {
+    const result = await sql`SELECT NOW()`;
+    console.log("Connection OK", result[0].now);
+  } catch (err) {
+    console.error("Connection NOK", err);
   }
-});
+})()
 
-module.exports = pool;
+module.exports = sql;
 ```
 
 ### Requêtes basiques
 
+Les requêtes doivent être écrites dans un `template literal` (délimité par un backtick (`) et non les quotes habituelles (' et ")).
+
 ```javascript
-const pool = require('../config/database');
+const sql = require('../config/database');
 
 // SELECT
-const getUsers = async () => {
-  const result = await pool.query('SELECT * FROM users');
-  return result.rows;
-};
-
-// SELECT avec paramètres (préparé - sécurisé)
-const getUserById = async (id) => {
-  const result = await pool.query(
-    'SELECT * FROM users WHERE id = $1',
-    [id]
-  );
-  return result.rows[0];
-};
+async function allUsers(user) {
+  try {
+    const result = await sql`SELECT * FROM users`;
+    return result;
+  } catch (err) {
+    console.error("Error fetching users from database:", err);
+  }
+}
 
 // INSERT
-const createUser = async (email, password, name) => {
-  const result = await pool.query(
-    `INSERT INTO users (email, password, name) 
-     VALUES ($1, $2, $3) 
-     RETURNING *`,
-    [email, password, name]
-  );
-  return result.rows[0];
-};
+async function createUser(user) {
+  try {
+    const result = await sql`INSERT INTO users (email, password, name) VALUES (${user.email}, ${user.password}, ${user.name}) RETURNING *`;
+    return result[0];
+  } catch (err) {
+    console.error("Error creating user in database:", err);
+  }
+}
 
 // UPDATE
-const updateUser = async (id, name) => {
-  const result = await pool.query(
-    'UPDATE users SET name = $2 WHERE id = $1 RETURNING *',
-    [id, name]
-  );
-  return result.rows[0];
-};
+async function updateUser(req) {
+  try {
+    const result = await sql(`UPDATE users SET password = ${user.password} WHERE id = ${user.id} RETURNING *`);
+    if (result.length === 0) {
+      return console.error("Not found");
+    }
+    return result[0];
+  } catch (err) {
+    console.error("Error updating user in database:", err);
+  }
+}
 
 // DELETE
-const deleteUser = async (id) => {
-  await pool.query('DELETE FROM users WHERE id = $1', [id]);
-};
-```
-
-### Controller complet
-
-```javascript
-// controllers/userController.js
-const pool = require('../config/database');
-
-exports.getUsers = async (req, res) => {
+async function deleteUser(id) {
   try {
-    const { rows } = await pool.query(
-      'SELECT id, email, name, role, created_at FROM users ORDER BY created_at DESC'
-    );
-    res.json(rows);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-};
-
-exports.getUser = async (req, res) => {
-  try {
-    const { rows } = await pool.query(
-      'SELECT id, email, name, role FROM users WHERE id = $1',
-      [req.params.id]
-    );
-    
-    if (rows.length === 0) {
-      return res.status(404).json({ error: 'User not found' });
+    const result = await sql(`DELETE FROM users WHERE id = ${id} RETURNING *`); // RETURNING est nécessaire pour vérifier que l'enregistrement a bien été supprimé.
+    if (result.length === 0) {
+      console.error("Not found");
     }
-    
-    res.json(rows[0]);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
+    return result[0]
+  } catch (err) {
+    console.error("Error deleting user from database:", err);
   }
-};
-
-exports.createUser = async (req, res) => {
-  const { email, password, name } = req.body;
-  
-  try {
-    const { rows } = await pool.query(
-      `INSERT INTO users (email, password, name) 
-       VALUES ($1, $2, $3) 
-       RETURNING id, email, name, role`,
-      [email, password, name]
-    );
-    
-    res.status(201).json(rows[0]);
-  } catch (error) {
-    if (error.code === '23505') { // Unique violation
-      return res.status(400).json({ error: 'Email already exists' });
-    }
-    res.status(500).json({ error: error.message });
-  }
-};
+}
 ```
 
 ---
@@ -422,66 +366,27 @@ exports.createUser = async (req, res) => {
 
 ```javascript
 // Pour les opérations qui doivent réussir ensemble
-const createOrder = async (userId, items) => {
-  const client = await pool.connect();
-  
-  try {
-    await client.query('BEGIN');
-    
-    // 1. Créer la commande
-    const orderResult = await client.query(
-      'INSERT INTO orders (user_id, total) VALUES ($1, $2) RETURNING id',
-      [userId, 0]
-    );
-    const orderId = orderResult.rows[0].id;
-    
-    let total = 0;
-    
-    // 2. Ajouter les items et mettre à jour le stock
-    for (const item of items) {
-      // Vérifier le stock
-      const productResult = await client.query(
-        'SELECT price, stock FROM products WHERE id = $1 FOR UPDATE',
-        [item.productId]
-      );
-      
-      if (productResult.rows[0].stock < item.quantity) {
-        throw new Error(`Stock insuffisant pour le produit ${item.productId}`);
-      }
-      
-      const price = productResult.rows[0].price;
-      total += price * item.quantity;
-      
-      // Ajouter l'item
-      await client.query(
-        'INSERT INTO order_items (order_id, product_id, quantity, price) VALUES ($1, $2, $3, $4)',
-        [orderId, item.productId, item.quantity, price]
-      );
-      
-      // Décrémenter le stock
-      await client.query(
-        'UPDATE products SET stock = stock - $1 WHERE id = $2',
-        [item.quantity, item.productId]
-      );
-    }
-    
-    // 3. Mettre à jour le total
-    await client.query(
-      'UPDATE orders SET total = $1 WHERE id = $2',
-      [total, orderId]
-    );
-    
-    await client.query('COMMIT');
-    
-    return { orderId, total };
-    
-  } catch (error) {
-    await client.query('ROLLBACK');
-    throw error;
-  } finally {
-    client.release();
-  }
-};
+const [user, account] = await sql.begin(async sql => {
+  const [user] = await sql`
+    insert into users (
+      name
+    ) values (
+      'Murray'
+    )
+    returning *
+  `
+
+  const [account] = await sql`
+    insert into accounts (
+      user_id
+    ) values (
+      ${ user.user_id }
+    )
+    returning *
+  `
+
+  return [user, account]
+})
 ```
 
 ---
@@ -652,18 +557,7 @@ const { rows } = await pool.query(`
 
 ## ❌ Erreurs Courantes
 
-### 1. Injection SQL
-
-```javascript
-// ❌ DANGER : Injection SQL possible
-const query = `SELECT * FROM users WHERE email = '${email}'`;
-
-// ✅ Utiliser les paramètres préparés
-const query = 'SELECT * FROM users WHERE email = $1';
-await pool.query(query, [email]);
-```
-
-### 2. Oublier les index
+### 1. Oublier les index
 
 ```sql
 -- ❌ Requête lente sur grande table
@@ -673,7 +567,7 @@ SELECT * FROM products WHERE category_id = 5;
 CREATE INDEX idx_products_category ON products(category_id);
 ```
 
-### 3. N+1 queries
+### 2. N+1 queries
 
 ```javascript
 // ❌ N+1 : 1 requête + N requêtes pour les relations
@@ -700,11 +594,6 @@ Q: Quel type pour un prix en SQL ?
 - [x] `DECIMAL(10,2)`
 - [ ] `INTEGER`
 
-Q: Comment éviter l'injection SQL ?
-- [ ] Échapper les guillemets
-- [x] Paramètres préparés ($1, $2...)
-- [ ] Valider côté client
-
 Q: Que fait `RETURNING *` ?
 - [ ] Annule la requête
 - [x] Retourne les lignes affectées
@@ -718,6 +607,7 @@ Q: Que fait `RETURNING *` ?
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 - [Prisma Documentation](https://www.prisma.io/docs)
 - [SQL Tutorial](https://www.w3schools.com/sql/)
+- [Module NPM Postgres](https://www.npmjs.com/package/postgre)
 
 ---
 

@@ -241,13 +241,10 @@ const user = await db.collection('users').findOne({ _id: objectId });
 
 ```javascript
 // ❌ Sans ORM : requêtes SQL brutes
-const result = await pool.query(
-  'SELECT * FROM users WHERE email = $1 AND active = $2',
-  [email, true]
-);
+const result = await sql(`SELECT * FROM users WHERE email = email AND active = true`);
 const user = result.rows[0];
 
-// ✅ Avec ORM : code plus lisible et sécurisé
+// ✅ Avec ORM : code plus lisible et orienté dev
 const user = await User.findOne({
   where: { email, active: true }
 });
@@ -289,17 +286,17 @@ const User = mongoose.model('User', userSchema);
 ### PostgreSQL (SQL)
 
 ```bash
-npm install pg
+npm install postgres
 # ou avec Prisma
 npm install prisma @prisma/client
 ```
 
 ```javascript
 // Driver natif
-const { Pool } = require('pg');
-const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+const postgres = require('postgres');
+const sql = postgres(process.env.DATABASE_URL);
 
-const result = await pool.query('SELECT * FROM users WHERE id = $1', [1]);
+const result = await sql(`SELECT * FROM users WHERE id = 1`);
 
 // Avec Prisma
 const user = await prisma.user.findUnique({ where: { id: 1 } });
